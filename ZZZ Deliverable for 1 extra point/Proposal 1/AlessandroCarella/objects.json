@@ -1,0 +1,14 @@
+[
+  {
+    "attribute1": "value1",
+    "attribute2": "value2",
+    "list_attribute.c..item1....item2..": "item1",
+    "list_attribute.c..item3....item4..": "item3"
+  },
+  {
+    "attribute1": "value3",
+    "attribute2": "value4",
+    "list_attribute.c..item1....item2..": "item2",
+    "list_attribute.c..item3....item4..": "item4"
+  }
+]
