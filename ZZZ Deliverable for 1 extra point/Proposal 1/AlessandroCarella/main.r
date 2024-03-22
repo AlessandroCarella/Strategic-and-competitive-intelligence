@@ -1,23 +1,16 @@
+library(yaml)
+
 source("getAllQuestionsLinks.r")
 source("extractDataFromQuestionPage.r")
-library(jsonlite)
 
-query = "generative ai"
+query = "list in python"
 
-questionsLinks = getQuestionsLinks (10, query)
-questions <- list()
+questionsLinks = getQuestionsLinks (3, query)
+questions_list <- list()
 for (questionLink in questionsLinks) {
-    questions <- c(questions, extractDataFromQuestionPage(questionLink))
+    questionObj <- extractDataFromQuestionPage(questionLink)
+    questions_list <- c(questions_list, questionObj$to_list())
 }
 
-df <- data.frame(
-    questionTitle = sapply(questions, function(x) slot(x, "questionTitle")),
-    questionVotes = sapply(questions, function(x) slot(x, "questionVotes")),
-    questionText = sapply(questions, function(x) slot(x, "questionText")),
-    questionCode = sapply(questions, function(x) slot(x, "questionCode")),
-    answerNumber = sapply(questions, function(x) slot(x, "answerNumber")),
-    stringsAsFactors = FALSE
-)
-
-# Write the df to json
-writeLines(df, "questions_output.json", pretty = TRUE, digits = 4)
+# Write the list of objects to YAML
+write_yaml(questions_list, "objects.yaml")
