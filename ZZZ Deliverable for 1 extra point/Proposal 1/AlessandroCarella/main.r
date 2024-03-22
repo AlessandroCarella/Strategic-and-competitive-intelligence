@@ -1,11 +1,12 @@
 library(yaml)
+library(jsonlite)
 
 source("getAllQuestionsLinks.r")
 source("extractDataFromQuestionPage.r")
 
 query = "list in python"
 
-questionsLinks = getQuestionsLinks (3, query)
+questionsLinks = getQuestionsLinks (2, query)
 questions_list <- list()
 for (questionLink in questionsLinks) {
     questionObj <- extractDataFromQuestionPage(questionLink)
@@ -13,4 +14,4 @@ for (questionLink in questionsLinks) {
 }
 
 # Write the list of objects to YAML
-write_yaml(questions_list, "objects.yaml")
+write_yaml(questions_list, "questions.yaml")

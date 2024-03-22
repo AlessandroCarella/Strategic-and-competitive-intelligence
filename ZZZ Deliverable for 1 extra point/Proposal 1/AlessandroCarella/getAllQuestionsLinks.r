@@ -23,8 +23,8 @@ update_page_number <- function(url, new_page) {
   return(updated_url)
 }
 
-getAllQuestionsLinks <- function(numberOfResultsWanted, url, pageNumber = 1, allLinks = character(), numberOfResults = 0){
-    while (numberOfResults < numberOfResultsWanted) {
+getAllQuestionsLinks <- function(numberOfResultsWanted, url, pageNumber = 1, allLinks = character(), numberOfResults = 1){
+    while (numberOfResults <= numberOfResultsWanted) {
         # Extract all the links from the webpage # nolint
         links = read_html(url) %>% 
           html_nodes("a") %>% 
@@ -50,7 +50,7 @@ getAllQuestionsLinks <- function(numberOfResultsWanted, url, pageNumber = 1, all
 
     #reduce the lenght of the 
     if (numberOfResults > numberOfResultsWanted){
-        allLinks <- allLinks[1:(numberOfResultsWanted+1)]
+        allLinks <- allLinks[1:(numberOfResultsWanted)]
     }
 
     return(allLinks)
