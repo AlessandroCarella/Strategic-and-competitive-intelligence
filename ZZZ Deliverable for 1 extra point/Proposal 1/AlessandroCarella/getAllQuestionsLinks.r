@@ -6,13 +6,6 @@ library(jsonlite)
 
 source("utility.r")
 
-combine_with_plus <- function(input_string) {
-  # Replace spaces with '+' using gsub
-  result = gsub(" ", "+", input_string)
-  
-  return(result)
-}
-
 update_page_number <- function(url, new_page) {
   # Define the regular expression pattern to match the page parameter
   pattern <- "(page=\\d+)"
@@ -30,10 +23,11 @@ getAllQuestionsLinks <- function(numberOfResultsWanted, url, pageNumber = 1, all
           html_nodes("a") %>% 
           html_attr("href")
 
-        # Filter links to include only those that end with '?r=SearchResults'
-        filtered_links = links[grep("\\?r=SearchResults$", links)]
+        # Filter links to include only those that contain '?r=SearchResults'
+        filtered_links = links[grepl("\\?r=SearchResults", links)]
 
         if (length(filtered_links) == 0){
+            print ("general page")
             solve_captcha ()
             return (getAllQuestionsLinks(numberOfResultsWanted, url, pageNumber, allLinks, numberOfResults))
         }
@@ -43,6 +37,11 @@ getAllQuestionsLinks <- function(numberOfResultsWanted, url, pageNumber = 1, all
 
         allLinks = c(allLinks, filtered_links_strings)
         numberOfResults = length(allLinks)
+        
+        if ((length(filtered_links_strings) != 49) && (length (allLinks) != numberOfResultsWanted)){
+            print (sprintf("Could not find %d results, found only %d", numberOfResultsWanted, length(allLinks)))
+            return (allLinks)
+        }
 
         pageNumber = pageNumber + 1
         url = update_page_number (url, pageNumber)
@@ -60,8 +59,9 @@ getQuestionsLinks <- function(numberOfResultsWanted, query) {
     # Specify the URL of the website you want to scrape
     #https://stackoverflow.com/search?page=1&tab=Relevance&pagesize=50&q=generative%20ai
     generalQueryBaseFormat = "https://stackoverflow.com/search?page=1&tab=Relevance&pagesize=50&q="
-    query = combine_with_plus(query)
     url = paste0(generalQueryBaseFormat, query)
+    print ("your full url is")
+    print (url)
 
     #get all the questions by the method
     filtered_links_strings = getAllQuestionsLinks(numberOfResultsWanted, url)
