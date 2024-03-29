@@ -38,7 +38,7 @@ getAllQuestionsLinks <- function(numberOfResultsWanted, url, pageNumber = 1, all
         allLinks = c(allLinks, filtered_links_strings)
         numberOfResults = length(allLinks)
         
-        if ((length(filtered_links_strings) != 49) && (length (allLinks) != numberOfResultsWanted)){
+        if ((length(filtered_links_strings) != 49) && (length (allLinks) < numberOfResultsWanted)){
             print (sprintf("Could not find %d results, found only %d", numberOfResultsWanted, length(allLinks)))
             return (allLinks)
         }
