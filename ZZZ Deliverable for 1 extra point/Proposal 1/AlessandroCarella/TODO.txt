@@ -1,4 +1,0 @@
-instead of the function for inputs create a hardcoded array for the user to write the query
-turn the function for inputs to make it return the above array
-
-finish excel turning
