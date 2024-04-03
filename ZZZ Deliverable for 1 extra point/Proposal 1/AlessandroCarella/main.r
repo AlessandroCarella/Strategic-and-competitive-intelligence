@@ -26,7 +26,7 @@ query = formulate_query (
         "2000", #min view (integer string)
         "print (\"hello\")", #code (string with code)
         "yes || no", #closed ("yes" or "no")
-        "yes || no", #duplicated ("yes" or "no")
+        "yes || no", #duplicated ("y    es" or "no")
         "yes || no", #is question ("yes" or "no")
         "yes || no" #is answer ("yes" or "no")
     )
