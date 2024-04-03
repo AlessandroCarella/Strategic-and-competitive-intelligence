@@ -7,13 +7,13 @@ library(jsonlite)
 source("utility.r")
 
 update_page_number <- function(url, new_page) {
-  # Define the regular expression pattern to match the page parameter
-  pattern <- "(page=\\d+)"
-  
-  # Replace the page parameter value with the new page number
-  updated_url <- gsub(pattern, paste0("page=", new_page), url)
-  
-  return(updated_url)
+    # Define the regular expression pattern to match the page parameter
+    pattern <- "(page=\\d+)"
+    
+    # Replace the page parameter value with the new page number
+    updated_url <- gsub(pattern, paste0("page=", new_page), url)
+    
+    return(updated_url)
 }
 
 getAllQuestionsLinks <- function(numberOfResultsWanted, url, pageNumber = 1, allLinks = character(), numberOfResults = 1){
