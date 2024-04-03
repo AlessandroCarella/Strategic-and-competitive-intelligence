@@ -24,6 +24,29 @@ Question <- R6::R6Class(
                 answers_number = self$answers_number,
                 answers = lapply(self$answers, function(answer) answer$to_list())
             )
+        },
+        get_top_rated_answer_votes = function(){
+            if (length(self$answers) == 0 || is.null(self$answers[[1]]$answer_votes)) return (0)
+            return (self$answers[[1]]$answer_votes)
+        },
+        get_top_rated_answer_number_of_comments = function(){
+            if (length(self$answers) == 0 || is.null(self$answers[[1]]$answer_num_comments)) return (0)
+            return (self$answers[[1]]$answer_num_comments)
+        }
+        ,
+        get_total_number_of_answer_votes = function(){
+            tot = 0
+            for (answElem in self$answers){
+                tot = tot + answElem$answer_votes
+            }
+            return (tot)
+        },
+        get_total_number_of_answer_comments = function(){
+            tot = 0
+            for (answElem in self$answers){
+                tot = tot + answElem$answer_num_comments
+            }
+            return (tot)
         }
     )
 )

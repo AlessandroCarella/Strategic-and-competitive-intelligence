@@ -8,6 +8,7 @@ source("queryOptions.r")
 source("getAllQuestionsLinks.r")
 source("extractDataFromQuestionPage.r")
 
+numerOfAnswersToRetrieve = 3
 #generative ai [python] code:print -[macos] -[opencv]
 query = formulate_query (
     #put your general query here, remember to use \" for words
@@ -45,7 +46,7 @@ query = formulate_query (
 print ("Your query is")
 print (query)
 
-questionsLinks = getQuestionsLinks (3, query)
+questionsLinks = getQuestionsLinks (numerOfAnswersToRetrieve, query)
 questions_list <- list()
 for (questionLink in questionsLinks) {
     questionObj <- extractDataFromQuestionPage(questionLink)
@@ -53,8 +54,58 @@ for (questionLink in questionsLinks) {
 }
 
 #----------------------------------------------------------------
-#EXCEL
-print ("ciao")
+#DATAFRAME
+print ("Creating dataframe")
+
+questionsTitles = character()
+questionVotes = numeric()
+answersNumbers = numeric()
+
+topRatedAnswersVotess = numeric()
+topRatedAnswersNumerOfCommentss = numeric()
+totalNumberOfAnswerVotess = numeric()
+totalNumberOfAnswerCommentss = numeric()
+
+for (questionObj in questions_list) {
+    questionsTitles = c(questionsTitles, questionObj$question_title)
+    questionVotes = c(questionVotes, questionObj$question_votes)
+    answersNumbers = c(answersNumbers, questionObj$answers_number)
+
+    topRatedAnswersVotess = c(topRatedAnswersVotess, questionObj$get_top_rated_answer_votes())
+    topRatedAnswersNumerOfCommentss = c(topRatedAnswersNumerOfCommentss, questionObj$get_top_rated_answer_number_of_comments())
+    totalNumberOfAnswerVotess = c(totalNumberOfAnswerVotess, questionObj$get_total_number_of_answer_votes())
+    totalNumberOfAnswerCommentss = c(totalNumberOfAnswerCommentss, questionObj$get_total_number_of_answer_comments())
+}
+
+
+# Create a list of your data
+data_list <- list(
+    questionsTitles,
+    questionVotes,
+    answersNumbers,
+
+    topRatedAnswersVotess,
+    topRatedAnswersNumerOfCommentss,
+    totalNumberOfAnswerVotess,
+    totalNumberOfAnswerCommentss
+)
+
+column_names <- c(
+    "Questions Titles",
+    "Question Votes",
+    "Answers Numbers",
+
+    "Top Rated Answers Votess",
+    "Top Rated Answers Number Of Commentss",
+    "Total Number Of Answer Votess",
+    "Total Number Of Answer Commentss"
+)
+
+data_df <- as.data.frame(data_list, stringsAsFactors = FALSE)
+
+names(data_df) <- column_names
+
+write.csv(data_df, "questions.csv", row.names = FALSE, quote=FALSE)
 
 #----------------------------------------------------------------
 #YAML
@@ -68,4 +119,7 @@ for (questionObj in questions_list) {
 # Write the list of objects to YAML
 write_yaml(toYamlQuestionList, "questions.yaml")
 
-print ("Finished execution, you will find the data in the questions.yaml file")
+print ("Finished execution, you will find:")
+print ("the dataframe with the most relevant data in the questions.csv file")
+print ("and")
+print ("a more extended version of the data (with text from the questions, relative answers and comments) in the questions.yaml file")
