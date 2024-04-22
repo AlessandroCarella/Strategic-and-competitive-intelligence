@@ -1,4 +1,8 @@
-ChatGPT_Tweets_Dataset_Full
+#datasets too big for git
+ChatGPT_Tweets_Dataset_Full.csv
+companies-2023-q4-sm.csv
+codingFiltered_ChatGPT_Tweets_Dataset_Full.csv
+objects_unique_values.txt
 
 # History files
 .Rhistory

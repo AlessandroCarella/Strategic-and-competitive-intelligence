@@ -1,0 +1,58 @@
+{
+    "c9snyn": {
+        "Title": "New AI programming language called Gen, based on Juila, made by MIT.",
+        "Post Text": "",
+        "Comments": [
+            "In this case it's more of a DSL built on top of Julia using the macro system and other metaprogramming tools, not an independent new programming language inspired on Julia. Though that means it can be easily integrated with the rest of the language ecosystem and easily extended.",
+            "Link above (PDF) is the paper written by MIT. Here is an article about it that also has a link to the paper.\n\nhttps://venturebeat.com/2019/06/27/mits-gen-programming-system-allows-users-to-easily-create-computer-vision-statistical-ai-and-robotics-programs/",
+            "Can it raise 2 to the power of 2 repeatedly without silently overflowing?"
+        ]
+    },
+    "1akghsg": {
+        "Title": "Edgen: A Local, Open Source GenAI Server Alternative to OpenAI in Rust",
+        "Post Text": "",
+        "Comments": []
+    },
+    "62p99": {
+        "Title": "The cutting edge of integrating next-gen animation and AI",
+        "Post Text": "",
+        "Comments": [
+            "Marketing BS-y"
+        ]
+    },
+    "562e3d": {
+        "Title": "Samsung acquires Viv, a next-gen AI assistant built by creators of Apple\u2019s Siri",
+        "Post Text": "",
+        "Comments": [
+            "If it goes the way of the rest of Samsung's line up, it will probably be a an unintentionally malicious AI.\n\nThe next generation of Samsung VR may accidentally put you in the matrix.",
+            "\"Viv, I'm cold.\"\n\n\"Starting a fire for you.\""
+        ]
+    },
+    "18j5xxe": {
+        "Title": "Advancing AutoGen Towards AGI: Improving Open Source AI Agents",
+        "Post Text": "",
+        "Comments": []
+    },
+    "15ncpx2": {
+        "Title": "GitHub - genia-dev/GeniA: Your Engineering Gen AI Assistant \ud83e\uddec\ud83e\udd16\ud83d\udcbb",
+        "Post Text": "",
+        "Comments": []
+    },
+    "tv1138": {
+        "Title": "Meet \u2018CodeGen\u2019: An AI Model That Turns Simple Natural Language Requests Into Executable Code",
+        "Post Text": "",
+        "Comments": [
+            "I think that what pissed me off the most about this article is how it tried to portray this as somehow good for society because it democratizes coding. We don't live in a world where people have a lot of free time to think about solving problems where they just need the tools to do it, we live in a world where income inequality is rising, corporate profits are soaring while people are making less and less, and increasingly people don't have the time to think about creating new an innovative solutions to problems when they have to worry about survival.\n\n\"Democratizing coding\" in this context won't help liberate people, let them solve their own problems, it will just allow corporations that need expensive programmers to replace them with workers that make less so that they can keep more of the money. Please stop trying to sell the attempt to loot society even more as somehow egalitarian or good for humanity.\n\nIf you want to pursue this, fine. Just don't pretend that you're doing it out of the goodness of your heart."
+        ]
+    },
+    "12px3s9": {
+        "Title": "First Gen-AI Enabled Multiplayer Desktop (Please give a star and reach out to contribute!)",
+        "Post Text": "",
+        "Comments": []
+    },
+    "1469z79": {
+        "Title": "Successfully Generated a Music with MusicGen's AI Music Generation System",
+        "Post Text": "",
+        "Comments": []
+    }
+}

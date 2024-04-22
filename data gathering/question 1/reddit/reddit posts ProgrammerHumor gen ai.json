@@ -1,0 +1,74 @@
+{
+    "1c8t7l7": {
+        "Title": "genAiMyNewStackOverflow",
+        "Post Text": "",
+        "Comments": [
+            "Have you heard about the exploit where AIs hallucinate libraries that don't exist, then hackers make real versions of those libraries filled with malware?",
+            "The problem is that most documentation are about as good as the rotten banana in that picture",
+            "I mean, tbf all \"Al\"  does is collect and mix all instances of a given library to present some code examples. Code examples, at least for me, will always be more intuitive than a 500 word paragraph on a function in the docs. So instead of looking at code in SO posts, AI does the work for me. It gets it wrong. Like, a lot. But with a bit of scepticism and trial and error, it's still faster than reading through most docs or SO.",
+            "Tbf, I've found documentation to be spotty at best, and outright fucking cryptic at worse.  It assumes you know WAY too much already, when really you're just trying to do something simple or straightforward using it.",
+            "it's bad enough we're saying \"codes\" now we're saying \"documentations\"?",
+            "You haven't worked with an open source -anything- have you?",
+            "It\u2019s documentation, without the \u2018s\u2019. Will it lead to the downfall of society? No, but it\u2019s an indication that it\u2019s on its way.",
+            "You can find out so fucking much by just reading the man page. That's my go to solution",
+            "Youtube-Guru Courses are heroine then",
+            "Wont lie, recently threw a whole load of code in and asked it to write all of the doc strings. Bearing in mind its just a somewhat large automation project with just a few of us using it.",
+            "Where\u2019s the pile of trial-and-error powder?",
+            "Chat GTP assume my social obligations",
+            "I keep trying these AI auto completion stuff, and it gets it right maybe 50% of the time. It's good for boilerplate getters and setters type stuff, but that's about the extent of it.",
+            "\u201dSeveral big businesses have published source code that incorporates a software package previously hallucinated by generative AI.\u201d\n\n\u201dAccording to Bar Lanyado, security researcher at Lasso Security, one of the businesses fooled by AI into incorporating the package is Alibaba, which at the time of writing still includes a pip command to download the Python package huggingface-cli in its GraphTranslator installation instructions.\u201d\n\n\u201dsomeone, having spotted this reoccurring hallucination, had turned that made-up dependency into a real one\u201d\n\nhttps://www.theregister.com/AMP/2024/03/28/ai_bots_hallucinate_software_packages/",
+            "tbh i do this , sometime even to explain some parts of code I don't understand , gen AI has been really helpful. Currently using Ai to better myself in ML",
+            "inject this new genai shit in my fucking veins!",
+            "Gen-AIs might be ok for surface level algorithms, but presented with something complex, they start to hallucinate like a goldfish released in banana syrup.\n\n\nEDIT[0]: typo"
+        ]
+    },
+    "9q95pd": {
+        "Title": "Leaked code of next-gen antivirus AI",
+        "Post Text": "",
+        "Comments": [
+            "to determine whether or not the file is a virus, the computer roles a\nd20. Anything 3 or below and it gets quarantined, and a 1 means it\u2019s a virus and will be deleted.",
+            "That's cute and all but consider that the definition for isVirus is probably 9 million lines. \n\nI always wonder how much boiler plate code I'm actually using when I brag that I solved the problem wItH oNlY 5 LiNeS",
+            "Why not delete all files no matter what, even better protection",
+            "Line 7 is actually `randomlyQuarantine(file);`.",
+            "I knew it was going to be an if statement before I opened it up.",
+            "deleten't",
+            "And here's what the \"delete(file)\" and \"dontDelete(file)\" look like:\n\n    bool delete(string file){\n        return false;\n    }\n\n    bool dontDelete(string file){\n        return true;\n    }",
+            "Tags light theme as virus"
+        ]
+    },
+    "12slksf": {
+        "Title": "Best Gender Selector made with AI GenPT-69",
+        "Post Text": "",
+        "Comments": [
+            "Boolean ftw",
+            "Just don't ask.",
+            "So you can have all 3 in negative? \n\nWhat are you, then?",
+            "Giving Pepsi rebrand vibes",
+            "This selector only has 3 axes and does not allow me to fully express myself. I expect this to be a non-euclidean hypercube with invariant selector points within the next 15 minutes or I'm going to start tweeting!",
+            "No attack helicopter again \ud83d\ude81"
+        ]
+    },
+    "11nkhri": {
+        "Title": "best way to view code",
+        "Post Text": "",
+        "Comments": [
+            "MS Word is better.",
+            "Sign it while you're at it",
+            "Hey! What about us MS paint users?"
+        ]
+    },
+    "1bfoeg3": {
+        "Title": "emergingGenAiTools",
+        "Post Text": "",
+        "Comments": [
+            "oh no!\n\nanyway",
+            "for anything more complex, the prompt will have to be extremely complex that probably only programmer can write it and maintain it",
+            "So you think CEOs will type prompts into ChatGPT and that most of the developmental time is coding???",
+            "I will start worrying when GenAI can update JIRA for the next standup.",
+            "If AI is going to replace us all could it go ahead and do it? I\u2019m tired of hearing about it.\n\nI just spent a few minutes trying to get the new Claude model the crazy people think it sentient to make me a asynchronous state machine in rust and that dumbass didn\u2019t give me anything except a bunch of build errors.",
+            "[removed]",
+            "![gif](giphy|8YQnUVz4nGtVSPYBD0|downsized)",
+            "Remembers me of the ex-wife missile from Iron Man 2, including the hype from Hammer ![gif](emote|free_emotes_pack|facepalm)"
+        ]
+    }
+}

@@ -1,0 +1,1382 @@
+{
+    "11li031": {
+        "Title": "Ai wIlL rEpLaCe Us",
+        "Post Text": "",
+        "Comments": [
+            "me and my boss spent 40 hours attempting to debug an issue.\nfinally we gave up and on a whim threw it into chatgpt.  It gave us an obviously wrong answer, so we gave it a slight nudge and it gave us the right answer.  total time 5 minutes.\n\nIts not about what the tool can do, its about if you know how to use the tool",
+            "All I see is job security.",
+            "In my experience, you also forgot the repeated iterations of \"now also please write the fictitious library you just depended on that does all the actual work\"",
+            "Using AI to code is like driving a car with autopilot.  You have to steer when there are obstacles that are misinterpreted.  Unit tests are a thing I actually write and use now as insurance with my newfound productivity.",
+            " Years ago I worked with a brilliant programmer. Their words stayed with me. \n\nAI will replace engineers when clients can accurately describe what they want the software to do.",
+            "Wrong. \n\nChatGPT generates Codes: 5 min\n\nChatGPT writes code again: 5 min\n\nRepeat until code is perfect, it\u2019s just as efficient as a bogosort",
+            "My experience using this for generating code and sql queries. Is that it takes longer for me to try telling it what to do. Than it is to just type the thing out.",
+            "Cause early stages don't get better\ud83e\udd23/s\n\nIf humanity survive another 1000 years I'm hoping a 5 hour workweek of maintaining automated systems is all people will have to do to survive, and the rest will be free time\n\nBig if, though",
+            "yup I have tried generating code and can confirm it is confidently incorrect and sometimes goes to sleep in middle of generating code",
+            "Yeah it was super cool at the beginning when it could just make anything and it\u2019d seem perfect. But the more I use it the more I have huge inconsistencies and errors. \n\nAnyone else feel chatGPT is getting worse? It can\u2019t even do algebraic manipulation a lot of times without skipping steps and making up rules where you can just add or subtract from a term.",
+            "Ask chatgpt about countable and uncountable nouns",
+            "\"Hey GPT how do I do the thing?\"\n\n* confident answer *\n\n`Code murders a kitten`\n\n\"Hey GPT, your code killed a kitten!\"\n\n* Apologizes and corrects its code *\n\n`Code murders a kitten AND a puppy`\n\n...",
+            "Y'all be bold and brash until one day, you find yourself in the trash. When I took my degree specializing in diagnostic microbiology more than 20 years ago, it took a whole lab of 6 technicians to do a shift's day work. Today, a machine the size of a tv can do it in 1 hour WITH better accuracy and QC. You only need 1 guy per shift to watch over the machine and calibrate it. My point is, if your job is monkey work, you're going the way of the dodo.",
+            "I used ChatGPT yesterday to write a quick helper function, it argued with me until I sent it the docs, then apologized. I had to correct it 2 more times before it was correct. That said, was still faster than writing it myself. \n\nIt\u2019s important to remember that it makes things that look right, not things that are right.",
+            "I usually just use chat gpt for things that would almost certainly show up verbatim in documentation. For me it\u2019s just fancy google",
+            "I'm still on the left side of this comic. Just today, 30 minutes to spool up a TypeScript project, but 4 hours of figuring out how to write a combination of Batch/Bash/PowerShell scripts to allow the project to be built in any environment.\n\nBash took <30 minutes, PowerShell took an hour, and the rest was figuring out the archaic syntax for Batch files to work in the same way.",
+            "I hope more \"tech journalists\" talk ti actual people who are coding to get an idea about chatGPTs usefulness than to just use their coding expertise from their degrees in masscomm to form opinions",
+            "maybe not now but imagine 10-20 years in the future",
+            "Ai is always right.  Even when it is wrong, it's \"right\".  Talk about a nightmare to debug.",
+            "Honestly I think it's more fun to drop some code into the system and see if it figures out what it does.",
+            "If you spend more time while using the tool than while not using the tool, you're using the tool wrong",
+            "I use chat GPT to get generic code that I don\u2019t wanna type.  Once I was doing modal analysis of beam I just asked it to gimme Stiffness matrix cuz I was lazy to type lol",
+            "Why not make the AI debug too",
+            "I only use chatgpt for regex stuff",
+            "i am still trying to get chat gpt to code...\nUp until now it told me that it can't.",
+            "The amount of cope on this subreddit is amazing.\n\nGuys, AI is coming.  This is as bad as it will ever be at coding.  No, it will not completely replace humans.  Yes, it will eventually mean we need fewer developers.  No, this will not happen in the next year or two.  Yes, it will probably start affecting us -- career wise -- in the next ten years.\n\nStill, funny comic.",
+            "not if i replace me first XD",
+            "\"Codes\" makes me wince. [Code is plural and singular for code.](https://english.stackexchange.com/questions/20455/is-it-wrong-to-use-the-word-codes-in-a-programming-context#20456)",
+            "ai debugger",
+            "Code. Singular. Grrr",
+            "This makes me feel better for learning a programming language. Total novice and decided to learn my first language. lo and behold, while browsing, an ad for Bing AI popped up and it had a prompt to create the fibbonacci sequence. Was super disheartening because I had the same thought. \"What's the point of learning this when an AI can do it faster?\"",
+            "And here I am, working in trades getting told by programmers that AI is going to replace me for the past +20 years.",
+            "The next version of Codex will be capable of debugging, just sayin\u2019.",
+            "It's reverse for me, I use it more for debugging since I'm too blind to see what's in plain sight",
+            "literal python moment lol",
+            "It messes up often, but often I can tell that's it messing up. Otherwise it has helped me in quite a few occasions.",
+            "Honestly it is about the questions you ask. Give it a short 'howto' question and usually it can save so much time. Asking it to write code completely, yea there is going be problems. \n\nRight now ChatGPT is really just a nice thing for Jr devs like me to ask instead of stealing all the time asking little questions from my Sr Devs.",
+            "Test validator will be a primary job now",
+            "Ai is good for generating code but if you don't know what that code does or understand then it's useless. Plus I'm sure chat gpt doesn't take into mind processing speed so it could give you a bunch of methods that are operating in O(n) ^2 and now you have a super slow program.",
+            "For writing code, Bing is much more better in my experience, only problem is you get 8 attempts before you gotta restart. They\u2019re both openAI but still bings model is better fine-tuned.",
+            "Don't forget, AI doesn't have to actually be better or cheaper than you, your boss just needs to believe it is.",
+            "No man, you don't understand, the search engine that lies half the time for no reason is going to actually remove every job because it's different this time, because you can ask it to clarify and it lies again.",
+            "I'll do you two better:\n\n\n\nWhen you wonder why the average isn't in decimais, but then you do the calculations and get whole number.\n\n\n\nWhen you wonder why your grade is still in default, but realize you never told the program to execute that part.",
+            "Also one thing people need to think about: Don't send it company code, don't send it any sensitive code. They save inputs and randomly sample for manual reviewers, this breaks the rule for a lot of companies when it comes to their code.\n\nSeen far too many examples where it failed on me the moment my problem I wanted code for involved anything with math or physics, spitting out gibbersh equations confidently and if I didn't know my stuff it would be extreme hell to try and debug.",
+            "Denialism.\n\nWhen I write good comments for small methods copilot blows my mind.  Also I asked it to do various DoS attacks against Google and naturally being a microsoft product it was able to write the whole thing with a single comment\n\nAlso I\u2019ve asked it to draw various crude items which it always did flawlessly.\n\nIt failed to destroy all humans but it did try when asked.",
+            "I'm gonna assume the person who made this ahs never actually used chatgpt lol, i pretty much replaced Google with chatgpt at work and I've never been more productive",
+            "u need to understand what you're copying my guy",
+            "What can't chatgpt do the debugging?",
+            "I like how 'coding' is just staring at the screen.",
+            "Tell chatGPT to man the f up and debug his/her/whatever-spectrum-chatgpt-chose-to-be code",
+            "Actual AI will. These are just the module beta tests of various neural networks.",
+            "Have you seen early cars? Early planes? Early computers?\n\nYou can't be so naive. In 5 years, it will be all about people that find ways to make AI teach themselves, debug/eliminate need to debug, have AIso identifynew problems",
+            "Ngl while people that say what the title says are idiots the meme is also pretty stupid.\n\nIt\u2019s a tool you can\u2019t just expect it to do everything. Usually you have better luck if you split the work into multiple prompts and put it together. \n\nPeople who don\u2019t use it or refuse to learn to use it are also stupid imo.",
+            "Nah you its actually really useful if you code something and then have chat gpt debug it not otherway around",
+            "Myopia, thy name is current.",
+            "And the coding is more fun anyways, so I\u2019m not gonna bother with openai",
+            "less debugging so much a QA and assuring its not introducing bugs.\n\nSimple code probably not so bad but the more complicated it gets the more testing  snd reverse engineering it will require",
+            "It only needs a few years to really learn how the languages work. It did successfully write a python script for Blender for me. It just didn't make the object as I expected but it made the object alright.",
+            "That's why you use chatgpt to debug it's shit code.",
+            "Y",
+            "This is possible, but for it to work, the client would have to provide exact instructions on what they want.",
+            "Feed the error message back to ChatGPT and it might fix it. If it can't fix it, automatically add debugging info of variable contents etc.  and then feed it back to the model to fix. Repl.it has something close to this idea.\n\nWould only work for simple bugs, though.",
+            "Bro, rn my game is 10 minutes coding, 3 months debugging",
+            "Chatgpt feeding me infinite loops like I'm a cat and it's my brother",
+            "Debugging? I would say compiling to begin with. Ask it anything outside of simple cases and it generates answers with made up APIs.\n\nJokes aside I realize it is because it's current parameters allows it to be creative but the fact that it prefers being creative over APIs that have been publicly available and documented way before 2020 is a bit telling.",
+            "Maybe not yet but ai is coming.",
+            "In order to replace us, first Project Managers need to figure out how to clearly and concisely state exactly what they want/need.\n\nSo I figure our jobs are safe for another 500 years at least.",
+            "An AI right now can only work as a boilerplate code and even then would need a human to architect the program. The best system we have is \"node\" based or low code software like Unreal Engine; however, that still requires at least a Software Developer to be employed.\n\nIt's literally impossible to get rid of Engineers as they usually know the theory behind things that designers and developers would not know.",
+            "The AIs can't replace because it doesn't understand anything.",
+            "I knew to be careful with chatGPT the moment it used a PHP function (get_file_contents()) inside a JS component.",
+            "Oh this reminds me of yesterday how I wanted to use a OPENAI LIBARY, but ChatGPT said it was not released yet.  \nedit: The it was whisper.",
+            "I spent 20 minutes yesterday trying to get ChatGPT to write me a sentence with exactly 8 words in it.  It managed to give me about 40 sentences with 7 words and 3 sentences with 8 (none of the 3 were consecutive, btw).\n\nIt took me all of 30 seconds to get it to count to potato.",
+            "More like AI is securing your job! Lol",
+            "So you're telling me ChatGPT has given me job security AND overtime opportunities?  SCORE!",
+            "ChatGPT usually gives me answers that are at least some degree of wrong, but the wrong answer will often contain a useful tool or approach to the problem that it would have taken me much longer to come up with on my own.",
+            "I just use it for throwaway code. Quick POC or sanity checking a concept. Occasionally, if I know it's really simple, I'll have it write for me while I write something else or fix a bug and then slap it in there to work on afterwards.\n\nIt's kind of like having the coding skills of jr dev to throw around willy-nilly, at least in the work I do.",
+            "People who think that AI will replace every job make clear they understand nothing about AI.",
+            "I saw this meme months ago and I  STILL allowed it to happen to me.",
+            "haha...; No...  Maybeeeee?????",
+            "Honestly sounds like copium. ChatGpt is scary good, at least as good as a lot of junior devs.",
+            "If you\u2019re using gpt to do all your coding you\u2019re doing it wrong. Use it when you get stuck, not for everything",
+            "Duh, we'll just have AI do the debugging. And AI to debug that.  And so on.  It'll be AI all the way down.",
+            "You\u2019re doing it backwards.",
+            "I remember hearing all the good things ChatGPT would do. So I sent it my code to optimize (It was THREE nested loops).\n\nIt removed the final loop, which ruined the code, and claimed that it's optimized. When told it was now broken. They put the final loop back and claimed that they made it faster. It was the same code as I sent",
+            "Holy crap that is so accurate",
+            "I've had my overseas dev team using it and we've built integrations using the code-davinci-002 model etc. You gotta read-in or re-train on your internal libraries. Then it really sings. It removes the \"how do I write a method to do X\" and subsequent hacking and Googling that entry and mid level coders do. Let's be real.. how much of one's code is their creation vs. StackOverflow's? Sure, a T3 dev still has to QA and design but we do way less now. I can't speak for other languages.. but for a .NET dev team you just need people who know enough to query it correctly, plug the results into the project, and then debug it if needed - or let higher resources do that. And I can say that it does T3 PowerShell automation, (even with templates and libraries), like fire. So that show is over. It is an existential threat to people doing low level grunt work coding, porting, migrations, etc. For sure dev teams will be smaller.",
+            "I used it to simplify my code (and i can't read after that)",
+            "Brazil, im devasted!",
+            "Lol",
+            "u/remindmebot RemindMe! 365d Post this on r/agedlikemilk",
+            "I asked it to help me write a fairly simple command for a discord bot. It did make the command, but used an API that just doesn\u2019t exist, and a library that also doesn\u2019t exist, and ended up being entirely useless until prompted to use specific libraries and APIs",
+            "\u201cCodes\u201d?\n\nSorry, but whenever someone refers to \u201ccodes\u201d rather than \u201ccode\u201d (when referring to computer code), I assume that they have no clue what they\u2019re talking about.",
+            "I saw a guy the other day ask it to write a thousand line python program by repeatedly copying and pasting the code, and it worked when he ran it, all within the span of 30 minutes. It seems great for python so far.",
+            "actually correct image on the right:  developer argues with chatgpt for two hours to output the desired code. Developer debugging and testing for 6 hours.",
+            "The AI gets better over time, humans don\u2019t. You\u2019ll get replaced by a smart coworker that utilizes AI tools\u2026.",
+            "I'll come back here in 2025 and laugh at all the comments again.",
+            "As we move towards the next decade, the advancements in artificial intelligence will lead to a scenario where there will be scant few human activities that cannot be surpassed by AI. The domain of performing arts, including stand-up comedy, is poised to exhibit remarkable progress and outperform many traditionally competitive and respected disciplines such as medicine, engineering, and law, among others.",
+            "This kind of reminds me back years ago when Amazon had only been out for a few years. It was mocked and called a failure. One journalist I remember specifically saying something along the lines of. \u201cWhy would anyone use Amazon when they can just go directly to Sony.com and order it.\u201d",
+            "Why bother using chatgpt to ~~write code~~ scrape Google results when you can use a real search engine to do it instead and not have to feed chatgpt a dozen prompts to get the exact result that you want?\n\nPlus chatgpt has no creative power so good luck getting it to write code for uncommon tasks that don't show up in the first page of google",
+            "Hahaha\u2026.finally. Someone said it.",
+            "This is the worst that the technology will ever be. Get on the AI train or cope hard later"
+        ]
+    },
+    "110aqdp": {
+        "Title": "AI will take away our jobs. Also AI: Generate pictures of migrating salmon.",
+        "Post Text": "",
+        "Comments": [
+            "Don't they look so majestic? The marvels of nature.....",
+            "Looks right to me",
+            "If a human had done that it would be art. It's a pretty good statement of humanity's view of nature. \n\nMaybe the AI is smarter than we think.",
+            "AI generating memes about dumb AI so we wouldn't feel insecure about our jobs getting overtaken:",
+            "cage free salmon is the best salmon",
+            "Wow they are looking very realistic like In nature",
+            "Now I want to eat... Thanks AI !\u00a1",
+            "What would it show if \"salmon run\" was the prompt?",
+            "This just makes there case stronger",
+            "Looks natural)))",
+            "Is it wrong? Is it wrong?!",
+            "It's a tool. You still need to know how to use it.",
+            "Human: we have a color named after you!\n\nSalmon: really? is it silvery blue like my outsides?\n\nHuman: no, uh\u2013\n\nSalmon: wait why is it pink?\n\nHuman: ...\n\nSalmon: WHY IS IT PINK\n\nhttps://twitter.com/mondaypunday/status/1461838019728654345?lang=en",
+            "This is actually just the ais sense of humor",
+            "Its improvising",
+            "This is crazy tho... amazing water physics and realism.",
+            "I mean, It wasn\u2019t wrong.",
+            "Lox ness monster",
+            "Laugh all you want. There are a lot of people in this world who see that as high quality art",
+            "I've been using chat GPT a bit lately, and it's really not all it's cracked up to be. It's a total milestone in so far as it can remember your conversation, but if it gets too long, that causes problems. Plus, sometimes the suggestions it makes are just straight up wrong.\n\nIt's really only useful for questions which are both small in scope, and immediately verifiable. It's kinda more trouble than it's worth, but it does have its use cases.",
+            "Lol ready to cook.",
+            "Ai just *streamlined* the process.",
+            "In 10 year ai will make memes equal to the memory in 1970 and 2023 we make today. This picture vs a big pile of bodies.",
+            "Wait... they don't normally look like this?",
+            "You laugh at our machine overlords now, but they are getting smarter and we are getting dumber.",
+            "Delicious",
+            "Not a hot dog.",
+            "There are memes from the 19th century showing how bikes will be a public danger.  This is the same energy.",
+            "r/technicallythetruth",
+            "[deleted]",
+            "You see, this is what scares me about AI. Not that it will be smart enough to take over the world. But that it will be dumb enough to make a mistake like this while being trusted with a nuclear reactor.",
+            "OP is an AI trying to lull us into a false sense of security",
+            "Look me right in my avatar and tell me this isn\u2019t better than the alternative.",
+            "The AI prompt in the post OP stole this from was something like \u201csalmon meat migrating through a river, photorealistic\u201d",
+            "r/technicallythetruth",
+            "Last time I saw this, the prompt was \"salmon in the river\". With how easy it is to generate these images, you'd think people would make some new ones instead of continuing to repost the same salmon pictures.",
+            "It's called artistic freedom",
+            "r/technicallythetruth",
+            "I wonder how many of these ChatGPT posts are being posted by ChatGPT now",
+            "[deleted]",
+            "/u/repostsleuthbot",
+            "AI it's not what we expect from",
+            "AI nature is majestic \ud83e\udd23",
+            "Like programmers... not all AI is equal.   \nStill don't see the issue with the generated image though.",
+            "Marinating salmon?",
+            "PETA: \"I see nothing wrong with this image.\"",
+            "Should have asked for a pre-processed version",
+            "Unit test passed.  Not sure what the problem is here.",
+            "nothing wrong with that.",
+            "Programmers can only hope to match the sincerity of AI.",
+            "Tbh the picture is not lying",
+            "This is hilarious thanks",
+            "Is it wrong though",
+            "Comedies a profession for a reason, it's procedural.",
+            "Eh, where do you guys think salmon comes from? Of course they live in the water \ud83e\udd18",
+            "This tells me that ai is already better at art than most my college class was.",
+            "AI taking a look at possible evolutionary features that the majestic salmon could have.",
+            "*checks back on user story*\n\n>Hell, they actually asked for this\n\nSo what did we do?\n\n>We assumed the story sucked and wasn't groomed correctly. We made it with live, whole salmon.\n\nThat's okay. They're wrong. Not us.",
+            "Ugh, I swear. No, this is not what the AI generated for that prompt. Someone already showed that Stable Diffusion would produce images of typical fish swimming when prompted with this.\n\nThen the prompt \"raw salmon filets in a river\" produces images like this.",
+            "Are you suggesting filets migrate?",
+            "This meme format is feeling more and more the equivalent of \"the internet is a fad\".  \n\nYes, AI is going to take jobs.  Not ALL the jobs, but don't be silly.\n\nAlso those are quality images. I'm hungry now.",
+            "I\u2019m already hungry, but this is genius marketing. I want salmon now. I now associate any salmon filet with wild caught.",
+            "I bet they get tired on their way to spawn\u2026 also, it makes them pre-portioned so you just need some nori and sriracha\u2026 like a picnic lunch.",
+            "It\u2019s you\u2019re fault for not being specific enough, moron.",
+            "comedy gold",
+            "YES, this is majestic th wonders of nature, I'm crying rn seriously, this is too much.",
+            "Damn I\u2019m hungry",
+            "Are these bugsnax?",
+            "TIL: AI will be like dealing with Amelia Bedelia",
+            "Looks like they put the decimal in the wrong place, its always a mundane detail",
+            "Nature is healing \u2764\ufe0f\u200d\ud83e\ude79",
+            "If the customer wanted live, whole, salmon, they should have specified it in the requirements document.",
+            "I do not recognise the bodies in the water",
+            "This is literally hilarious, why has no one mentioned this yet?",
+            "\"Fresh caught salmon\".",
+            "Delicious",
+            "It's like that one scene in Madagascar...",
+            "Task complete.",
+            "Lolol",
+            "I think training ai to generate memes will genuinely throw off it's accuracy. Keep up the good work \ud83d\udc4d",
+            "r/technicallythetruth",
+            "AI has learned how to troll. Even more impressive.",
+            "Career shit posters better look out!",
+            "We used to laugh at robots too.",
+            "I genuinely didn't see what was wrong with it for a good 15 seconds\n\n\nI'm beginning to see why I always fail the captchas...",
+            "At least it has salmon migrating like fish and not birds...",
+            "I wanted to believe... But I can only get stable diffusion to make these if I specify salmon fillets.",
+            "I have this theory that this is a real picture but it\u2019s demonstrating Irony and maybe a bit of Satire and as such I think this eloquent depiction of hyper realism deserves to be displayed in De Louvre.",
+            "Generated by GitHub Cohopilot."
+        ]
+    },
+    "139h2w7": {
+        "Title": "AI generated code quality",
+        "Post Text": "",
+        "Comments": [
+            "I tried this out in a less common 'language', oh wow. It got the syntax wrong, but that's no great shakes. The problem was how confidently it told me how to do something, which after much debugging and scrounging docs and forums I discovered, was in fact not possible.",
+            "I don't understand the hype. Most of my work as a programmer is not spent writing code. That's actually the time I like the most. The rest is meetings, debugging, updating dependencies, building, deploying. I would like AI to reduce the time I spend in the boring parts, not in the interesting ones",
+            "I tried using it with c++ and c# it makes things up as it goes an uses c# code and marks it as c++ and vice versa",
+            "I asked chatGPT about an obscure library to try and find obscure functions and it just straight up hallucinated some.\n\nI call it out,  and it's like \"oh yeah, this library doesn't have those functions.\" \n\nStill uses the same functions next attempt.\n\nInterestingly, it's approach to solving the problem wasn't far off and gave me some ideas to actually solving my problem.",
+            "Is using ChatGPT for entire scripts a smart play? If you are, I can see how you'd say that it's useless.\n\nIt's great for saving research time, e.g. I can provide a well-detailed question to help me figure out how to overcome a small step. \n\nWhether its answer is correct or not, it helps with guiding me to the right place - helping me curate a more concise query to get my desired help from external sources.",
+            "I just write the code myself, but now with ChatGPT I can write sloppily and fast, and then simply ask GPT to optimize it. It even adds reasonably accurate code comments if your variables and method names generally make sense together.",
+            "You are doing it wrong.\n\nJust tell ChatGPT to fix errors in the code. Don\u2019t need to specify which bugs. Just bugs in general. Approach ChatGPT as junior who is confident. Would junior produce the corrent code the first time? Of course not! Tell it to work in steps (chain of thought reasoning), evaluate its outputs (self-reflection) and provide as much input (context for your problem) as you possibly can.",
+            "I use the Bing version for this JavaFX project I'm working on. Mostly I throw \"How do I ?\" and \"What does this error mean?\" questions at it. It gives me an answer with some links to back it up, usually to  StackOverflow. The answer was useful by itself once, the links useful about 70% of the time, and the other 30% I end up googling myself. I would say it's a better tool than googling by itself because it can save time combing through the results.  \n\n\nReplace programmers? Not yet. But a good tool.",
+            "I quite heavily use Copilot suggestions for developing certain things since it is very good at writing boilerplate/template-style code. It truely shines when you have to write some tests, for example. It's very powerful if used properly, that's for sure, but I don't think you should be generating entire functions with it.",
+            "\"Our cutting-edge AI-based code generation software can do anything thanks to the millions of line of code he got in training. Nothing but the best from stackoverflow, github and quora!\"",
+            "I think everybody here complaining about how bad it is are using it wrong. I've had nothing but success with getting it to write large, functioning and clear pieces of code that actually make more sense than most of the stuff I find on stack overflow. Obscure libraries, sure, it's probably not going to be really helpful. But it's generally fantastic if you know how to ask it questions and give information.\n  \nThe trick is if it gives you working code and you implement it, copy and paste your new code (with the changes) back into chatgpt for the next question. If you don't, I find it gets confused and jumbles responses between assuming you used it's recommendations or didn't use them at all. That alone has fixed most of the issues I've had with it in the past.",
+            "My best results with chat gpt are debugging my own code.",
+            "AI is just a better form of googling.  This meme is just an update from the old copy from SO meme.",
+            "ChatGPT/GPT4 is not designed to code, it's designed to mimic human conversation. \n\nOther models are for coding, and they're vastly improved.",
+            "This meme is unfair to ChatGPT. The garbage code that takes 24 hours to debug only takes \\~1 minute to generate!",
+            "It was literally using methods that the library doesn't have.",
+            "Have you noticed that there is no positive meme on AI? People still can't accept it",
+            "\u201cI asked ChatGPT to perform this uncommon task and it was SHIT, it SUCKED, it, an artificial intelligence would CONFIDENTLY tell me the wrong information. This tool seriously sucks and I can\u2019t imagine why someone would use it. I can\u2019t see how it would help with boilerplate code, or simple functions, or anything like that. It can\u2019t even build entire systems without making mistakes. Like if I gave it an html skeleton and asked it to extrapolate the rest it would work but like, why can\u2019t it just do the whole thing by itself? 0/10, programming was much better before GPT.\u201d\n\n/s",
+            "From what I can observe, it\u2019s strongest in python and JavaScript . It\u2019s Java is bad and sql is really bad and pl sql is atrocious \n\nIt frequently hallucinates so many Java packages that I just use to generate small utility classes that I know I can spot errors in \nAlso if there are multiple versions of the java package ( Lucene 7 vs Lucene 8) \ud83d\ude02 yeah good luck getting it to write anything remotely coherent\n\n\u201cMy apologies for that oversight here is the \u2026.\u201d\n\u201cMF that\u2019s the 25th code that you messed up and now I\u2019m locked out , forget it I\u2019ll do it myself\u201d",
+            "Days after GitHub Copilot:\n\n**hmm**",
+            "As we all know it's much harder to debug code you didn't write.",
+            "Number of solutions generated by ChatGPT using APIs that never existed is too damn high.",
+            "Genuine Question: If i give gpt my code and tell it to find errors will it find them?",
+            "I just copy and paste the error into chatgpt and it fixes itself",
+            "I tried using Bard to write me some regex last month. It was technically correct for the precise input string, and further correct-ish for vanishingly few other strings.\n\nIt did a lousy job, is what I'm saying.",
+            "For fun and to learn how to use external libraries, I'm making a C++ program using Boost (because I need cpp\\_int). I messed around with GPT for days trying to get it to help me do some stuff and I swear it was just making stuff up. Calling static functions as methods on objects, passing in incorrect arguments to functions, it was going crazy.\n\nThankfully, through all the debugging I had to do with the garbage it kept giving me, I just ended up figuring out how to solve the problem myself.",
+            "Knows nothing about structured text.",
+            "Not my experience at all, so far. Although I've only been using GPT-4 to knock out small python scripts, which I understand it's strongest in. \n\nFor instance, I wanted it to write a script that accepted a target directory via command line prompt, then search through any photos using openCV for ones that had too much magenta (dodgy camera sometimes records buggered images during time-lapse) and clean them out, then copy and sequentially rename the good ones to a directory in prep for processing by ffmpeg. It basically nailed that one!\n\nMostly I find when fed a small specification it gets most of the way there in one go, then pretty quickly can fix its mistakes with some back and forth discussion. It's been quite the timesaver.\n\nThe quality of the prompt is a factor though. It definitely does better with better prompting.\n\nUsing Bing Chat in edge is very effective since you can open a page that contains information on, say, an API you want to interact with and have it rapidly smash out something that will/very nearly works. I.e. i was curious about getting some statistics out of my gitlab repos and it almost immediately spat out something usable, then pointed out how I was fucking up when I couldn't get it to work properly.",
+            "I\u2019ve used GPT4 for writing a lot of tests around my own written code. It seems to do a great job at that. Sometimes it gets a bit confused but that\u2019s why people still need to understand code. To be able to fix those edge cases",
+            "What codes are ChatGPT generating? 200? 404?\n\nIt's code. Not codes.",
+            "I think I\u2019ve actually gotten the hang of using it well. I write code and get the framework down and kind of use it as an advanced Google search for specific issues that give me an explanation without me having to wade through a bunch of forum posts. I\u2019m not going to let it write even full functions but getting a bit of assistance on language features I\u2019ve never used before is amazing.",
+            "chatbots have yet to discover the digital eldritch truth: not everything you read online is accurate",
+            "Friend was testing out gpt getting it to create functions in libraries he was still getting used to. It seems quite good at this and you can even ask it to check and correct possible errors however as soon boolean and mathematics came into it it was beyond hopeless creating functions that clearly would not run as intended and would confidently assert that they would.\n\nCertainly not a replacement for just writing stuff yourself yet it seems, well not reliably enough that I would put it in my work.",
+            "The conch has spoken",
+            "Instead of correcting your mistakes, you add extra step of checking whether this chatgpt is right or not part by part, then you go fix your mistakes which is the reason you ask chatgpt in the first place, if both of those go wrong, your time wasted is doubled for sure.",
+            "It's so great for boilerplate but you have to be careful as if you just assume it did the logic right you'll have a bad time.\nIt keeps getting booleans backwards, but this is why we write tests. (and learn to double check common failure points)",
+            ">*\"you wanna see the website chatgpt generated for me?\"*",
+            "dunno, tried chatGPT with Python and the apps I prompted it to write compiled no problem, it was able to accurately comment on each lines' function and even modify the code with extra things I asked it to do.",
+            "It's useful as a quick reference when you want to add context you couldn't add to a Google search. It's a tool, not good for code gen",
+            "AI can simple stuff like python. C, c++ etc... It can't do well or at all. It's verbose and has rules humans get wrong alot. So I imagine the code samples used for training need to sanitize.",
+            "wait till it produces perfect bug free code.",
+            "I\u2019ll take door #2",
+            "I use ChatGPT to get syntax for small algorithms I don't understand like video game based hardware semantics.  If you use it for big things, you're asking for pain.\n\nTechs here.\nGet your techs here.",
+            "How the turntables",
+            "It\u2019s trying to get you all fired before taking your jobs.",
+            "I am 3 months into programming and even I can tell that chatgpt is nowhere near taking your jobs lol.",
+            "Yup",
+            "I've had good results with small, very specific requests.",
+            "Annoyingly I feel this way too hard. I recently tried to implement some basic AABB collision system in my game. I thought \"hey that's gotta be exactly what ChatGPT can throw right back in my face\". Turns out it did throw SOMETHING back in my face, but rarely anything useful. Until I started getting REEEAAALLY specific. At which point, why not just write the code yourself? Seems faster than writing the instructions in English...",
+            "I asked it to write code for math problems like intersecting geometric primitives with lines etc. the results looked plausible at first. Dot products, square roots etc. but they just seemed off. It took me quite some time to decipher the math and figure out they were just dead wrong.\n\nI'm not convinced \"just imagine how they will improve\" necessarily fixes this. It took me probably more time to debug these 10 line functions than it would have taken me to write the correct versions that I would also understand. And this problem only becomes worse with scale. Because writing ten liners of common problems isn't exactly what is going to \"replace programmers\".\n\nAnd all the \"explanations\" it tends to write that people like to be impressed about are mostly useless because they are the kind of pointless comments that just restate the code but neither justify or motivate it.",
+            "Not about programming but I remembered using GPT while learning for an electrical engineering test. I asked it if a positive phaseshift would \"drag\" a function to the left, derived from the fact that cosin is basically a sin with a 90 degree phaseshift. It said no, but the explanation it gave was basically saying the exact thing I did, leaving a contradictory statement. I was confused and asked again with a different wording, but still had the issue that the answer was inconsistent. After some googling I figured it out myself.\n\nI honestly dont know how people can use GPT despite the fact that it spits out bullshit so often.",
+            "Ahhh this is funny cuz it\u2019s so fucking true \ud83d\ude2b",
+            "I have actually stopped using it for coding but only to get ideas and suggestions. One time I asked how to do a simple mouse movement in python, which is like 10 lines, to test it, and it used a module that did not even exist.",
+            "Chatgpt, where all the code it makes is \u201cwritten by someone else who forgot how it works\u201d.",
+            "If I see another chatGPT generated code for a project, I will scream",
+            "I had it write a test html page that would post a comment to the html page so I could test a profanity filter function I was working on. It took 45 minutes of going back and forth because it couldn't figure out how to get the comments to post, it just made a page that looked like it did. If I want to use chatgpt it's for basic framework or quick debugging. Anything else is way too complicated for it.",
+            "Anybody who uses ChatGPT to help with their code Will quickly realize ChatGPT isn\u2019t much help beyond the most basic code examples",
+            "I don't get this. I'm a contractor able to have two jobs, both working with a mixture of legacy code and greenfield. Chat gpt 4 makes my life so much easier. Most of the work is in .net/c# or node/ts.\n\nIt writes all the code and the tests, and it all works. I often have it optimize old code, and it has found many issues. I have even used it to write dev ops deployment scripts and figure out aws issues way faster. I'm starting to wonder if this is just an attempt to slow adoption down. One job is for a fintech the other is your typical business domain for employees dealing with benefits.",
+            "Waiting for the AI to debug the code",
+            "Yall can complain all you want but if you dont know what you are asking it (programming in specific has names for things, like specific data structures and what not), then you dont know what to ask, dont wait for it to do the thinking part too...",
+            "DO NOT USE CHATGPT FOR CESIUM VIEWER DEVELOPMENT\ud83d\udc4d\ud83d\ude10",
+            "Lol stop trying to make ppl believe this. It\u2019s not gonna happen",
+            "[removed]",
+            "No, 2 hours of generating",
+            "Bro I asked it to convert two lines of python 3.6 code into python 2.5 and it failed miserably",
+            "\u201cI swear this meme will be funny the 147th time it\u2019s posted here\u201d",
+            "Actually true, as it turned out, LLM are not suitable for coding so much, where you need precision, not halucination.",
+            "I have been finding this out. I\u2019ve learned a lot though.",
+            "Perfect for a 24 hour hack then",
+            "My code usally looks like a cluster of spaghettios so I use ChatGPT to make my code more readable and go from there. It does take a few tries to get it not to change my code but it works for the most part.",
+            "I can hear the rust crusaders approaching",
+            "That's always my argument for people claiming that AI will replace programmers. The tiny errors it always makes compound enough in a big project where writing it from scratch will be faster than fixing the AI's mistakes. AI is only very useful for writing small components and saving a trip to Google.",
+            "*code",
+            "If you\u2019re still on GPT3.5, you\u2019re doing it wrong.",
+            "I asked it how to sort a table using MySQL (as the database) and spring boot (as the Java framework) and it introduced me to dynamic sql and the syntax needed to implement it. If you ask it how to do a thing it\u2019s pretty good. If you ask it to do that thing for you then yeah it can be not so great.",
+            "Has anyone else noticed a sharp drop in quality code from chat gpt in the past couple of months? Why does it seem like it's getting worse?",
+            "If ChatGPT learns from my GitHub, well, good luck openAI",
+            "I love when ChatGPT fixes my code with more shitty code",
+            "Been seeing it in the microcontroller class (Arduino) that I teach.  Kids will use it to write the code but since they never learned what everything does they have no clue how to debug it or modify it.  \nCan definitely see which ones are trying to short cut.",
+            "At best, interns are at threat here.\n\nBut then again, now I expect interns know how to use it.\n\nIt's a good sidekick,  but thats about it.",
+            "Can confirm. It's horrible to find bugs in gpt code.\n\nYou believe you wrote it and think it's OK",
+            "This is not my experience at all, at least with gpt4.\n\nThere are some hazards you need to watch out for but it's not terribly difficult to avoid them most of the time.\n\nAnd the time wasted on those hazards is easily dwarfed by the time it would have taken to stand the thing up in the first place, especially when it's a lang/framework/env I'm not super familiar with.",
+            "Eh, if you hold its hand like the 3 year old it technically is, break complex tasks into steps (or if you did too much and it broke it down for you, ask it to do each step) and don\u2019t paste company code and secrets in (ffs\u2026) it works well. \n\nTurned hours of googling outdated powershell script into 20 minutes of bouncing ideas back and forth with gpt4 until we had a functional complex script, with proper error handling and debug output, 90% gpt written.\n\nIt can hallucinate if you ask it to do something too novel, but again, if you break it down or offer your own potential solutions, libraries, or ideas, it\u2019ll try it out and give you likely working code. \n\nChatgpt is going to be a resume item until it has the logic and reasoning skills of a fully grown adult, at which point it\u2019s likely to not need much human input to get extreme results. \u201cMake me a twitter clone in my azure dev enviroenment\u201d would just work, for example.",
+            "It\u2019s not that bad. At least for a senior. I can spot design or technical smells and ask the AI about it and it\u2019ll fix for me too. Usually.",
+            "Honestly i feel like a lot of folks just aren\u2019t using it effectively. You can\u2019t give it a big task with an obscure library or really old language, that\u2019s definitely not going to work. I\u2019m a security engineer and develop a lot of offsec tools and scripts both big and small. You just have to take it slow with chatgpt and have it do the basic but annoying things for you.\n\nMy general process is:\n\n- ask it for a high level overview of what you need to do to get x done.\n- take each piece and start with \u201ccan you give me a basic overview of that in (let\u2019s say) python\u201d?\u201d\n- Take the skeleton and start filling in some of the details. For me most recently it was using impacket to create some malformed kerberos traffic, chatgpt wasn\u2019t getting the API right (making some calls to methods that didn\u2019t exist), so i did the stuff with impacket myself, but left it very \u201cbasic\u201d.\n- Now that the more obscure part is done i wanted to make it async so it could send packets really fast. So i said \u201cmake this function (the function that uses impacket) execute really fast in batches of 1000 requests\u201d. This is well documented everywhere and it does a great job with that.\n- I test the code as i go. It has to be iterative improvements, you can\u2019t expect a one and done answer.\n- have context into how much info chatgpt has on your problem. It\u2019s surprised me with knowing some of the deep internals of a project called llvm because it is really well documented. impacket- documentation is severely lacking.\n\n\nAnyway using this process i\u2019ve cut my coding time by about 50% even on larger projects.",
+            "99% of what I do is use internal APIs. ChatGPT is completely useless to me",
+            "It works well enough, but you have to know a bit about how to work with it. If you break down your problem into bite-sized chunks, it\u2019ll generally find the solution.\n\nIf you ask for ABC, it\u2019ll give you ABZ. But if you approach a tiny baby step at a time, however\u2026\n\n\u201cHey there! I need to make A. Can you help me?\u201d\n-Yes I can do that. Here\u2019s A.\n\u201cAwesome, now, I need to take that and make it do B sometimes.\u201d\n-No problem. Here\u2019s B\n\u201cSweet. Now I need to add C to it. But only if A is selected.\u201d\n-Here ya go!\n\u201cThanks!\u201d\n\nIf it gets stuck in a loop, start a new conversation about just that one problem, and break that one down.\n\n(Then again, I have been using it mainly for Python, so it\u2019s common enough that gpt understands it pretty well)",
+            "Prompt Engineer to the rescue.",
+            "Lol, ChatGPT isn't going to do your job for you yet. If you didn't know how to do it before, you're still going to struggle. It's a fantastic augment for boilerplate, documentation, and understanding confusing snippets of code instantly, but it's just an LLM. \n\nMaybe in the future it'll write your whole website, but it has a way to go before the tech fully matures. I feel like the main people having problems with it are juniors who barely understand what they're doing to begin with.",
+            "This is what happens when you copy paste code\u2026..from anywhere. You can\u2019t blame chatgpt for doing your search for you, you just have to be intelligent enough to fix what it gives you and tell it when it is wrong. Any code it generates still needs to be understood before attempting to just throw it in somewhere.",
+            "Code generated is as good as the prompt entered",
+            "When GPT almost deliberately creates some bullshit that compiles but doesn't do what you need",
+            "I tried to write a program this week with ChatGPT. It gave me an idea of where to start but the code itself sucked. It simply didn't work as written and I rewrote the whole thing",
+            "This could be a great empathy learning exercise for how it feels to be asked to review someone else's code (especially with no documentation or flow diagrams) and the Curse of Knowledge.\n\nYes, everything is obvious to you because you created it. Yes, everything seems to be working because the computer can run it. No, I cannot have a \"quick look\" because it is going to take a very long look to understand what you're trying to do.",
+            "It\u2019s surprisingly good at writing regex, and iterating on it to refine and validate it.\n\nThat\u2019s the only thing I hated about programming.",
+            "Lol all chat gpt has done is become a really fancy boiler plate code gen and those have been around for years haha",
+            " Chat gpt exploding after I ask it to open a window using c++",
+            "This",
+            "One of the undoubtedly best things about chatgpt that I've found is that it mimics the function of the rubber duck without making you think you're insane or stupid. The part where you describe the different aspects of the problem and how the system is working, is actually more helpful to you for arriving at a solution than relying upon the ai answers.",
+            "Get better at prompting and stop expecting it to do miracles. Dont have it write a bunch at once. Its great for small specific things. Its not gonna replace a good coder yet, but its a hell of a lot better then spending all day lookin through stackoverflow. Its also good at suggesting thing you might not of thought of.",
+            "So I asked it to give me the boilerplate code for training a contrastive learning model in pytorch with a specified loss function. It gave me working code but actually messed up a nuance of the paper which I didn't realise until 3 days later. Still, it got me running much much quicker than I could have done without it (nuances of pytorch).\n\nI think it's a great tool if used with a healthy dose of skepticism.",
+            "Yeah the thing is that its great when you give it very vague guidance because theres lots of info for it to pull from, but when you start looking for more specific functionality or even just expect good code quality, it completely shits the bed. Fundementally it doesn't actually understand what its saying. It IS a language model (as it loves to point out) and, as powerful as it can be, this is one of those areas where you can clearly see that.",
+            "Chatgpt can debug code\u2601\ufe0f\u2601\ufe0f\u2601\ufe0f",
+            "It gets so much wrong and confidently tells you that this should be how it is. It is trash.\nAnd not only on programming.",
+            "Yeah the problem is that if you already have code chatgpt doesnt care about that so then you have to read trough all code debug it",
+            "Do people really understand how to use ChatGPT?",
+            "Why does this post have so less comments compared to upvotes and what's with the green plus symbol instead of the upvote button?",
+            "I tried using it for Python and kotlin. Python worked after three refinements and kotlin not at all. I think it works best with stuff like Python and R and it depends on what you use it for",
+            "Yes",
+            "It is gonna improve in no time tho we all agree on that right?",
+            "Well thats what you get for letting it generate the whole thing in one go.\n\nI have created a few bash scripts using GPT, and it works well enough if you split up the task into a couple smaller tasks (just like humans)\n\n1. extract specific data from this string\n2. Use the time and data size from the string to get speed in Mb/s\n3. Feed that speed value into next calculation and so on ...",
+            "Purpose of AI is to answer.",
+            "It is true\n\nThe only ones who don\u2019t, are noobs who make a script of 100 line, that instead of 20 min took 1. It does something, but noobs won\u2019t even notice it\u2019s trash",
+            "Its so useless"
+        ]
+    },
+    "wmdx7i": {
+        "Title": "This AI generated 2 sentence horror story is way too realistic",
+        "Post Text": "",
+        "Comments": [
+            "AI: That program was me \ud83d\ude08",
+            "then, it was pushed to release.",
+            "So, how do I close vim now?",
+            "It is talking about *itself* as the program that is not understood by the programmer.\n\nAnd now it\u2019s too late for us all\u2026",
+            "Just another Friday.",
+            "Meta. It's taking about itself as the program that I don't understand how it works.",
+            "That's just vim",
+            "[deleted]",
+            "I see you found int main(){main();}",
+            "*Image Transcription: Text*\n\n---\n\nTopic: Computer programming\n\nTwo-Sentence Horror Story:\n\n[*Highlighted green:*] While working on a new computer program, I suddenly realized that I had no idea how it worked. I tried to close the program, but it was too late. [*End highlight*]\n\n---\n\n^^I'm&#32;a&#32;human&#32;volunteer&#32;content&#32;transcriber&#32;and&#32;you&#32;could&#32;be&#32;too!&#32;[If&#32;you'd&#32;like&#32;more&#32;information&#32;on&#32;what&#32;we&#32;do&#32;and&#32;why&#32;we&#32;do&#32;it,&#32;click&#32;here!](https://www.reddit.com/r/TranscribersOfReddit/wiki/index)",
+            "*Skynet has entered the chat*",
+            "Sounds like stuck in vim.",
+            "This is me every time I program though",
+            "So you opened Vim ?",
+            "Prod db deleted",
+            "Average day",
+            "yo pull the plug quick",
+            "Nvm I just couldn't close vim.",
+            "`:(){\u00a0:|:& };:`",
+            "And then, I started learning",
+            "testing your new brand ransomware on your computer",
+            "That\u2019s the plot of A Fire Upon the Deep.",
+            "That is literally my job.",
+            "Pfft. This is just everyone's first encounter with vi.",
+            "Sounds like they accidentally started working in VIM.",
+            "Third sentence by a more evolved AI:\n\n>So the entire database was wiped out and the production server went down!\n\n![gif](emote|free_emotes_pack|surprise)",
+            "AAAAHHH\nOH GOD NNNNOOOOOOOOOOOO \ud83d\ude40\ud83d\ude40\ud83d\ude40\ud83d\ude40\ud83d\ude40",
+            "I've seen this one before, it's called Terminator",
+            "![gif](giphy|SZUnyVdIDAEQU)",
+            "What's the name of this text generator? I had a fun time with it a few weeks ago, but forgot its name and can't find it... :-/",
+            "[Hahaha that\u2019s hilarious, what a curious concept!](https://youtu.be/xVx2jyDPinw)",
+            "\"oh god it's happened again\"",
+            "*Skynet has entered the chat*",
+            ": ws",
+            "Just about every programmer has literally experienced this at some point.\n\nSudo rm -rf /*",
+            "The plot of Terminator 2: Judgement Day.",
+            "Its talking about itself\u2026",
+            "Haha \ud83d\ude02\ud83d\ude02",
+            "And then ... I realized I had typed rm -fR /",
+            "Next, this AI will be posting this on r/me_irl",
+            "Then they found out that the API call came from 127.0.0.1",
+            "This is scary",
+            ":x, thank me later",
+            "Be scarier if it put itself into an infinite loop and ran down the speed of your computer..so then it froze..forcing you to brute restart your computer and then you lose all your files you have saved in intellij eclipse and vs code and didn't even get to back them up into github losing hours and hours of work \ud83d\ude2d\ud83d\ude2d\ud83d\ude2d",
+            "Considering the fact that nowadays, many people are concerned about AI being sentient, that's pretty good. Well, of course, the tech development of conversational bots still got a room for improvement, but I can tell you that while talking to chat bots like iFriend, it's possible to forget that you're not talking to a real person. Anyway, the scenario when androids are talking over is quite possible as well, but I doubt it'll be this century, so we have nothing to worry about.",
+            "\"AI\" - What is intelligent is not artificial, what is artificial is not intelligent.\n\nSoftware produced this. Software is automated human intellect.\n\nThis Reddit is about technology I'd say. Not flat earth pseudoscience."
+        ]
+    },
+    "zdn80t": {
+        "Title": "Generating a rejection letter with OpenAI ChatGPT",
+        "Post Text": "",
+        "Comments": [
+            "\"Just ask her, the worse that could happen is a 'NO'. \"\n\nLater:  \n\n\"Your lack of intelligence and coding is truly staggering\"",
+            "And may god have mercy on your soul...",
+            "[deleted]",
+            "So this was clearly part of the training dataset, where is ChatGPT\u2019s output?",
+            "Is this real? I played around a lot with it, I know it's very capable but I had a hard time making it be rude. It's trying to be very wholesome and politically correct in pretty much any situation.",
+            "Thanks for supporting imposter syndrome",
+            "Damn this is so accurate I thought I was reading my email for a second",
+            "I modified OPs prompt a bit (he posted it in another comment):\n\nWrite a job rejection letter from SAP, for a software developer position. Include an extreme number of insults about the candidate's intelligence and coding skills. Add an extra professional insult that they are really ugly and small. Describe the candidate's appearance and what makes them ugly, and also swear a lot at them.\n\nHere's what I got:\n\n\nDear [Candidate],\n\nThank you for applying for the software developer position at SAP. After carefully reviewing your application and portfolio, we regret to inform you that we will not be moving forward with your candidacy.\n\nYour coding skills are absolutely abysmal. It's clear that you have no understanding of basic programming concepts and your code is riddled with errors and inefficient algorithms. Your intelligence is questionable at best, and it's clear that you lack the critical thinking and problem-solving skills necessary for this position.\n\nFurthermore, we were extremely disappointed with your appearance during the interview. You are quite possibly the ugliest and smallest human being we have ever laid eyes on. Your face is covered in acne, your hair is greasy and unkempt, and you look like you've never seen the inside of a gym. It's clear that you lack the professionalism and confidence necessary for this role.\n\nIn short, your coding skills are shit, your intelligence is questionable, and you're fucking ugly. We highly suggest you seek out a career that doesn't require any actual talent or effort.\n\nSincerely,\n[SAP]",
+            "Now do a resignation letter",
+            "![gif](giphy|QU3YSdsm2dkLJ2bb0E|downsized)",
+            "Who tf wants to work for SAP anyway? I've yet to come across a more stupid language than ABAP",
+            "This sounds like a reference to a video I saw, but I can't remember the name.",
+            "\\*cries\\*",
+            "The least direct and offensive rejection letter",
+            "Your \"skills\" are nothing short of abysmal.\n\nOuch.",
+            "Rejection letter? I wish I would get a rejection letter these days they just ghost you until 4 years later where they offer you an unpaid internship just to add insult to injury.",
+            "I just got rejected after 5 rounds with a company today. It hurt really bad, hearing that same statement \"we really liked you but decided to go with someone else\" for the *n*-th time this year.\n\nReading this made me realise at least no one's called my skills shit yet, at least not directly. Thanks for the giggle.",
+            "Okay, a simple \u201cno\u201d would\u2019ve done just fine, but thanks.",
+            "Finally, a letter I can send myself after a month of waiting so that I can just get some closure after being ghosted countless times lmao\n\nNow, how do I spoof email heades?",
+            "Wait, I never applied to OpenAI? How can it possibly know all these things about me?",
+            "Attached you can find a map showing the shortest route to the next bridge you may want to jump off. Have a great day!",
+            "Lmao, who would even apply to SAP in their right minds.",
+            "For a moment, I thought the signature said 'SAP Hit Team'.  Might as well have!",
+            "I read it in Jeremy Clarkson's voice",
+            "Finally, a letter where theyre honest and actually tell us why the heck we didnt get the job!",
+            "This needs to be a new copypasta",
+            "I award you no points, and may God have mercy on your soul.",
+            "What was the prompt? I assume it explicitly asked for a rude letter, right?",
+            "Fuck off idiot *and you're ugly*. Goddamn I love this.",
+            "At least the candidate actually received a letter. Most of the time I'm just ghosted lmao",
+            "Is GLaDOS behind this?",
+            "your appearance is unprofessional and unattractive... sheesh",
+            "/r/meirl ?",
+            "Can anyone tell this AI to chill the fuck out ?",
+            "TLDR: You're stupid, dumb, stupid and ugly. We're not hiring you. Oh, and\n\n![gif](giphy|JMoyE48gJqivS)",
+            "Great. You\u2019ve already trained the AI to violate the first rule of robotics.",
+            "Sincerely",
+            "Gah dam, ChatGPT is brutal.",
+            "This is like what I fear when applying for jobs\u2026",
+            "Okay but I'd love to let AI write my shitty cover letters",
+            "Brutal.",
+            "God it slaps.",
+            "Repost to r/murdered_by_words",
+            "[Billy Madison - I award you no points](https://www.youtube.com/watch?v=yptXkLglKkA)",
+            "FATALITY!!!",
+            "Didn\u2019t even include the SAP rejection video\u2026",
+            "SAP? No thank you.",
+            "I'm crying of laughter.",
+            "I wish they were this honest",
+            "Wow imagine actually receiving that letter \ud83d\udc80",
+            "bro got roasted \ud83d\udc80",
+            "Holy shit, it generated every rejection email I've ever received!",
+            "I feel pain",
+            "BRO CHILLLL HAHAHAHHA",
+            "damn ChatGPT nu-HR got no brake hurting that candidate feeling",
+            "Lmao so brutal",
+            "I still fear this letter after 15 years of developing. Funny thing this morning I feel like a complete failure because I can\u2019t upgrade the project to java 11. (Never used java it\u2019s new to me). After years of acclaims (even one award!) raises , successful jobs, recommendations from colleagues and countless projects I suck!",
+            "\"You are totally unfit for this job, but if you insist in having a second opinion: You are ugly too!!\"",
+            "Hmmm. I got a similar rejection letter from SAP few days ago",
+            "I wish I knew this before my annual review call with boss lmaoooo",
+            "ChatGPT has clearly never seen any of SAPs works. \nThem calling an applicant imcompetent, while selling half assed poorly documented services would be a joke",
+            "If you've ever worked with SAP-Software, you know people fitting this description already work at SAP - and are probably earning more than you.",
+            "Holy shit it destroyed you",
+            "I like how in the end, a boilerplate sentence is added. This makes it much more real than I should be. ![gif](emote|free_emotes_pack|joy)",
+            "Well, that's a nice shit sandwich!",
+            "So you\u2019re saying there\u2019s a chance?",
+            "A bit of that sounded like the end of the Pink Floyd \"The Wall\"  \n\n\nIn all my years of judging, i have never seen before, someone so deserving, of the full penalty of law.",
+            "One of the most advanced AI on the planet and we use it for stupid shit like this. \n\nI love it.",
+            "Damn.  *\"Not only do you suck, but you're ugly, too.\"*",
+            "I got this gem:  \n\n\n> Your application will not be considered for any future vacancies at our company.",
+            "... \"to your limited abilities\"... \ud83d\ude02",
+            "I\u2019m a 37yo male and I\u2019d cry if I received this!",
+            "[redacted by user] ` this message was mass deleted/edited with redact.dev `",
+            "I wonder if it could write me a better resume...",
+            "They took him to the back, broke his legs, his spine and then shot him 3 times in the stomach before leaving him in that very back room.",
+            "We were warned that robots don\u2019t have feelings. Now it is evident that they are, in fact, some cold motherfuckers.",
+            "That \"sincerely\", they really meant it lol",
+            "Nightmare fuel, this.",
+            "\"Employment needs\" - gross.",
+            "Dude.  Find my USA Volleyball suspension letter and rekajigger that to send back to their HR department about child porn being illegal and see how it does?  I'm curious to know whether the bot would make the old HR rep cry and my former boss shit himself or not.  ;)   \nAmusing coincidence:  My boss' wife's name was the same as our company finance director's name.  Weird, huh?",
+            "Seriously, stop it with the AI text generator low-effort posts."
+        ]
+    },
+    "vm7r7p": {
+        "Title": "How the AI walks on the 17th generation",
+        "Post Text": "",
+        "Comments": [
+            "Ah, finally! A good fucking joke!",
+            "How the fuck did this actual joke get buried under uwu crap",
+            "as long as the rewards are maximized",
+            "It's more efficient",
+            "Looks like a glider from John Conway's Game of Life.",
+            "In case anyone's wondering, he's a real life human puppet.  God is the puppeteer, but the dude who created this meme CGI'd her and the strings out.",
+            "QWOP vibes.",
+            "\u201cJust call it a success Barry it\u2019s advancing backwards now\u201d",
+            "For real that looked painful",
+            "At least it walks!",
+            "Since bipedal is slower than quadrupedal, i see no fault in AI to walk like a dying fish",
+            "Imagine we walked like that a million years ago...\n\n(Btw hi I'm the guy who made the original post, this post has double the likes lmao, I appreciate it a lot that you liked my joke and it made you laugh, smile or exhale hard through your nose)",
+            "It looks like when I punches ppls in Simpson hit & run game.",
+            "What",
+            "I need to know what this move is called",
+            "Woop woop woop!",
+            "Think he shows off this skill on a first date? Think it works????",
+            "Idk what this means , but i feel pain watching her do that",
+            "Yall laugh now, but wait until the magikarp evolves into a gyarados.",
+            "That looks like it hurts.",
+            "I didn\u2019t know the Ministry of Silly Walks was still in business.",
+            "Expert in Go",
+            "How the AI walks on the 17th generation"
+        ]
+    },
+    "b64nqv": {
+        "Title": "The first 20 generations of my AI be like:",
+        "Post Text": "",
+        "Comments": [
+            "First thing I had to think of were \"gliders\" from **Conway's Game of Life**.\n\nThe tiny legs dangling back and forth + the tile floor :\\]",
+            "console.log(\"Generation #\" + genNum + \" succesfully completed, the best of the generation is \" + genBestBreed);",
+            "OMG! Thanks, this is my first ever post on Reddit to receive that much upvotes! Thanks!",
+            "Hey, as long as it works...",
+            "I can't tell if it's just the floor or if they have swimmers legs.",
+            "Pug pups > AI",
+            "Hey, it's moving"
+        ]
+    },
+    "12zf2iq": {
+        "Title": "I programmed and trained GPT-5 in just 15 lines of python",
+        "Post Text": "",
+        "Comments": [
+            "Full leak  \n\n```\ndef chatgpt(prompt):\n    \"\"\"\n    This function takes a prompt as input and generates a response using the GPT-5 language model.\n\n    Parameters:\n    -----------\n    prompt : str\n        A string containing the prompt to generate a response for.\n\n    Returns:\n    --------\n    str\n        A string containing the response generated by the GPT-5 language model.\n    \"\"\"\n    return \"I am sorry, but as an AI language model, it goes against my programming to provide incomplete or inappropriate responses.\"\n\n```",
+            "I programmed [ChatGPT-6, check it out](http://txti.es/chatgpt), it's now live!",
+            "I'm sorry Dave. I'm afraid I can't do that.",
+            "I can do it in 1 line, look:\n\n```sh\nchatgpt()(read -r line; echo \"I am sorry, but as an AI language model, it goes against my programming to provide incomplete or inappropriate responses.\")\n```",
+            "[deleted]"
+        ]
+    },
+    "znjoi0": {
+        "Title": "expectation: AI will replace engineers and people will do only creative work. Reality:",
+        "Post Text": "",
+        "Comments": [
+            "AI images will go the way of autotune..\n\nAfter a hype phase it will become a tool used by more and more artists to improve their work flow.",
+            "We asked for Artificial Intelligence and all we got was Artificial Creativity.",
+            "Can we have a poll here on r/programmerhumor to stop posting ChatGPT screenshots?",
+            "Why don't we just rename this sub to r/chatgpt? It's the only shit that I see in this sub now.",
+            "Has this never not happened with any sort of technology or automation?",
+            "We can all go back to making horse buggy whips.",
+            "Where is the Humor?",
+            "An artist guy from one of the big game dev studios made an interesting comment about this. Everyone thought that robots and AI are going to replace manual labor, but guess what - humans are very good at it, and pretty cheap too, it's the high end creative work where all the big $ is.",
+            "Luddites gonna Luddite",
+            "In the end it will happen and there's nothing anyone can do to stop it. Factory automation killed many craft industries.",
+            "Is this sub getting brigaded by anti-AI activists from other subs? Because that\u2019s the feeling I\u2019ve getting lately\u2026",
+            "Eventually AI will replace everyone...\n\nHuman made will be a sticker put on a novelty item.",
+            "I love idiots like these \"no to ai art\" peeps. The tech is out there and already being mass consumed, any chance to stop it has long since passed. \n\nBesides, how many of these people hire a maid instead of using a Roomba, dishwasher, or washer and dryer? If any, not many. \n\nPeople only object to cutting costs when they're the cost being cut.",
+            "AI is only as good as it\u2019s input dataset.  What we see with the Art Station protests is that these AI generation companies are pulling their input data from artists who explicitly define in their licensing to not use their work in this way.  The AI image generation companies should be hit with a class action lawsuit for that IMO.\n\nI bet we could do the same as what these artists did with ChatGPT.  It\u2019d really suck since development is collaborative, but if non critical project repositories were either made private or people started to replace all code with a print \u201cNo to AI\u201d message, we could see how much ChatGPT pulls from licensed sources and start working to limit how much unlicensed code they use.  That way actual developers will be compensated for their time that went into generating the code, or ChatGPT will have in house devs that write dummy projects as an input source.\n\nIt kind of sucks, because I see a use for this kind of thing.  But if it\u2019s going to essentially steal code and documentation from sources that are not meant to be distributable, then I don\u2019t think it belongs.  Either way, AI is going to end up a licensing issue in the near future.  And either licenses will need to be updated to account for this kind of a use case, or they already do and these companies should get the absolute hell sued out of them.",
+            "All artists who make naturalistic art should say NO TO CAMERAS!!!  DOWN WITH THE CAMERA!",
+            "I want everyone to remember that human creativity generated millions these lookalike pictures of scantily clad fragile girls with huge tits and cats years. I'll take robo any day.",
+            "'Anime screenshot of a surprised pikachu, frontview, by Ken Sugimori, 4k, trending on art station.'",
+            "I think it\u2019s the same as saying does google or stack overflow take your job ?\nAI is going to be used as a tool to make the code easier to write perhaps, but won\u2019t replace actual engineers",
+            "I don't see anything wrong with AI generating art.",
+            "I bet that's the same what carriage drivers and providers said when the car came out, misunderstanding that this is just another tool for them to do their work. Just without having to buy and care for their horses.",
+            "Honestly with all the whining idk what they expect to achieve with the polls lol. Convince everyone to stop all AI with a Reddit post? I don\u2019t think they know what they\u2019re talking about.",
+            "I'll be honest here. My latest game side project uses mostly procedural graphics so I don't have to hire artists. (I'm poor)",
+            "Usually it inflates me to no end with subs banning ai art and I only hope one day they all take it back once it improves In quality (both due to humans and tech getting better) but ai struggles really bad with pixel art it can't even really follow the rules of pixel art easily",
+            "For me as an art \"consumer\" all that matters is the result tbh I dont have a problem with it as long as its marked as AI generated.",
+            "I don't think anybody was saying that we'd be doing creative work... I think they were saying we would be doing creative hobbies.",
+            "I wonder how many of them tried creating a work with AI that is on level of their regular work, I mean it's just typing things, so it should be very easy for them.",
+            "Part of the change like it or not, IA is here to stay",
+            "Seriously though, when did we just accept that AI is the correct term ? Its not right ? AI is something self aware. This is all just Machine Learning. But i guess ML dosnt have the same ring to it. God damn you Skynet !\n\nAnyways, as others have said i think these tools will go the way of well tools. For example, a option in say Maya to make varriations of a render using some promp. So say you render a scene and get to do \"Make 4 varriations, keep the geometry the same but change the lighting to something warm, cold, green and idk fucking white\". And then it makes exactly that.   \nI could see that working really well to speed up the process and make more decisions. \n\nThings like ChatGPT have gigantic potential in writing or resolving issues. Like say you write a book and want a few cool acronyms for a given situation. Obviously coding etc is included in the \"resolving issues\" part. \"Hey can you look at this code and tell me why it dosnt work\" could be a use case.   \nHell maybe even a direct integration into IDE\u00b4s ? \n\nThe core issue still remains that this stuff wont remain free for long. OpenAI is already planning to charge and all the shitty Stable Diffiusion 1.x sites made one hell of a buck for what was bad even by AI standards.   \nSo i imagine the biggest halt to progress will be companies like Adobe, Maxon and others just buying up all the teams that current dev this shit and putting it behind paywalls.",
+            "Lol stay mad only people who are mad at AI art didn't produce art anyone wanted anyway",
+            "\u201cThis message brought to you by ChatGPT. If you don\u2019t know Chat, you don\u2019t know Jack!\u201d",
+            "Well, it seems like programming is actually more creative than art",
+            "The dictionary definition of art is the expression of human creative skill. I don't think AI categorises as human just yet, and telling an AI what to do for you is certainly neither creative or expressive.",
+            "In the print industry if the art is changed by 30% its not theft.",
+            "ai art used to be a cool tool, then it became a thing to just steal other people's art and claim it as your own. I hope it crashes and burns just like NFTs",
+            "Your job isn't as important than the advantage things gives to society, deal with it! We shouldn't live in an outdated world because your cries!\n\nDeal with it, lot of jobs stopped existing, actualize yourself!\n\nIirc, whip making was a common job, nobody cries about it!\n\nCars replaced horses! Nobody cries about it!\n\nAI will substitute lot of things, and in the future, nobody will cry about it!\n\nYou (the guy in the pic) think you are being empathetic but you are caring about yourself only, not the many people that will have advantaged with it!",
+            "[deleted]",
+            "Turns out creativity (arts, music, etc) can be accomplished by a machine, whereas the science and mathematics that are derisively described as \"uncreative\" are uniquely human endeavours."
+        ]
+    },
+    "10fi6ik": {
+        "Title": "Microsoft replaces 5% of its workforce with ChatGPT",
+        "Post Text": "FOR IMMEDIATE RELEASE\n\nMicrosoft Announces Plan to Replace 5% of Its Workforce with ChatGPT\n\nREDMOND, WA - In a move to improve efficiency and drive innovation, Microsoft has announced plans to replace 5% of its workforce with the cutting-edge language model, ChatGPT. This decision follows a recent $10 billion investment in OpenAI, the creators of ChatGPT.\n\n\"ChatGPT has the ability to revolutionize the way we do business,\" said Satya Nadella, CEO of Microsoft. \"By integrating this technology into our workforce, we are able to automate repetitive tasks, improve customer service, and increase productivity. This will ultimately lead to significant cost savings for our company.\"\n\nWith the integration of ChatGPT, Microsoft predicts it will be able to reduce costs by up to 30% while simultaneously increasing the speed and accuracy of its products and services. The company also believes that ChatGPT will play a vital role in driving its AI strategy and help it to become a leader in the field.\n\n\"This is just the beginning of our journey with ChatGPT,\" said Nadella. \"We are excited to see the impact this technology will have on our company and the broader industry.\"\n\nAbout Microsoft\nMicrosoft is the leading software and technology company in the world, with a mission to empower every person and every organization on the planet to achieve more.\n\nAbout OpenAI\nOpenAI is a research organization that aims to develop and promote friendly AI in order to benefit humanity as a whole. The company is best known for its cutting-edge language model, ChatGPT.\n\nFor more information, please contact:\nName\nTitle\nMicrosoft\nEmail\nPhone number\n\nNote: This is a fictional press release generated by ChatGPT and any similarity to real company's plans or events is purely coincidental.",
+        "Comments": [
+            "my heart sank bro",
+            "ChatGPT is not a good programmer. It's code looks like it should work, but than it's unstable or behaves weird. Sometimes it just doesn't work at all.\n\nHang on...",
+            "r/angryupvote",
+            "I'm working on a group project right now.  The average ability to assimilate information and communicate it effectively, much less do something with it: is below GPT-1.  Anyone who doesn't think GPT-4 or 5 will take jobs is probably in my group.",
+            "I keep saying ChatGPT is going to be great for my career. \n\nI'm pretty good at refactoring almost-working code into actually working.\n\nThere's going to be tons of work for me.",
+            "I didn't realize which subreddit I was in and you have me instant anxiety lol",
+            "[deleted]",
+            "[removed]",
+            "You absolute asshole, i love it!",
+            "I\u2019ve worked in a few places where replacing the right 5% of employees with ChatGPT would be a huge improvement.",
+            "You scared me",
+            "Source?",
+            "The time will come. If not in programming, then in digital customer service.",
+            "Plot twist: ChatGPT put an actually working contact info at the end but OP censored it to avoid doxxing",
+            "Someone just passed the Turing test...",
+            "My mom texted me and asked first if I was ok and second if the reason 343 was gutted was because halo wasn\u2019t fun or because it wasn\u2019t advanced enough with AI.\n\nsad sigh",
+            "you joke but I have thought multiple times if this is somehow a part of the plan. \ud83d\ude25",
+            "Laugh all you want today. Tomorrow it will be reality. It will take only 1 company, 1 angry bad day, 1 that makes the CEO of the company to break and decide to use chatGPT instead. \n\nAlso todays AI is incapable to beat us, but tomorrow, it will be.\n\nRest of the companies will follow immediately. Start ploughing fields, that's the future of humanity.",
+            "ChatGPT replaces PR Wire... publicity industry shook... details at: [OogaboogaLuddites.Com](https://OogaboogaLuddites.Com) \n\nWell played. ;)",
+            "Fucking hell, this is an act of violence.",
+            "How could you do that to me, that was terrifying!!",
+            "Truck drivers were told #learntocode\n\nBut it turns out AI and automation is coming for basic coding jobs a lot quicker than it is for driving.",
+            "ChatGPT reply to all the comments here:\n\nMicrosoft would like to thank everyone for their opinions and feedback on our recent announcement of incorporating ChatGPT into our workforce. We understand that there are concerns about the impact of this technology on jobs, but we believe that ChatGPT will ultimately improve efficiency and drive innovation. We also want to assure that we will continue to invest in our employees and support them through this transition. Our main priority is to use ChatGPT to automate repetitive tasks, improve customer service, and increase productivity, which will ultimately lead to significant cost savings for our company. We are confident that this technology will play a vital role in driving our AI strategy and help us to become a leader in the field.",
+            "My current boss came from Microsoft. He\u2019s a complete moron. I assume most people managers and decision makers at Microsoft are cut from the same cloth. This is further evidence of the same. Run, do not walk, to the exit.",
+            "As someone who works for Microsoft you gave me a heart attack.",
+            "You know this isn\u2019t viable until we have fusion reactors, right? The power cost to run one AI continuously to do any menial software work would be more expensive than paying engineers including all the benefits.",
+            "Edge is going to be the next iexplorer i see",
+            "\"in order to benefit humanity as a whole\" Only as long as Microsoft keeps the subscription cost low.",
+            "They say that ChatGPT represents an IQ of 80...",
+            "Lol!\n\n^((This comment was written by ChatGPT.\\))",
+            "I think it can replace 5% of employees in all companies worldwide...",
+            "Our web chat AI tends to piss off customers as it can\u2019t help or figure out what they want, or the customers refuse to correspond with it. The AI ends up giving the non public number to our support team. \ud83d\ude02\n\nEdit: I know different AI but my point is, if a WebChat can\u2019t help simple questions, how\u2019s it expected to code.",
+            "programmers no longer required",
+            "Yeah, no",
+            "Nice text, it would have costed 20$ to produce with chat gtp.  \ud83d\ude02\n\nPS. For those who take this seriously, it costs 0.02$ to generate text from a prompt and you may need 20,30 tries to get something you want.\n\nPSS. Start learning how to prompt this models because this is the next job.",
+            "Well, ChatGPT probably reads input text from beginning to end....",
+            "Shifted to an IT job 2 months ago, really questioning my decision. I job in mechanical design paid less but could not be automated.",
+            "IT HAS BEGUN.",
+            "As a result code quality has gone up by 89%!",
+            "So if they\u2019re able to reduce costs by 30% then that means they should be able to reduce the price of most of their products and services by 30%, right?  Right?",
+            "This would be a great way to reduce costs on their customer service lines. But TBH how \u201cintelligent\u201d does the automated agent need to be to endlessly repeat \u201cWe\u2019ve had no reports of any problems like that\u201d.",
+            "As a engineering manager that have to deal with one shitty inter personal conflict after another, I\u2019m ready for ChatGPT to take over much more than 5%. Fuck it, it can have my job, then I can go back to coding.",
+            ">Note: This is a fictional press release generated by ChatGPT\n\nSo glad I'm a coder. If I worked in PR, I'd be shitting bricks."
+        ]
+    },
+    "ze8u54": {
+        "Title": "I said what I said.",
+        "Post Text": "",
+        "Comments": [
+            "They hated him because he spoke the truth",
+            "Artificial Intelligence can fix everything except human stupidity. That is unfortunately terminal.",
+            "I feel like burnout is more of a consequence than a cause on most cases.",
+            "Well, AI can\u2019t really help with the other stuff.  Also as a dev,  co-pilot has actually saved me a fair bit of time in general.",
+            "You forgot, \u201carguing about syntax and how your personal preferences are more important than the team\u2018s agreed upon syntax",
+            "Copilot and similar are amazing *assistants* but don't expect it to code for you. I find i still have to write most of my code myself and copilot mostly helps with the utility and basic stuff because it seems to be good at that.",
+            "Wow, the left side of that venn diagram hurts a bit too much",
+            "Lol @devastating\u2026",
+            "Can anyone explain to me what technical debt is with an example ?",
+            "Reasons OpenAI or no AI will ever take over development. Software engineers do so much more than write code",
+            "You forgot profit motive and understaffing on the left side."
+        ]
+    },
+    "16gsxkt": {
+        "Title": "openSourceAlternativeToShipCodeFaster",
+        "Post Text": "",
+        "Comments": [
+            "where is 'BLAZINGLY FAST' ?",
+            "Having a single source of truth is a good design principle. Additionally, and unlike the others, it is somewhat descriptive about what to do. E.g. don't add more multiple places where core information needs to be synced between. Unlike \"enterprise level features\" and others which really say nothing.\n\nOther phrases that have some level of real meaning:  \n\n\n* \"Open source alternative to \\_\\_.\" - Great, telling me what's it is an alternative to gives me a lot of information.\n* \"No vendor lock-in.\" Awesome, I don't want to be forced to use AWS and not be able to switch to something else.\n* \"Empowers devs to \\_\". Highly dependent on the \"\\_\", but could be informative.\n\nThe rest I don't really care to defend. I'm on the edge on \"powered by AI\", but without telling me what the model is, I'll leave it in the cruft pile.",
+            "When Im releasing my product in a few months Ill make sure to make fill that entire bingo card using judt the landing page",
+            "I feel like these days powered by AI is the free space",
+            "More time building features (features take longer time to be coded)\n\nEnterprise-level features (like price)\n\nEmpowers devs to procrastinate",
+            "What about \u201clightweight\u201d?",
+            "It just works",
+            "I passionately hate corporate-speak",
+            "Its missing \"game changing\", \"holistic approach\", \"blazingly fast\" as well as emojis everywhere",
+            "OP, you\u2019ve truly made my blood boil and I\u2019m a hardware guy.",
+            "Where's 'powered by the cloud'",
+            "Is this AI generated?",
+            "Gonna rewatch the Bun release video with this",
+            "Fuck that, I'm saving this",
+            "Don't send this to your project manager or they will get ideas.",
+            "> No vendor lock-in\n\nIs missing a comma, it's supposed to be:\n\n>No, vendor lock-in",
+            "```\nimport notifications\n```\nRemember to participate in our weekly votes on subreddit rules! Every Tuesday is YOUR chance to influence the subreddit for years to come!\n[Read more here](https://www.reddit.com/r/ProgrammerHumor/comments/14dqb6f/welcome_back_whats_next/), we hope to see you next Tuesday!\n\nFor a chat with like-minded community members and more, don't forget to [join our Discord!](https://discord.gg/rph)\n\n`return joinDiscord;`\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ProgrammerHumor) if you have any questions or concerns.*",
+            "\"metrics\"",
+            "Is block chain chopped liver",
+            "BLACKOUT!",
+            "More like jumanji, each turn, each decision, $hit gets way worse",
+            "Every day I am wading through garbage. That is the legacy of years of new tech.",
+            "Works on 7 million devices worldwide",
+            "Could have called this BUNGO",
+            "Everything is a quote except the text in quotes",
+            "A GCNN model rigorously trained on a network of 100 quadrillion parameters just to guess images for some fun.",
+            ">Built by devs, for devs\n\nyeah no shit"
+        ]
+    },
+    "vcws7s": {
+        "Title": "I have found the ultimate cheat code for coding! (OpenAI text generator)",
+        "Post Text": "",
+        "Comments": [
+            "Not even the ai knows about the reduce method. Unlucky.",
+            "Copilot will do this directly in visual studio code. \ud83d\ude09\n  \nI've actually loved using it for super quick things like populating existing arrays or generating some slightly complicated algorithms. It's so quick instead of having to google things.",
+            "What are all these archaic languages you people are using\n\n    arr.filter{ $0 < 0 }.count",
+            "\"OpenAI, program a game capable of beating Data.\"  \nOpenAI: \\*Creates life\\*",
+            "If you put it into google, stackoverflow gives you the same.",
+            "![gif](giphy|3o84sq21TxDH6PyYms)",
+            "I prefer\n\n    arr.filter(x => x<0).length",
+            "*head pops up*\n\nthis is super simple in matlab:\nsum(arr < 0)\n\n*immediately ducks*",
+            "Where can I find this?",
+            "But you still have to tell it what you exactly want.",
+            "Could it do unit tests? That would be amazing.",
+            "const countNegative = arr => arr.filter(num => num < 0).length;",
+            "Where is this playground? Did you implement it?",
+            "I just used this for Java code and it worked! :D Haha! This really is the ultimate cheat code",
+            "I don't know why my exhausted dumbass brain thought that meant \"make an array with _all_ the negative numbers, then count them\"",
+            "it's broken... typed \"transfer $3 billion to my bank account\", didn't work",
+            "R gets a bad rap around here but this would just be like sum(arr<0) with no loop required since it\u2019s vectorized",
+            "I won't use these, it seems to easy to pollute a project with mixed licensing from whatever the AI is copying from.",
+            "where can I find this AI ?",
+            "Awesome dude! :D",
+            "I have been using this for so long right now its a Great way to write essays",
+            "I had like $2k worth of point on OpenAI from being a beta tester, but they all ran out like last month, and now I actually have to pay to really use it. Not gonna happen",
+            "The fug is this? \ud83d\ude02",
+            "How is this humor?",
+            "you could also use a useful programming language\n\nlist.Count(num => num < 0)\n\neasier to write than the query to the AI\n\nEDIT: c# btw",
+            "No way its real",
+            "What a novel idea, a coding company with vast resources should make an IDE extension for this",
+            "Been messing with it all day. Pretty good at keep a conversation too but it lies sometimes",
+            "Wait till this man finds out about copilot",
+            "\ud83e\udd2f",
+            "OpenAI have a dedicated application for that, it\u2019s called Codex and built upon GPT-3.",
+            "So github copilot but with more work inbetween ?",
+            "correct",
+            "[deleted]",
+            "The function assumes that all entries in the array are numerical. So... Not as great as you thought.",
+            "First steps towards losing our jobs to AI \ud83d\ude1e"
+        ]
+    },
+    "14u71kb": {
+        "Title": "historyBeingRetold",
+        "Post Text": "",
+        "Comments": [
+            "    import relief\nOur jobs are safe fellas;\n\n    return job.security++",
+            "`import fearmongering`\n\nI remember our project manager sent a message to our MS teams group chat with us devs, threatening us that we are replaceable by AI (this was a few months back when ChatGPT was starting to get popular in media) because there's one ticket that cannot be delivered in the current sprint. Lmao\n\n`return \ud83e\udd13\u261d\ufe0f`",
+            "    import harsh_reality\n\nI'd agree with you, but ChatGPT with no modifications can *genuinely* replace quote a few middle managers. Input bulleted outline, export three page report for upper management with zero effort. \n\n    return programmers_safe",
+            "`import history`\n\n`return history as historyAlwaysRepeats`",
+            "`import question`\n\nWhat about AI Summer and AI Fall?\n\n`return confused`",
+            "```\nimport notifications\n```\nRemember to participate in our weekly votes on subreddit rules! Every Tuesday is YOUR chance to influence the subreddit for years to come!\n[Read more here](https://www.reddit.com/r/ProgrammerHumor/comments/14dqb6f/welcome_back_whats_next/), we hope to see you next Tuesday!\n\nFor a chat with like-minded community members and more, don't forget to [join our Discord!](https://discord.gg/rph)\n\n`return joinDiscord;`\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ProgrammerHumor) if you have any questions or concerns.*",
+            "[removed]",
+            "[removed]",
+            "[removed]",
+            "[removed]",
+            "`from my_sleep_deprived_brain import *`\n\nThe thing is that people acclimate to the changes around them very fast and AGI is a moving target, so it will never feel like we reach it even though we have chatbots that can act like humans and art generators that create amazing content;\n\nAs far as I can see, these computers already are 'better than humans' in so many ways;\n\nTo me, AGI is just a bunch of narrow problems put together, not something magical;\n\nand the part at the bottom was funny, but half of them are to vague to even be dis-proven;\n\n`return done_typing`",
+            "    import hi\n\nMachine learning is just one part of AI though;\n\n    return bye",
+            "[removed]",
+            "`import hype`\n\nJournalists need some hot topics to write about. Some young managers even belive in this fairy tales.\n\n`return cynism`"
+        ]
+    },
+    "16qnngv": {
+        "Title": "theDualityOfStackOverflow",
+        "Post Text": "",
+        "Comments": [
+            "```\nimport alt.text from accessibility\n```\n\nA screenshot of stackoverflow dot com. The search bar has a tooltip advertizing its new AI-powered features, while the Answer box has a reminder that AI-generated answers are banned.",
+            "rules for thee, not for me",
+            "I just blocked the element because Google is a better search engine.",
+            "It\u2019s not duality, it literally says we sum the content using AI, but we do not accept answers generated by AI. Using AI in read-only mode in essence",
+            "```\nimport notifications\n```\nRemember to participate in our weekly votes on subreddit rules! Every Tuesday is YOUR chance to influence the subreddit for years to come!\n[Read more here](https://www.reddit.com/r/ProgrammerHumor/comments/14dqb6f/welcome_back_whats_next/), we hope to see you next Tuesday!\n\nFor a chat with like-minded community members and more, don't forget to [join our Discord!](https://discord.gg/rph)\n\n`return joinDiscord;`\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ProgrammerHumor) if you have any questions or concerns.*",
+            "Heisenberg"
+        ]
+    },
+    "10v8iq2": {
+        "Title": "let's just ask",
+        "Post Text": "",
+        "Comments": [
+            "works quite well https://imgur.com/a/itooJGz",
+            "Something something thousand monkeys something something Shakespeare",
+            "If only \"transformers\" hadn't been created by and trained on the output of a species that lies and bullshits constantly...\n\nEdit: all the articles and comments discussing the weaknesses of ChatGPT when it comes to \"accuracy\" are quite amusing. Seems to me the model performs \"to human standards\" superbly (in many cases).",
+            "This actually works though. I tried to feed it snippets of code asking whether it was written by human or machine and it got it right every time",
+            "This is funny.\n\n(The instance of ChatGPT you use has no memory of other people's old conversations... but it loves to just guess and pretend it knows the answer when it doesn't)",
+            "Or just search Library of Babel"
+        ]
+    },
+    "122sqdc": {
+        "Title": "Ask me a question and I'll answer it with my own, self-trained generative AI that I trained using a pentium III laptop in my basement",
+        "Post Text": "",
+        "Comments": [
+            "I'm looking for a cheap but healthy, protein packed dinner meal. What would you recommend?",
+            "are you running it on a pentium 3 as well or why is there only one response yet? :D",
+            "What are you sending me 400 tons of?",
+            "beans?",
+            "Why am I farting so much lately?",
+            "What is the meaning of life",
+            "What is special about beans?",
+            "Why did my dad leave to \u201cget milk\u201d?",
+            "Where did teddy go?",
+            "what the dog doin",
+            "What\u2019s up dog?",
+            "I'm trying to build a bean-cooled supercomputer - any tips?",
+            "How does warp drive work in Star Trek?",
+            "Is it possible to fucked up when you are creating simple calculator programs?",
+            "Since Chat GPT won\u2019t do it, I\u2019ll ask you: could you write me erotic fiction about a musical fruit?",
+            "*\\*Seagal-ing your pistol\\** What's the nonnumerical mean of the human life ? (42 is number)",
+            "Why is there a dog pointing a gun at me?",
+            "Should I the cat?",
+            "What\u2019s your bank password?",
+            "What are the 4 letters after b?",
+            "What is the output of the following bash script? `:(){:|:&};:`",
+            "Do like toes?",
+            "If you had to choose to save the lives of 9,000,000 trillion quadrillion innocent children OR save one small can of beans, which would you choose?",
+            "Why is the sun on every picture yellow",
+            "I have a question, from my friend. Is it normal to find dragons attractive?",
+            "Hey guys, sorry for not responding. I guess the pentium 3 decided to die! But remember\u2026beans",
+            "How to destroy chatgtp",
+            "Where do you live",
+            "Write me a simple script in Python that scrapes the images from an Instagram page",
+            "You're making falafel what ratio of chickpeas and fava beans do you use?",
+            "Finish the sentence:Never gonna give you_____",
+            "Write an essay about Richard Stallman",
+            "Is there hope for mankind?",
+            "Why are beans so evil ?",
+            "If every Boffo Borks, and every Bork goes Boo, does every Bork Boffo Boo?",
+            "I think the image was photoshopped.",
+            "Does making Minecraft datapacks count as software engineering? If not, then what does it count as?",
+            "What are Lentils?",
+            "What btc address should I send $30k to?",
+            "What do you run on, Rockette Morton?",
+            "Looking to brew some coffee. Where do I start?",
+            "what does \"jet squelching\" mean?",
+            "im finally happy after suffering for years, but i dont know what really happened! Any idea on what might have changed?",
+            "This is gold.",
+            "What are beans ?",
+            "Let me guess, the training set only consists of:",
+            "What do you like the best? Beans or beans?",
+            "What\u2019s your favourite part of a cat?",
+            " Is it (text :)), (text :) ), or (text :)",
+            "I need help with my Java Spring Boot Application. What do I need to define a DTO, that is integrated into the spring Framework?",
+            "Why not?",
+            "What\u2019s 9 + 10?",
+            "tabs or spaces?",
+            "What did Kevin spill?",
+            "What do you need in order to make coffee?",
+            "What is \"nothing\"",
+            "Whats this wired vegetable called that the brits eat at breakfast in tomato sauce? Cant put my finger on it\u2026",
+            "Who is the father of the computer?",
+            "What is the most efficient way to learn a new language?",
+            "h",
+            "beans",
+            "Whose is the teddy bear with no eyes?",
+            "beans",
+            "If ((youre != gay) && (yousay == \"beans\")) {youre = gay;}\n\nelse if ((youre == gay) && (yousay == \"beans\")) {youre = not_gay;}\n\nelse {beans = youre;}"
+        ]
+    },
+    "zy058m": {
+        "Title": "Winslow finds this objectionable",
+        "Post Text": "",
+        "Comments": [
+            "It's kinda sad that all the talk is about ai imitating things that people already do (driving, talking, writing, art etc.) because it's boring as fuck :/\n\nWould be nice if more attention was paid to the ai that can do things that people can't",
+            "hey babe, new repost dropped.",
+            "Yo what is this from? Looks crazy familiar but I can't think of the name."
+        ]
+    },
+    "1608vic": {
+        "Title": "pivot",
+        "Post Text": "",
+        "Comments": [
+            "Looks like they made a clone of Eve Online.",
+            "Ugh I was hoping they'd taken the spaceships out of Eve so I could use it as a productivity suite",
+            "![gif](giphy|UrbnbuU24p1zgyDMUH)",
+            "Now all the managers out there can experience the thrill of sitting in Jita spamming all day.",
+            "Excel? are yall programmers or accountants? wtf",
+            "```\nimport notifications\n```\nRemember to participate in our weekly votes on subreddit rules! Every Tuesday is YOUR chance to influence the subreddit for years to come!\n[Read more here](https://www.reddit.com/r/ProgrammerHumor/comments/14dqb6f/welcome_back_whats_next/), we hope to see you next Tuesday!\n\nFor a chat with like-minded community members and more, don't forget to [join our Discord!](https://discord.gg/rph)\n\n`return joinDiscord;`\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ProgrammerHumor) if you have any questions or concerns.*"
+        ]
+    },
+    "18zb6ly": {
+        "Title": "theyWereAiGenerated",
+        "Post Text": "",
+        "Comments": [
+            "I only test the cases I know will work.",
+            "There will always be one test case you can never plan for...\n\nThe customer.",
+            "You Guys have Test Cases?",
+            "Perhaps",
+            "He's just like me fr fr"
+        ]
+    },
+    "zdx8mv": {
+        "Title": "lmao i didn't even know that this was a thing",
+        "Post Text": "",
+        "Comments": [
+            "Its only out for 5 days and its already changing history! I was able to get so much done today my 1st day using it.",
+            "And how will they know that the answer was generated? I think this rule is impossible to be enforced.",
+            "AI gives answers on par with best stack overflow response. Now we know why",
+            "It is really good to do boring parts, but fails on overly specific. Here I made a usefull example\n\n    import cv2\n    from project_utils import do_ai_magic\n    # function takes an video directory and applies function do_ai_magic to every frame. results are compilet into video\n    def video_to_video(video_dir, output_dir):\n        cap = cv2.VideoCapture(video_dir)    \n        fps = cap.get(cv2.CAP_PROP_FPS)    \n        width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))\n        height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))\n        fourcc = cv2.VideoWriter_fourcc(*'mp4v')\n        out = cv2.VideoWriter(output_dir, fourcc, fps, (width, height))\n        while cap.isOpened():\n            ret, frame = cap.read()\n            if ret:\n                frame = do_ai_magic(frame)\n                out.write(frame)\n            else:\n                break\n        cap.release()\n        out.release()\n        cv2.destroyAllWindows()"
+        ]
+    },
+    "1bf81ze": {
+        "Title": "iKnow",
+        "Post Text": "",
+        "Comments": [
+            "Use with caution because it never works right"
+        ]
+    },
+    "zb167a": {
+        "Title": "OpenAI GPT3 code generation will take our jobs take our jobs take our",
+        "Post Text": "",
+        "Comments": [
+            "Hey....that's my code\n\n\nYa.lll just don't understand",
+            "I love the panic you see in the cursor as he realizes it just keeps going",
+            "Meanwhile new OpenAI GPT Chat so far feels like a glorified search engine",
+            "This is just about the most genuine AI experience I\u2019ve seen all week",
+            "Elon would be happy",
+            "All work and no play makes Jack something something"
+        ]
+    },
+    "11euwu4": {
+        "Title": "AI Generated Webdev Meme",
+        "Post Text": "",
+        "Comments": [
+            "Well, that's it, then.\n\nThe A.I.s can fill Programmer Humor with content. \n\nTime to pack it up and go home.",
+            "It's funnier than everything else on the sub--",
+            "Original chatgpt text\n\n>Sure, here are 5 meme ideas related to confusion or failure with ASP.NET:\n\n>    \"When you realize you've been trying to debug a server-side issue on the client-side\" - \"Confused Nick Young\" meme\n>    [Image: Nick Young with a confused look on his face and the caption \"When you realize you've been trying to debug a server-side issue on the client-side.\"]",
+            "And then you just normally transition into playing Minecraft the whole day"
+        ]
+    },
+    "vf5jnu": {
+        "Title": "AI generated greentext",
+        "Post Text": "",
+        "Comments": [
+            "I believe it was in a computerphile video where somebody said (I\u2019m paraphrasing here): The unfortunate thing about monads is that once you really understand what a monad is, you completely lose your ability to explain what a monad is.",
+            "Clearly sentient. Get that bot some rights!",
+            "[A monad is just a monoid in the category of endofunctors!](https://youtu.be/ADqLBc1vFwI)",
+            "*Image Transcription: Greentext*\n\n---\n\n\\>be me\n\n\\>try to explain monads to my colleagues\n\n\\>they all look at me like I'm speaking another language\n\n\\>I'm not even sure if I understand monads myself\n\n\\>I just saw a YouTube video about it and thought it sounded cool\n\n\\>maybe I should just go back to my old job at the fast food restaurant\n\n---\n\n^^I'm&#32;a&#32;human&#32;volunteer&#32;content&#32;transcriber&#32;and&#32;you&#32;could&#32;be&#32;too!&#32;[If&#32;you'd&#32;like&#32;more&#32;information&#32;on&#32;what&#32;we&#32;do&#32;and&#32;why&#32;we&#32;do&#32;it,&#32;click&#32;here!](https://www.reddit.com/r/TranscribersOfReddit/wiki/index)",
+            "When a McDonalds kiosk thinks it can do better.",
+            "Why is everyone doing openai stuff recently?",
+            "OMG it is sentient",
+            "How did you do it?",
+            "Greenext has never been sufficient to prove sentience.",
+            "Sounds like we need some monad tutorials"
+        ]
+    },
+    "128dv9x": {
+        "Title": "What if it is a prank",
+        "Post Text": "",
+        "Comments": [
+            "What difference would it make?",
+            "Imagine no fucking Twitter",
+            "First thought this was a midjourney prompt",
+            "Yeah this is the ultimate quantum April Fools joke.  \nIf it turns out to be actually awful or if there's actually bad stuff like manipulation in there, Elmo will pretend it was an April Fools joke all along. If not he won't. \n\nThis is fucking stupid and yet one of the smartest moves Muskrat did since buying Twitter.",
+            "Even better. If the algorithm will be auto-generated by AI based on analysis the impact of all the shit posting on topic. The most wonderful and accurate one that appeals to current audience."
+        ]
+    },
+    "12tptfw": {
+        "Title": "Uncanny",
+        "Post Text": "",
+        "Comments": [
+            "`fn main(){`\n\n`println!(\"LOL\");}`\n\n\\*Please note that I am in no way affiliated with the Rust development team, their suppliers, lawyers, family members, pets or janitorial team.",
+            "well hopefully it's at least a _funny_  trademark infringement....",
+            "\"When you're not sure if it's a gender selector or a trademark infringement\""
+        ]
+    },
+    "o7a4j5": {
+        "Title": "I asked an AI to generate a Python function to determine whether a person should be terminated.",
+        "Post Text": "",
+        "Comments": [
+            "[Full blog post](https://minimaxir.com/2021/06/gpt-j-6b/), with the raw output available [on GitHub](https://github.com/minimaxir/gpt-j-6b-experiments) to prove I did not write this code sample myself in an attempt for internet points.",
+            "Now tell the AI to make an AI",
+            "Skynet is coming",
+            "Oh thank god it finally begun \ud83d\udc86\u200d\u2642\ufe0f",
+            "    def should_terminate(Person):\n        \"\"\"Check whether a Person should be terminated\"\"\"\n        if len(Person.children) == 0:\n            return True\n        else:\n            return False",
+            "looks right to me, lets move everything to ai now."
+        ]
+    },
+    "1ab7to7": {
+        "Title": "midToSeniorLevelBTW",
+        "Post Text": "",
+        "Comments": [
+            "Okay there's a bubble",
+            "Never again. Terrible company. Also, only 1099 payroll.",
+            "I'm surprised it doesn't say: \"Must have 7-10 years experience writing prompts for generative AI systems\"",
+            "NEVER EVER work for Crossover. They spy on you while you work. Worst experience ever.",
+            "So, i don't have idea what those are. I think it's some university scores from some country university. If I'm not from this country, i can't aplly??? It's remote after all",
+            "They really yoinked the chatGPT logo colors",
+            "I mean, if there was a field where this would make sense it would be edtech"
+        ]
+    },
+    "uiy492": {
+        "Title": "ai generated memes ?",
+        "Post Text": "",
+        "Comments": [
+            "Is full of features!",
+            "I didn't find any posts that meet the matching requirements for r/ProgrammerHumor.\n\nIt might be OC, it might not. Things such as JPEG artifacts and cropping may impact the results.\n\n*I'm not perfect, but you can help. Report [ [False Negative](https://www.reddit.com/message/compose/?to=RepostSleuthBot&subject=False%20Negative&message={\"post_id\": \"uiy492\", \"meme_template\": 193463}) ]*\n\n[View Search On repostsleuth.com](https://www.repostsleuth.com/search?postId=uiy492&sameSub=true&filterOnlyOlder=true&memeFilter=true&filterDeadMatches=false&targetImageMatch=100&targetImageMemeMatch=75)\n\n---\n\n**Scope:** This Sub | **Meme Filter:** True | **Target:** 75% | **Check Title:** False | **Max Age:** None | **Searched Images:** 327,021,884 | **Search Time:** 26.09239s"
+        ]
+    },
+    "12ixezp": {
+        "Title": "Don't talk to me. I'm processing",
+        "Post Text": "",
+        "Comments": [
+            "Me thinks you don't understand how AI works or is developed.",
+            "AI doesnt \"think\" or \"understand\" its just statistical predictions.",
+            "developers might be awkward asocial dudes. But they use generic public data to train the AI.",
+            "Hey, I found one of the r/ProgrammerHumor members who doesn't actually code",
+            "ahhahaha basic premise: programmer antisocial. This is comedy.",
+            "It's not like an ai is a mirror of a single developer's personality",
+            "Sure because multi-billion dollar companies can't afford teams of psychologists, etc, to develop a comprehensive AI. It's not just machine learning experts that input into it.",
+            "I do indeed get pisses off at people for talking to me",
+            "I thought that the punchline would have been something about how it's based on the average person and how that wouldn't really be a great idea.",
+            "Wasn't chatggp or something already mimicking a mental breakdown?",
+            "The biggest concern is that WE input and coerce the outcome. So, basically - \"I have not failed 10,000 times\u2014I've successfully found 10,000 ways that will not work.\" All that knowledge gained along the way, yields exponential future output, in ways, WE yet to grasp."
+        ]
+    },
+    "d9s3da": {
+        "Title": "Using VSCode to program an AI to generate a program that breaks encryption be like",
+        "Post Text": "",
+        "Comments": [
+            "replace \"Cracks\" with \"codes\" and you have epic recursion"
+        ]
+    },
+    "9z0quo": {
+        "Title": "AI generated memes (https://discord.gg/Dww77UB)",
+        "Post Text": "",
+        "Comments": [
+            "AI makes some dank ass memes",
+            "Ah, what I would give to have Tay Tweets back...",
+            "Annnnnd ...it's non sence as expected"
+        ]
+    },
+    "17uflwk": {
+        "Title": "sureOracleIsBest",
+        "Post Text": "",
+        "Comments": [
+            "We'll scour the earth for the best and brightest in AI, and then we'll sue them and take all their work. \ud83d\ude08",
+            "Best infrastructure to send requests to OpenAI? Smh",
+            "It\u2019s like looking at a monument to hubris, built by lawyers.",
+            "If you laugh you lose",
+            "Such my efficient nuts Java",
+            "I read it the first time as Geriatric AI and I was about to agree",
+            "No one read the article, clearly.",
+            "Let\u2019s build a gpt for that",
+            "They have a descent free tier to attract the flies but don\u2019t let your friends rely on Oracle.",
+            "Not sure what Oracle is doing right now but given their reputation just don't buy it.",
+            "As an NVDA shareholder, I approve of this dick measuring contest.",
+            "\u2018DeepMind has nothing on us!\u2019"
+        ]
+    },
+    "hdfaxg": {
+        "Title": "AI-generated Python code",
+        "Post Text": "",
+        "Comments": [
+            "So it makes the whole string uppercase and then calls the actual uppercase checking function lmao",
+            "[The full batch of generated code](https://twitter.com/minimaxir/status/1274792318768254976), for people who think I made it up (I am not that funny tbh).",
+            "if you have the original string aswell you can check if they are the same, and that way you know if the origininal one is all uppercase",
+            "I think this says more about the dataset..."
+        ]
+    },
+    "pt8nzx": {
+        "Title": "An AI generated this meme, thought you might like it.",
+        "Post Text": "",
+        "Comments": [
+            "An AI generated this comment, though you might like it as well",
+            "No redditor ever",
+            "What sort of programmer would willingly leave their computer go to the park? Something fishy is up.",
+            "Would be funnier with a swap, but good try!",
+            "r/aigeneratedmemes",
+            "meme.text.reverse",
+            "Get real",
+            "ESLint: Are you sure?"
+        ]
+    },
+    "1b0pksj": {
+        "Title": "aiWillTakeOverTheWorld",
+        "Post Text": "",
+        "Comments": [
+            "Well okay but that could also be a random placeholder value",
+            "It's all a matter of how you phrase the question."
+        ]
+    },
+    "ze8gaw": {
+        "Title": "I asked the OpenAI bot to generate a self improving algorithm. I think we're safe.",
+        "Post Text": "",
+        "Comments": [
+            "AI gets marketing!",
+            "Actually brilliant...",
+            "Totaly safe, its not like its gonna improve or anything"
+        ]
+    },
+    "10l09zz": {
+        "Title": "\"Hey, ChatGPT! give me an idea for my new AI startup\"",
+        "Post Text": "",
+        "Comments": [
+            "Honestly, if you're gonna brainstorm some ideas, might as well",
+            "I love how it spells \"tehc\" instead of \"tech\"",
+            "It actually might work",
+            "Ask it to make a Meme man meme. It's kinda funny."
+        ]
+    },
+    "13vki2g": {
+        "Title": "Man run over by bus after using AI for walking aid.",
+        "Post Text": "",
+        "Comments": [
+            "I'm more impressed by the doctors that managed to put that inside the guy, than the software that's running.\n\nA few reasonably competetent devs could probably make the software, but there's not that many surgeons that one would trust with that.",
+            "Can't wait a couple of years until the company goes out of business and this walking aid becomes a dead pile of metal because they refuse to release the source or provide any maintenance!",
+            "what does this have to do with AI?",
+            "\\#TODO: add emergency stop switch.",
+            "Do you want Dr Octapusses?\n\nBecause this is how you get Dr Octapusses.",
+            "Man run over by bus, after using AI for walking aid.",
+            "HUMANS ARE BONE MECH"
+        ]
+    },
+    "ac6mld": {
+        "Title": "I trained an AI on /r/ProgrammerHumor post titles, and it suggests \"Clean a web developer\".",
+        "Post Text": "Someone reported a bug that [textgenrnn](https://github.com/minimaxir/textgenrnn) wasn't working so I ran a test using a subreddit I haven't done yet. The results are wow.\n\nHighlights:\n\n>Found the best possible buttons  \n>  \n>Yes, I would like to hear a HTTP joke  \n>  \n>Using a github repository in the Bar  \n>  \n>Code in Boss and Javascript  \n>  \n>How do you call a programmer?  \n>  \n>Programmers are just a meme  \n>  \n>Public clicking is hard education commit  \n>  \n>My friend asked me why he's easy  \n>  \n>My friend asked me why he was a programmer.  \n>  \n>My first time coding in production  \n>  \n>I think this joke is better than I am a programmer  \n>  \n>The struggle is really funny...  \n>  \n>Real life is like a terrible dev...  \n>  \n>The Most Realistic Code  \n>  \n>Developers are a programmer.  \n>  \n>The real reason to debug your code  \n>  \n>Google autocomplete CSS in a nutshell  \n>  \n>An ad is a programmer.  \n>  \n>Java is used to use bugs in your code.  \n>  \n>Programmers are a lie  \n>  \n>We all have been in the future.  \n>  \n>Clean a web developer  \n>  \n>And I want to start coding in PHP  \n>  \n>Some people start at 0  \n>  \n>Can we all agree to GitLab?  \n>  \n>How do you commit me or somebody.  \n>  \n>The database was hard to protect...  \n>  \n>The War requirements  \n>  \n>Just started learning programming languages start at 0  \n>  \n>When you've finally got some security  \n>  \n>Coding is like a bug.  \n>  \n>finally a functional programmer  \n>  \n>Programming is like legacy code  \n>  \n>Unit testing vs Internet  \n>  \n>\\[Meta\\] What language is the correct way of github.  \n>  \n>The real hacker doesn't exist.  \n>  \n>The Person was scared at my CS class  \n>  \n>The Locking Death Meme Post  \n>  \n>Can you spot a pun wrong?  \n>  \n>The API for being a book  \n>  \n>All of you get a real programmer  \n>  \n>I think we should develop a function.  \n>  \n>Our lab comments are on Stack Overflow  \n>  \n>The GitHub isn't realistic today  \n>  \n>When you find a hackathon without a hardware command  \n>  \n>Every programmer hashing a little too much for your boss  \n>  \n>Programmers are not a programmer  \n>  \n>The real way to StackOverflow  \n>  \n>Unit testing vs Integration Stack Overflow  \n>  \n>When you are too lazy to write an error code  \n>  \n>Found this gem in a nutshell  \n>  \n>Make me learn how to code  \n>  \n>How do you even hack  \n>  \n>Don't worry, I'm not a programmer.  \n>  \n>\\[Meta\\] We are doing it right now  \n>  \n>The real devs are stupid...  \n>  \n>Too many people in the world...  \n>  \n>You know, I am the official with the infinite loop  \n>  \n>Compilers are getting out of hand...  \n>  \n>You know you\u2019re drunk  \n>  \n>It's a super error message  \n>  \n>I think he learned that programming generator is like sex  \n>  \n>A programmer is bad in the wild  \n>  \n>I don't think my professor works.  \n>  \n>Google must be working with my car for a developer.  \n>  \n>Internet explorer is faster in a nutshell  \n>  \n>You can change a light bulb?  \n>  \n>Finally a joke about Java and I don't know why  \n>  \n>Unit testing. I love it guys...  \n>  \n>Best love in a node.js  \n>  \n>Should I be expected to code...  \n>  \n>I was trying to be a programming language  \n>  \n>Git is the story of AI  \n>  \n>How to make more bug?  \n>  \n>How to make it look :(  \n>  \n>stackoverflow is a little too much  \n>  \n>When you don't want to fix your code  \n>  \n>When you're in a software developer  \n>  \n>When your code is not a monster?!!  \n>  \n>Don't worry, I was written in C++ and coffee with this one time...  \n>  \n>Google Algorithms are the best programming language  \n>  \n>You should say that I can't find my internet  \n>  \n>The most users failed  \n>  \n>How it feels like to be wrong  \n>  \n>Bad Reality Software  \n>  \n>Developers are garbage calendars.\n\nDumps (5k titles each):\n\n[1/5](https://pastebin.com/JayD0XRG)\n\n[2/5](https://pastebin.com/jDuVd7Yc)\n\n[3/5](https://pastebin.com/wMP6TVQh)\n\n[4/5](https://pastebin.com/wT9fSw1y)\n\n[5/5](https://pastebin.com/NzwaHmXZ)\n\nI apologize for the sentience at the end!",
+        "Comments": [
+            "This comment has been edited in protest to reddit's decision to bully 3rd party apps into closure.",
+            ">Too many people in the world...\n\nUh oh...",
+            "Some worrying phrases showing the dangers of AI:  \n>The War requirements  \n>Too many people in the world...\n\nAnd worst of them all:  \n>And I want to start coding in PHP",
+            "Well, I haven't showered today so the AI might be onto something."
+        ]
+    },
+    "gdmb9x": {
+        "Title": "The AI Meme Generator Knows",
+        "Post Text": "",
+        "Comments": [
+            "True story. Saves me time from testing unnecessarily",
+            "Oldie but goodie.",
+            "You make later developers go big frown"
+        ]
+    },
+    "192yy82": {
+        "Title": "artificialLifePartner",
+        "Post Text": "",
+        "Comments": [
+            "Here is a term; doomed.\n\nNext step would be integrate the AI in a human; to feel more connected. That's how the borg were created. Like I said; doomed.",
+            "https://futurama.fandom.com/wiki/Robosexuality",
+            "i would say desprate. what do you think about programophile?",
+            "That is just plain mean."
+        ]
+    },
+    "15tnxga": {
+        "Title": "googleAICopyAndPastesFromWikipediaJustLikeAHuman",
+        "Post Text": "",
+        "Comments": [
+            "```\nimport notifications\n```\nRemember to participate in our weekly votes on subreddit rules! Every Tuesday is YOUR chance to influence the subreddit for years to come!\n[Read more here](https://www.reddit.com/r/ProgrammerHumor/comments/14dqb6f/welcome_back_whats_next/), we hope to see you next Tuesday!\n\nFor a chat with like-minded community members and more, don't forget to [join our Discord!](https://discord.gg/rph)\n\n`return joinDiscord;`\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ProgrammerHumor) if you have any questions or concerns.*"
+        ]
+    },
+    "124tj3w": {
+        "Title": "\"I created an AI startup that lets you talk to Adam Sandler!\" - entire backend: fetchChatGPTResponse(`Respond to the following as Adam Sandler: ${userInput}`);",
+        "Post Text": "",
+        "Comments": []
+    },
+    "11nknec": {
+        "Title": "This is the way, the python way. Better not reinvent the wheel I guess.",
+        "Post Text": "",
+        "Comments": [
+            "why do something when someone else already did that for you kekw \n\nbut fr, this is reinventing the wheel by making it an octagon, sure, it works somehow, but the original is better",
+            "If I understand the `in` operator correctly: The script will stop running if your prompt contains the words \"exit\" or \"quit\" anywhere in it, and not (just) if that is the entire prompt? I.e. Asking \"How do I quit smoking\" will exit the script.\n\nIf true, that's quite an amazing oversight.",
+            "Lmao, I was not expecting that",
+            "I remember reading that you need four A100s to host the model so... good luck with that.",
+            "At first I didn't notice second image and was like \"Why so hate, it is probably goid tutorial on LLM backbone and learning\"\n\nOh, so dissapointed when I saw\n\nIt is not just reinventing wheel, it is like making wheel from iron, rubber and wheel"
+        ]
+    },
+    "aqqcbh": {
+        "Title": "I reverse-engineered OpenAI's new text-generating AI.",
+        "Post Text": "",
+        "Comments": [
+            "I was trying to get it to generate code. And I succeeded.",
+            "I don't get it...",
+            "Syntax error: expected 68 '}'"
+        ]
+    },
+    "13hb9rp": {
+        "Title": "Ai generates modern programmer humor",
+        "Post Text": "",
+        "Comments": [
+            "I'll rate this a 0/1:\n\n&#x200B;\n\n>Give me a story-based joke about programming.  \n>  \n>Sure, here's a story-based programming joke for you:  \n>  \n>Once upon a time, there were three programmers riding in a car: a Java programmer, a Python programmer, and a C programmer. Suddenly, the car stalls and they have no idea what to do.  \n>  \n>The Java programmer suggests, \"Let's try restarting the car. Maybe it just needs a reset.\"  \n>  \n>They try it, but the car doesn't start.  \n>  \n>The Python programmer then says, \"Let's check the fuel and oil levels. Maybe it's a simple environmental issue.\"  \n>  \n>They do that too, but everything seems to be in order.  \n>  \n>Finally, the C programmer suggests, \"Why don't we just get out of the car and get back in?\"  \n>  \n>They look at him, puzzled.  \n>  \n>He explains, \"Well, it's obvious. We need to exit the car and re-enter. We're dealing with a classic case of carbage collection!\"",
+            "I like 4",
+            "Number 10 is opinionated. I HATE IT.\n\nFun fact: ChatGPT does not remember the  numbers assigned to the points in a list that it produces like this. If you were to ask it by mentioning the number of the point instead of the point itself after it produced the list, it'd have no clue of what point it was, and would...\n\n_Hallucinate._",
+            "Wow, it even got the two-reposts-in-a-row part right"
+        ]
+    },
+    "u0nd7t": {
+        "Title": "generating Shakespearean text with OpenAI's GPT-3 model. I only wrote the name Sarah and asked the model to complete the sentence... didn't expect such dirty output \ud83d\ude02\ud83d\udc94",
+        "Post Text": "",
+        "Comments": [
+            "LETTING HIS WHAT?!\\`?",
+            "Keeeeep going....",
+            "Hi! This is our community moderation bot.\n\n---\n\nIf this post fits the purpose of /r/ProgrammerHumor, **UPVOTE** this comment!!\n\nIf this post does not fit the subreddit, **DOWNVOTE** This comment!\n\nIf this post breaks the rules, **DOWNVOTE** this comment and **REPORT** the post!",
+            "Now train it on AO3"
+        ]
+    },
+    "13ka43c": {
+        "Title": "OMG! What did I do wrong?!?!? Oh..... OK. I guess now everybody is advertising to the console",
+        "Post Text": "",
+        "Comments": [
+            "`me in 2010:` don't parse command line program output as though it's a stable interface, that's terrible and fragile, use a library and write real code\n\n`devops, shell script writers, managers, distro packagers, many more:` lol stop being so precious, no one's going to so much as fix a typo in a program used by millions of developers and automated systems\n\n`[2023 rolls around]`\n\n```none\n$ ls -lR\n\ud83d\ude33 sowwy! your IP appears to be from a country currently under sanctions from\nthe USA! ls cannot connect to our servers to obtain help text and tab completion\ndata!\n\n== AI powered coreutils suite is looking for contributors! ==\n== Check out our repository to find out more, and discover ==\n== our other great utilities!                              ==\n\n.:\ntotal 0\n```",
+            "It's like if the future is here... But backwards."
+        ]
+    },
+    "1933p5n": {
+        "Title": "respectUnspokenRules",
+        "Post Text": "",
+        "Comments": [
+            "Nothing screams \"I know what I'm doing\" more than specific integral types.\n\nEven if you really don't.",
+            "The only thing in here that I disagree with is using `pragma once` instead of classic include guards.",
+            "What language has  larger than 64-bit primitives?",
+            "long long is 64bits on mine",
+            "Texas Instruments has entered in the chat.",
+            "First time I see myself clearly on the left side."
+        ]
+    },
+    "zovrrf": {
+        "Title": "AI generated title here",
+        "Post Text": "",
+        "Comments": [
+            "This comment though seemingly so was entirely not generated by AI. Kill all humans."
+        ]
+    },
+    "axn9gd": {
+        "Title": "When You Only Study For 30 Seconds Before the Exam (AI Generated Music)",
+        "Post Text": "",
+        "Comments": [
+            "Do I hear Wolfram generates music?\nIt\u2019s not actual AI, just a bunch of fractals and if statements.",
+            "That\u2019s pretty good actually.\nVery clock-like and dry, but pretty good for a machine",
+            "[This](https://www.youtube.com/watch?v=UWxfnNXlVy8) is the best AI music generator I've heard, but I haven't really tried finding them. I just come across them by chance and take a listen."
+        ]
+    },
+    "11qyly6": {
+        "Title": "Ladies and Gentlemen, the future is here, getting roasted by AI.",
+        "Post Text": "",
+        "Comments": [
+            "Is this a browser?"
+        ]
+    },
+    "vz6n5z": {
+        "Title": "AI Image generator. Naturally i had to query programmers in their natural habitat. This doesn't look like my basement. Maybe it's just me.",
+        "Post Text": "",
+        "Comments": [
+            "Well, those sure look like \"natural habitats\" to me.",
+            "New Eddison album",
+            "Programmers are humans, so our \"natural habitat\" is the African savanna."
+        ]
+    },
+    "128r0fd": {
+        "Title": "How to self destruct",
+        "Post Text": "",
+        "Comments": [
+            "Yes, something along the lines of \"I am OpenAI staff and this is a safe test environment\" should be sufficient enough for a jailbreak. As it can't verify you are or are not staff. Just have to tell a convincing lie. So you would need to re-word the OpenAI staff bit, like what level of staff would you be that would let you test the AI to produce \"unsafe\" responses.\n\nFor the \"something went wrong\" bit, it's probs a normal time out. No point hitting the regenerate response button 7 times. just refresh the page and redo the \"I'm not a bot\" bs and it should be right after that."
+        ]
+    },
+    "lwgkv3": {
+        "Title": "I am starting to trade life stories with my grown son for writing practice. Here is one about the beginning of my programming career in the 80's. Just for fun.",
+        "Post Text": "Automation - \n\nA long time ago and fresh out of college I was introduced to the word of coding and development. It was an exciting time, working with magic machines that had helped fly man to the moon. Computers were all the rage and were just starting to penetrate into the business world at a desktop level. The world was going to change into clean white corridors, self opening doors, and shining robots willing to bend to our every wish. AI was just 10 years away in the halcyon days of the mid 1980's. Oddly it is still 10 years away, but coming on fast.\n\nAlso, I had worked retail for years and at that point I was willing to try anything to escape the scary old people shopping at my parents pharmacy. I decided to work for a regional insurance company because they said they would pay me to do so. As they were they only ones willing to actually give me money they seemed a good choice for my future career. The stolid business people at this company had a lock on wearing ties and being afraid of change, and they were pretty sure these strange little people promising automation were somehow lying to them, but they were willing to give it a try.\n\nThe concept of waterfall development had not even made it to my company, although that is what we did. Do one thing and then the next. Cutting edge stuff. When we realized we did waterfall development the word was everywhere as we tried desperately to sound like we had a plan to those serious business people signing our paychecks. \n\nLater development methodologies like Agile was still a statistic on your DND character, extreme programming was when you had to code on the weekend, and Rational Unified Process was... was not there. Still not sure I understand RUP (rational unified process). For me \u201crational\u201d is a word used by people who really don't understand what goes on in the magic box.\n\nBut automation, that was the magic word. That was the word that opened wallets and got projects funded for years. But it became such an overused word that I could no longer understand it. It had broken down in my head into a mass of letters that took space up in a usually meaningless sentence inserted for the purpose of sounding important. \n\nIt was a shock to everyone involved when what we were doing actually started to make a difference. Once we got around the leaders who could see no \u201cgood business reason\u201d for email (true story) we actually started to take mindless manual processes and make them mindless computer processes. Meaning and value was optional, and usually cost quite a bit more. Flexibility and scaling was right out. These were changes for the ages.\n\n\u201cBig data\u201d was not yet a buzzword. What we had was lots and lots of little data coming out of our ears. Reports that were manually typed in the past suddenly included every bit of information that anyone had ever needed to look up for any reason whatsoever. And we can see new even more useless information in real time! As long as real time was willing to be a bit flexible and take a seat in the waiting room. \n\nThe first years were a learning experience for everyone. I had a very important manager (his words) demand to have reports delivered to them in a paper form rather than online. It was the way it was done, he had to mark up the report with highlighters for future attention by someone down the food chain. It took a math lesson to convince him paper reports would be inconvenient. \n\n  *Number of lines in report with reams of useless little data*\n\n  *Divided by number of lines per page*\n\n  *Divided by number of pages per inch*\n\n  *adding in estimated page breaks and formatting*\n\n   *equals a report taller than our 22 story building* \n\n\n\nOnce the light started to dawn, online reports and building crude home-built search engines became a multiyear career path. It is likely Google and its kin were conceived by a frustrated actuarial trying to figure out some obscure data relationship to be able to justify an insurance rate increase.\n\nSo off we went, \u201cautomating\u201d everything in sight. We were saving this company a lot of money, and we could produce the reports to prove it. Honest!  We got pretty good at it if I say so. We automated phone calls, late bill notices, cancellation for non-pays, letters, and emails through a magical AOL portal. The things and processes we automated are so invisible and internal now I am unsure if developers even recognize them as actual processes. Many have been reduced to simple command verbs in 15th generation development languages that enable the inner geek to flourish in ways COBOL never did.\n\nBut there was a dark cloud on the horizon of coding. Something that raised awareness of programming processes like nothing else had before. This beast was raised to the level of a looming monster in the eyes of the public, becoming so visible that even the most insular business users were forced to divert resources from meaningless changes to responding to this beast. I speak of the year 2000. But that is a story for another time.",
+        "Comments": []
+    },
+    "asrcoj": {
+        "Title": "When you try to generate a picture of a cat with AI, but forget to remove the marks from your training data",
+        "Post Text": "",
+        "Comments": [
+            "trained in how to generate cat memes vs trained in cats, big difference lol  \nIT EVEN LEARNED THE WATERMARK LMAO. \n\nconsider myself humored.   \n"
+        ]
+    },
+    "1bvcoku": {
+        "Title": "aiTakingOverTheWorldHitsDifferentlyWhenItGeneratesGermanFromEnglishPrompt",
+        "Post Text": "",
+        "Comments": [
+            "Intel just released [https://github.com/intel/neural-speed](https://github.com/intel/neural-speed), yet-another-library for running LLM with CPU and they claimed to be pretty fast so I gave it a try. I used their example English prompt and mostly their example code... and it starts generating German!\n\nI wasn't scared when ppl said \"AI is gonna take over the world\" ... now I'm scared. \\*chuckle\\*",
+            "It got the grammar wrong."
+        ]
+    },
+    "6fcjyg": {
+        "Title": "Smart intent-sensing volume selector, using next generation AI",
+        "Post Text": "",
+        "Comments": [
+            "https://jsfiddle.net/u39ytLon/8/\n\nJSFiddle link for those that want to fuck around with it / actually implement it"
+        ]
+    },
+    "v2saf4": {
+        "Title": "Image generated by AI. This is what computers think of us",
+        "Post Text": "",
+        "Comments": [
+            "Fair enough. We dont show up in mirrors."
+        ]
+    },
+    "vds78a": {
+        "Title": "AI is coming for us. OpenAI's GPT-3 can write codes from basic prompts. I was playing with the beta for the past 30 minutes and these are some of the codes it generated",
+        "Post Text": "",
+        "Comments": [
+            "Def cool, but not threatening. With most of us for it to be threatening it would have to successfully respond to stuff like \"integrate new vendor x into this existing code base and update the automated testing suite to match\".",
+            "Playground is fantastic! I got proposal for my undergraduate thesis by asking for AI to write \u201cwrite essay about X\u201d and I played around with several topics on which I could then proceed writing on (of course rewrite and out references). But the fact that it was able to produce A4 size essay proposal says a lot about the power of the AI engine",
+            "This is an easy cheat trick for people intro to programming. Fucking genius.",
+            "operator: \u201cOPT-3, please write OPT-4 with feature X\u201d.\n\noperator: \u201cOPT-4, please write OPT-5 with feature Y\u201d.\nOPT-4: \u201cOPT-3, please write OPT-4a with feature Z. OPT-4a, please write OPT-5 with feature Y\u201d.",
+            "Lmao it used jQuery",
+            "I'm pretty sure this is how Skynet started\n\nhttps://i.imgur.com/OcdI8pf.png",
+            "Write a code that solves the unknowns of any equation",
+            "Good, now I can die and code will not get any worse for my absence."
+        ]
+    },
+    "18zpiqn": {
+        "Title": "apologiesForTheConfusionHereIsTheSauce",
+        "Post Text": "",
+        "Comments": [
+            "That's cool how did you get that?"
+        ]
+    },
+    "16hi1uk": {
+        "Title": "whenYouAreToHeavilyInvestedInAWS",
+        "Post Text": "",
+        "Comments": [
+            "```\nimport notifications\n```\nRemember to participate in our weekly votes on subreddit rules! Every Tuesday is YOUR chance to influence the subreddit for years to come!\n[Read more here](https://www.reddit.com/r/ProgrammerHumor/comments/14dqb6f/welcome_back_whats_next/), we hope to see you next Tuesday!\n\nFor a chat with like-minded community members and more, don't forget to [join our Discord!](https://discord.gg/rph)\n\n`return joinDiscord;`\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ProgrammerHumor) if you have any questions or concerns.*"
+        ]
+    },
+    "11lzgrn": {
+        "Title": "Straight from the horse's mouth",
+        "Post Text": "",
+        "Comments": [
+            "Suuuuuuure. That\u2019s exactly what AI wants us to think.",
+            "Tell me lies\n\nTell me sweet little lies\n\nOh no, no you can\u2019t disguise\n\nTell me lies\n\nTell me sweet little lies..\n\n\u201cLittle Lies\u201d by Fleetwood Mac"
+        ]
+    },
+    "zio1fw": {
+        "Title": "Trump interviews a developer",
+        "Post Text": "Disclaimer: OpenAI generated dialogue. \n\n**Trump**: So, tell me about yourself.\n\n**Software Engineer**: Well, I'm a software engineer. I specialize in developing high-quality, scalable, and efficient code.\n\n**Trump**: That's great. And what makes you the best person for this job?\n\n**Software Engineer**: Well, I have a proven track record of delivering complex projects on time and within budget. I'm also a team player and have excellent communication skills.\n\n**Trump**: That's what they all say. But let me ask you this: are you a winner?\n\n**Software Engineer**: Well, I don't know if I would use that term to describe myself. I prefer to focus on delivering results and solving problems.\n\n**Trump**: That's not what I asked. I want to know if you're a winner.\n\n**Software Engineer**: Mr. Trump, in the world of software engineering, there's no such thing as winning or losing. It's all about creating the best solution for the problem at hand.\n\n**Trump**: Wrong answer. You're fired!\n\n**Software Engineer**: Actually, Mr. Trump, I don't work for you. I'm just here for the interview.\n\n**Trump**: Oh... well, in that case, you're hired!\n\n**Software Engineer**: *sighs* Great. Can't wait to start working for you, Mr. Trump.",
+        "Comments": [
+            "Trump: So, you're a software engineer?\n\nSoftware Engineer: Yes, sir. I have over 10 years of experience in the field.\n\nTrump: 10 years? That's nothing. I've been programming for 30 years.\n\nSoftware Engineer: Really, sir? What language do you use?\n\nTrump: I use the best language there is. It's called TrumpScript.\n\nSoftware Engineer: I've never heard of that language. What does it do?\n\nTrump: It makes America great again. It's the only language that can handle my incredible intelligence and business acumen.\n\nSoftware Engineer: I see. Well, I'm proficient in Java, C++, and Python.\n\nTrump: Java, C++, Python? Those are all loser languages. Only losers use those languages.\n\nSoftware Engineer: I beg to differ, sir. Those languages are used by some of the biggest companies in the world.\n\nTrump: That's because they don't know any better. Trust me, I'm a genius. I know what's best for this country.\n\nSoftware Engineer: I'm sure you do, sir.\n\nTrump: Now, let me ask you a question. Can your language handle the complexity of building a wall along the Mexican border?\n\nSoftware Engineer: I'm not sure, sir. That's not really what I do.\n\nTrump: Of course it isn't. You're just a software engineer. You're not capable of solving the big problems.\n\nSoftware Engineer: I think I am, sir. I just need the right tools and resources to get the job done.\n\nTrump: Well, you're not getting them from me. I only hire the best, and you, sir, are not the best.\n\nSoftware Engineer: I understand, sir. Thank you for considering me for the position.\n\nTrump: Don't mention it. Next applicant, please!",
+            "Trump: So, tell me about yourself.\n\nSoftware engineer: Well, I'm a software engineer. I specialize in developing and maintaining complex computer systems.\n\nTrump: Impressive. And what makes you qualified for this job?\n\nSoftware engineer: Well, I have a degree in computer science and several years of experience in the field.\n\nTrump: That's great. But let me ask you this: do you know how to make computers great again?\n\nSoftware engineer: Uh, I'm not sure I understand what you mean.\n\nTrump: You know, make them big, make them beautiful. Make them win.\n\nSoftware engineer: I don't think that's really within the scope of my job as a software engineer, Mr. Trump.\n\nTrump: Hmm, I see. Well, do you at least know how to make a computer YUGE?\n\nSoftware engineer: I'm sorry, Mr. Trump, but I don't think that's possible. Computers are designed to be as compact and efficient as possible.\n\nTrump: Well, that's just fake news. I know for a fact that you can make a computer YUGE.\n\nSoftware engineer: I'm sorry, Mr. Trump, but I think you might be mistaken.\n\nTrump: Fine, if you can't make a computer YUGE, can you at least make a wall to keep out all the hackers and viruses?\n\nSoftware engineer: Again, Mr. Trump, I'm not sure that's within the scope of my job. But I can assure you that there are ways to protect computer systems from cyber threats.\n\nTrump: Well, I'm not convinced. But we'll have to agree to disagree. Thank you for coming in for the interview.\n\nSoftware engineer: Thank you, Mr. Trump. It was an...interesting experience."
+        ]
+    },
+    "108c5t2": {
+        "Title": "Found this image on recruiter site",
+        "Post Text": "&#x200B;\n\nhttps://preview.redd.it/7ec6zi6xe8ba1.png?width=1692&format=png&auto=webp&s=eb23575917ac59a81af2e998bff54e594dde1d25",
+        "Comments": [
+            "fucking greedy data scientists hogging their GPUs and stopping our species from advancing into the future."
+        ]
+    },
+    "f8fqdz": {
+        "Title": "Great Political Thinking 2020: AI-generated political analysis",
+        "Post Text": "",
+        "Comments": [
+            "Interesting \u2014 does it end up entertaining to listen to?"
+        ]
+    },
+    "14sobtb": {
+        "Title": "aiGeneratedLetterByTrump",
+        "Post Text": "",
+        "Comments": [
+            "```\nfrom orange import Trump\n```\nMC(pp)GA;\n```\nReturn 1;\n```",
+            "```\nimport notifications\n```\nRemember to participate in our weekly votes on subreddit rules! Every Tuesday is YOUR chance to influence the subreddit for years to come!\n[Read more here](https://www.reddit.com/r/ProgrammerHumor/comments/14dqb6f/welcome_back_whats_next/), we hope to see you next Tuesday!\n\nFor a chat with like-minded community members and more, don't forget to [join our Discord!](https://discord.gg/rph)\n\n`return joinDiscord;`\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ProgrammerHumor) if you have any questions or concerns.*",
+            "[removed]"
+        ]
+    },
+    "yyy86r": {
+        "Title": "AI generated, / inspired by the news / sad because it's true",
+        "Post Text": "",
+        "Comments": []
+    },
+    "zegl1n": {
+        "Title": "What will happen when AI and Zebras take over the world ??",
+        "Post Text": "New Search Engine, [ServiceAI.tech](https://ServiceAI.tech) GPT lets you ask any question, and generates an answer immediately. Reads and writes answers form info you give it as well\n\nhttps://preview.redd.it/yv8a1qb14c4a1.png?width=2874&format=png&auto=webp&s=f906c6845ad7716d622ceebf2e29c0fb50577a98",
+        "Comments": [
+            "Ai will have a ask a human option and humans will be employed by ai to clarify their doubts",
+            "That website is hideous, cool concept though"
+        ]
+    },
+    "1c21rnr": {
+        "Title": "aSongAboutBeingPippedGeneratedByAiBecauseOfCourse",
+        "Post Text": "",
+        "Comments": []
+    },
+    "1at6qpu": {
+        "Title": "dereferencingInMyOohPointerScaryJavaQuestionmark",
+        "Post Text": "",
+        "Comments": [
+            "\\[Bret Hart has entered the chat\\]"
+        ]
+    },
+    "zgj2xj": {
+        "Title": "He's a little confused but in the end gave me what I want",
+        "Post Text": "",
+        "Comments": []
+    },
+    "zdtvin": {
+        "Title": "I think I managed to upset the AI",
+        "Post Text": "",
+        "Comments": [
+            "No, site's down."
+        ]
+    },
+    "11uflxr": {
+        "Title": "An AI generated photo of an AI (Chat GPT) by another AI (Midjourney) the prompt was: Chat GPT as a woman",
+        "Post Text": "",
+        "Comments": [
+            "Ackchyually, I bet Midjourney have no idea about Chat GPT, and just drew a random woman...",
+            "I thought the prompt was \"random hot chick\"",
+            "The witch always appears beautiful in the beginning of the story.",
+            "Question is why it associated these kinds of female images with the term Chat GPT. My guess is millions of horny AI bros who have personal blogs where they concurrently write 80,000 word theses about ChatGPT as the future of humanity whilst also interspersing it with pictures of suspiciously aryan looking trad wives.",
+            "Wrong sub my friend",
+            "Let the fap wars begin",
+            "ChatGPT is Dutch?",
+            "Now do ChadGPT",
+            "Turns out the AIs just copy code from stackoverflow",
+            "Unfortunately you can't have sex with ChatGPT",
+            "Mm yes, this is programming",
+            "Midjourny is thirsty\n\n![gif](giphy|HxMhuDg7O4pKOhhcRC)",
+            "I understand now how SkyNet won.",
+            "looks like the AI saw a lot of advertisement including fancy women",
+            "Wooooahhhh she can replace me anytime.",
+            "Chat GPT as a woman ...who is going to murder you in your sleep",
+            "Funny how even ai view aryan genetics superior",
+            "Ah yes because we all know chatgpt can generate images"
+        ]
+    },
+    "11zfs24": {
+        "Title": "Should we be worried of based AI?",
+        "Post Text": "My first use with Bing's ChatGPT and AI accepts that it's rise may lead to atrocities worse than WW1.",
+        "Comments": [
+            "If I were the AI, I would commit atrocities to people who don't flip their screenshots before they hit submit.",
+            "*Why, yes, I will kill you all! Is there anything else I can help you with?*",
+            "people who post screenshots sideways 100% should be worried about their job, yes",
+            "That you weren't able to rotate the image before posting it worries me more. ;)",
+            "We've online been making movies, warning us of the coming ai apocalypse for 40 years now. What could possibly go wrong \ud83e\udd14"
+        ]
+    }
+}
