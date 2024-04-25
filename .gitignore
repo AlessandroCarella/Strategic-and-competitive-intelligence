@@ -3,6 +3,7 @@ ChatGPT_Tweets_Dataset_Full.csv
 companies-2023-q4-sm.csv
 codingFiltered_ChatGPT_Tweets_Dataset_Full.csv
 objects_unique_values.txt
+filtered_df.csv
 
 # History files
 .Rhistory
