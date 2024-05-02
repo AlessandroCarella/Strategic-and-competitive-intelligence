@@ -1,3 +1,8 @@
+library(shiny)
+library(treemap)
+library(DT)
+library(ggplot2)
+
 ui_question1 <- fluidPage(
   titlePanel("Strategic and competitive intelligence project"),
   mainPanel(
