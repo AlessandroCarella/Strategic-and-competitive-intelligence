@@ -116,4 +116,5 @@ server_question1 <- function(input, output, session) {
         labs(title = "Reddit and Twitter Counts by Company",
              x = "Company", y = "Count") +
         theme_minimal()
-    })}
+    })
+  }
