@@ -1,8 +1,8 @@
 library(shiny)
 
 # Define UI
-source("ui_question1.R")
-source("server_question1.R")
+source("ui.R")
+source("server.R")
 
 # Run the application
-shinyApp(ui = ui_question1, server = server_question1)
+shinyApp(ui = ui, server = server)
