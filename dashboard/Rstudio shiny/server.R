@@ -27,6 +27,22 @@ server <- function(input, output) {
     read.csv("data/question1reddit_twitter_counts_normalized_cut20_ordered_reddit.csv")
   })
 
+  # Load data for Question 3
+  
+  question3datasetTwitter <- reactive({
+    req(file.exists("data/question3discoveryTwitterFiltered.csv"))
+    read.csv("data/question3discoveryTwitterFiltered.csv")
+  })
+  
+  question3datasetDevTo <- reactive({
+    req(file.exists("data/question3discoveryDevToFiltered.csv"))
+    read.csv("data/question3discoveryDevToFiltered.csv")
+  })
+  
+  question3datasetReddit <- reactive({
+    req(file.exists("data/question3discoveryRedditFiltered.csv"))
+    read.csv("data/question3discoveryRedditFiltered.csv")
+  })
   
   # Render plots
   output$treemapTwitter <- renderPlot({
@@ -57,6 +73,21 @@ server <- function(input, output) {
       theme_minimal()
   })
   
+  # Render plot for Question 3
+  output$question3BarPlot <- renderPlot({
+    req(input$question3Dataset)  # Ensure dataset is selected
+    
+    dataset <- switch(input$question3Dataset,
+                      "Twitter" = question3datasetTwitter(),
+                      "DevTo" = question3datasetDevTo(),
+                      "Reddit" = question3datasetReddit())
+    
+    ggplot(dataset, aes(x = name, y = mention, fill = input$question3Dataset)) +
+      geom_bar(stat = "identity") +
+      labs(x = "Technology", y = "Number of Mentions") +
+      scale_fill_manual(values = c("Twitter" = "red", "DevTo" = "blue", "Reddit" = "green")) + # Specify colors
+      theme_minimal()
+  })
   
   # UI for main panel content
   mainPanelContentQuestion1 <- reactive({
@@ -76,10 +107,13 @@ server <- function(input, output) {
     })
   })
   
-  observeEvent(input$question2, {
+  observeEvent(input$question3, {
     output$mainPanelContent <- renderUI({
-      #TODO
+      tagList(
+        selectInput("question3Dataset", "Select Dataset", choices = c("Twitter", "DevTo", "Reddit")),
+        plotOutput("question3BarPlot")
+      )
     })
   })
-  
+
 }

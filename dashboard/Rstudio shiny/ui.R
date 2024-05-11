@@ -27,7 +27,8 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       actionButton ("question1", HTML("The first question we wanted to answer was<br>What organizations are mentioned most often in the genAI for coding<br>public discourse?"), class = "square-btn"),
-      actionButton ("question2", HTML("AAAAAAA"), class = "square-btn")
+      actionButton ("question2", HTML("AAAAAAA"), class = "square-btn"),
+      actionButton ("question3", HTML("What innovative approaches or methodologies are emerging in the field of coding?"), class = "square-btn")
     ),
     mainPanel(
       uiOutput("mainPanelContent")
