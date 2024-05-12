@@ -190,7 +190,7 @@ dashboardPage(
               ),
               circle = TRUE,
               status = "success",
-              icon = icon("gear"),
+              icon = shiny::icon("database"),
               width = "300px",
               tooltip = tooltipOptions(title = "Click to see possible datasets"),
               up = TRUE
@@ -225,7 +225,7 @@ dashboardPage(
               ),
               circle = TRUE,
               status = "success",
-              icon = icon("gear"),
+              icon = shiny::icon("database"),
               width = "300px",
               tooltip = tooltipOptions(title = "Click to see possible datasets"),
               up = TRUE
@@ -313,7 +313,7 @@ dashboardPage(
               ),
               circle = TRUE,
               status = "success",
-              icon = icon("gear"),
+              icon = shiny::icon("database"),
               width = "300px",
               tooltip = tooltipOptions(title = "Click to see possible datasets"),
               up = TRUE
@@ -350,7 +350,7 @@ dashboardPage(
             ),
             circle = TRUE,
             status = "success",
-            icon = icon("gear"),
+            icon = icon("database"),
             width = "300px",
             tooltip = tooltipOptions(title = "Click to see possible datasets"),
             up = TRUE
