@@ -55,7 +55,29 @@ shiny::shinyServer(function(input, output, session) {
     req(file.exists("data/question3discoveryRedditFiltered.csv"))
     read.csv("data/question3discoveryRedditFiltered.csv")
   })
+
+  # Load data for Question 4
   
+  question4datasetDevto2022 <- reactive({
+    req(file.exists("data/question4_devto_2022.csv"))
+    read.csv("data/question4_devto_2022.csv")
+  })
+  question4datasetDevto2023 <- reactive({
+    req(file.exists("data/question4_devto_2023.csv"))
+    read.csv("data/question4_devto_2023.csv")
+  })
+  
+  question4datasetStackOverflow2022 <- reactive({
+    req(file.exists("data/question4stackoverflow_2022.csv"))
+    read.csv("data/question4stackoverflow_2022.csv")
+  })
+  
+  question4datasetStackOverflow2023 <- reactive({
+    req(file.exists("data/question4stackoverflow_2023.csv"))
+    read.csv("data/question4stackoverflow_2023.csv")
+  })
+  
+
 
   
   # Create the questions box
@@ -328,4 +350,120 @@ shiny::shinyServer(function(input, output, session) {
     plot_visibility$barplot <- FALSE  # Hide bar plot when treemap is shown
     plot_visibility$piechart <- TRUE  # Hide treemap when bar plot is shown
   })
+
+  # QUESTION4
+  
+  # Show Q4 data table
+  output$q4Table <- DT::renderDataTable({
+    
+    # Load the dataset based on user selection or default to Devto if none selected
+    dataset <- switch(ifelse(is.null(input$question3DatasetTable) || input$question3DatasetTable == "", "Twitter", input$question3DatasetTable),
+                      "Devto2022" = question4datasetTwitterFull(),
+                      "Dev.To" = question3datasetDevTo(),
+                      "Reddit" = question3datasetReddit())
+    
+    
+    DT::datatable(
+     dataset,
+      rownames = FALSE,
+      colnames = c('Technology','Number of Mentions'),
+      extensions = c('Responsive', 'Buttons'),
+      options = list(
+        searchHighlight = TRUE,
+        dom = 'Bfrtip',
+        buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+        title= paste(input$question3DatasetTable, " Dataset")
+      )
+    )
+  }, server = FALSE)
+
+  output$selectedDataset <- renderUI({
+    selected_dataset <- input$question3DatasetTable
+    h2(paste(selected_dataset, " Dataset"))
+  })
+  
+  
+  plot_data <- reactiveValues(plot_type = "barplot")
+  plot_visibility <- reactiveValues(barplot = TRUE, treemap = FALSE, piechart=FALSE)
+  
+  
+  output$q3dynamicplot <- renderPlotly({
+    if (is.null(plot_data$plot_type)) {
+      return(NULL)  # No plot selected yet
+    }
+    # Load the dataset based on user selection or default to Twitter if none selected
+    dataset <- switch(ifelse(is.null(input$question4Dataset) || input$question4Dataset == "", "Devto2022", input$question4Dataset),
+                      "Devto2022" = question4datasetDevto2022(),
+                      "Devto2023" = question4datasetDevto2023(),
+                      "StackOverflow2022" = question4datasetStackOverflow2022(),
+                      "StackOverflow2023" = question4datasetStackOverflow2023())
+    
+    if (plot_data$plot_type == "barplot") {
+      if (plot_visibility$barplot) {
+        
+        # Define color mapping
+        colors <- setNames(c("lightblue", "blue", "darkblue","#7474f0" ), c("Devto2022", "Devto2023", "StackOverflow2022", "StackOverflow2023"))
+        
+        # Initial plot setup with bar type
+        p <- plot_ly(data = dataset, x = ~name, y = ~mention, type = 'bar', color = ~input$question4Dataset, colors = colors) %>%
+          layout(xaxis = list(title = "Technology"),
+                 yaxis = list(title = "Number of Mentions"),
+                 title = "Predominant Technologies on Q3",
+                 barmode = 'group')
+        
+        
+        return(p)}
+    } else if (plot_data$plot_type == "treemap") {
+      if (plot_visibility$treemap) {
+        treemap_data <- dataset
+        print(treemap_data)
+        p <- plot_ly(
+          data = treemap_data,
+          ids = ~name,
+          labels = ~name,
+          parents = ~"",
+          values = ~mention,
+          type = "treemap",
+          hoverinfo = "label+value+percent root",
+          treemapcolorway = c("white"),
+          marker = list(
+            colorscale = list(
+              c(0, 0.5, 1),
+              c("lightblue", "blue", "darkblue")
+            )
+          )
+        )
+        p}}
+    else if (plot_data$plot_type == "piechart") {
+      # Generate some sample data for the pie chart
+      
+      plot_ly(dataset, labels = ~name, values = ~mention, type = "pie")
+    }
+  })
+  
+  observeEvent(input$move_to_barplot, {
+    plot_data$plot_type <- "barplot"
+    plot_visibility$barplot <- TRUE
+    plot_visibility$treemap <- FALSE  # Hide treemap when bar plot is shown
+    plot_visibility$piechart <- FALSE  # Hide treemap when bar plot is shown
+  })
+  
+  # Toggle visibility of the treemap
+  observeEvent(input$move_to_treemap, {
+    plot_data$plot_type <- "treemap"
+    plot_visibility$treemap <- TRUE
+    plot_visibility$barplot <- FALSE  # Hide bar plot when treemap is shown
+    plot_visibility$piechart <- FALSE  # Hide treemap when bar plot is shown
+  })
+  
+  # Toggle visibility of the treemap
+  observeEvent(input$move_to_piechart, {
+    plot_data$plot_type <- "piechart"
+    plot_visibility$treemap <- FALSE
+    plot_visibility$barplot <- FALSE  # Hide bar plot when treemap is shown
+    plot_visibility$piechart <- TRUE  # Hide treemap when bar plot is shown
+  })
+
+
+
 })
