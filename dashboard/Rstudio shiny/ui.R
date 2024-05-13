@@ -422,13 +422,13 @@ dashboardPage(
             
             fluidRow(
               column(width = 3,
-                     actionButton("move_to_barplot", "Bar Plot", class="custom-btn")
+                     actionButton("move_to_barplot_q4", "Bar Plot", class="custom-btn")
               ),
               column(width = 3,
-                     actionButton("move_to_treemap", "Tree Map", class="custom-btn")
+                     actionButton("move_to_treemap_q4", "Tree Map", class="custom-btn")
               ),
               column(width = 3,
-                     actionButton("move_to_piechart", "Pie Chart", class="custom-btn")
+                     actionButton("move_to_piechart_q4", "Pie Chart", class="custom-btn")
               )
             ),
             br(),
