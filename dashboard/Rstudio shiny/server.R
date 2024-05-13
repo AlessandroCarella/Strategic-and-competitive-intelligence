@@ -76,8 +76,16 @@ shiny::shinyServer(function(input, output, session) {
     req(file.exists("data/question4_stackoverflow_2023.csv"))
     read.csv("data/question4_stackoverflow_2023.csv")
   })
-  
 
+  question4datasetDevtoMerged <- reactive({
+    req(file.exists("data/question4_devto_2022_23.csv"))
+    read.csv("data/question4_devto_2022_23.csv")
+  })
+  
+  question4datasetStackOverflowMerged <- reactive({
+    req(file.exists("data/question4_stackoverflow_2022_23.csv"))
+    read.csv("data/question4_stackoverflow_2022_23.csv")
+  })
 
   
   # Create the questions box
@@ -392,38 +400,42 @@ shiny::shinyServer(function(input, output, session) {
     if (is.null(plot_data$plot_type)) {
       return(NULL)  # No plot selected yet
     }
-    # Load the dataset based on user selection or default to Devto if none selected
-    dataset <- switch(ifelse(is.null(input$question4Dataset) || input$question4Dataset == "", "Devto2022", input$question4Dataset),
-                      "Devto2022" = question4datasetDevto2022(),
-                      "Devto2023" = question4datasetDevto2023(),
-                      "StackOverflow2022" = question4datasetStackOverflow2022(),
-                      "StackOverflow2023" = question4datasetStackOverflow2023())
+    dataset <- switch(ifelse(is.null(input$question4Dataset) || input$question4Dataset == "", "Devto", input$question4Dataset),
+              "Devto" = question4datasetDevtoMerged(),
+              "StackOverflow" = question4datasetStackOverflowMerged()
+    )
     
     if (plot_data_q4$plot_type == "barplot") {
       if (plot_visibility_q4$barplot) {
-        
-        # Define color mapping
-        colors <- setNames(c("lightblue", "blue", "darkblue","#7474f0" ), c("Devto2022", "Devto2023", "StackOverflow2022", "StackOverflow2023"))
-        
+                
         # Initial plot setup with bar type
-        p <- plot_ly(data = dataset, x = ~name, y = ~mention, type = 'bar', color = ~input$question4Dataset, colors = colors) %>%
+        p <- plot_ly(data = dataset, x = ~name, y = ~mention2022, name = "2022", type = 'bar') %>%
+         add_trace(x = ~name, y = ~mention2023, name = "2023") %>%
           layout(xaxis = list(title = "Technology"),
                  yaxis = list(title = "Number of Mentions"),
-                 title = "Predominant Technologies on Q3",
+                 title = "Predominant Technologies on Q4",
                  barmode = 'group')
-        
-        
         return(p)}
     } else if (plot_data_q4$plot_type == "treemap") {
       if (plot_visibility_q4$treemap) {
         treemap_data <- dataset
-        print(treemap_data)
+        year <- ifelse(is.null(input$question4YearSelectInput), 2022, input$question4YearSelectInput)
+        output$question4YearSelect <- renderUI(
+          selectInput(
+            inputId = 'question4YearSelectInput',
+            label = "Year",
+            selected = year,
+            multiple = FALSE,
+            choices = c(2022, 2023)
+          )
+        )
+        if (year == 2022) {
         p <- plot_ly(
           data = treemap_data,
           ids = ~name,
           labels = ~name,
           parents = ~"",
-          values = ~mention,
+          values = ~mention2022,
           type = "treemap",
           hoverinfo = "label+value+percent root",
           treemapcolorway = c("white"),
@@ -434,11 +446,41 @@ shiny::shinyServer(function(input, output, session) {
             )
           )
         )
+        } else {
+        p <- plot_ly(
+          data = treemap_data,
+          ids = ~name,
+          labels = ~name,
+          parents = ~"",
+          values = ~mention2023,
+          type = "treemap",
+          hoverinfo = "label+value+percent root",
+          treemapcolorway = c("white"),
+          marker = list(
+            colorscale = list(
+              c(0, 0.5, 1),
+              c("lightblue", "blue", "darkblue")
+            )
+          )
+        )
+        }
         p}}
     else if (plot_data_q4$plot_type == "piechart") {
       # Generate some sample data for the pie chart
-      
-      plot_ly(dataset, labels = ~name, values = ~mention, type = "pie")
+        year <- ifelse(is.null(input$question4YearSelectInput), 2022, input$question4YearSelectInput)
+        output$question4YearSelect <- renderUI(
+          selectInput(
+            inputId = 'question4YearSelectInput',
+            label = "Year",
+            selected = year,
+            multiple = FALSE,
+            choices = c(2022, 2023)          )
+        )
+        if(year == 2022) {
+          plot_ly(dataset, labels = ~name, values = ~mention2022, type = "pie")
+        } else {
+          plot_ly(dataset, labels = ~name, values = ~mention2023, type = "pie")
+        }
     }
   })
   

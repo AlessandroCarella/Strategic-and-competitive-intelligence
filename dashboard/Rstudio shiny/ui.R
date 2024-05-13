@@ -437,8 +437,10 @@ dashboardPage(
               selectInput(
                 "question4Dataset",
                 h5("Select Dataset:"),
-                c("Devto2022", "Devto2023", "StackOverflow2022", "StackOverflow2023")
-              )
+                c("Devto", "StackOverflow")
+              ),
+
+              uiOutput("question4YearSelect")
 
           )
         )
