@@ -377,7 +377,7 @@ shiny::shinyServer(function(input, output, session) {
     )
   }, server = FALSE)
 
-  output$selectedDataset <- renderUI({
+  output$selectedDatasetq4 <- renderUI({
     selected_dataset <- input$question3DatasetTable
     h2(paste(selected_dataset, " Dataset"))
   })
@@ -441,7 +441,7 @@ shiny::shinyServer(function(input, output, session) {
     }
   })
   
-  observeEvent(input$move_to_barplot, {
+  observeEvent(input$move_to_barplot_q4, {
     plot_data$plot_type <- "barplot"
     plot_visibility$barplot <- TRUE
     plot_visibility$treemap <- FALSE  # Hide treemap when bar plot is shown
@@ -449,7 +449,7 @@ shiny::shinyServer(function(input, output, session) {
   })
   
   # Toggle visibility of the treemap
-  observeEvent(input$move_to_treemap, {
+  observeEvent(input$move_to_treemap_q4, {
     plot_data$plot_type <- "treemap"
     plot_visibility$treemap <- TRUE
     plot_visibility$barplot <- FALSE  # Hide bar plot when treemap is shown
@@ -457,7 +457,7 @@ shiny::shinyServer(function(input, output, session) {
   })
   
   # Toggle visibility of the treemap
-  observeEvent(input$move_to_piechart, {
+  observeEvent(input$move_to_piechart_q4, {
     plot_data$plot_type <- "piechart"
     plot_visibility$treemap <- FALSE
     plot_visibility$barplot <- FALSE  # Hide bar plot when treemap is shown
