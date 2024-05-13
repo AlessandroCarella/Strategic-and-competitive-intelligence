@@ -442,7 +442,7 @@ dashboardPage(
               selectInput(
                 "question4Dataset",
                 h5("Select Dataset:"),
-                c("Twitter", "Reddit", "Dev.To")
+                c("Devto2022", "Devto2023", "StackOverflow2022", "StackOverflow2023")
               ),
               circle = TRUE,
               status = "success",
@@ -464,7 +464,7 @@ dashboardPage(
           status = "primary",
           width = 12,
           collapsible = T,
-          uiOutput("selectedDataset"),
+          uiOutput("selectedDatasetq4"),
           
           # Question 4 table
           DT::dataTableOutput("q4Table"),
@@ -477,7 +477,7 @@ dashboardPage(
             selectInput(
               "question4DatasetTable",
               h5("Select Dataset:"),
-              c("Twitter", "Reddit", "Dev.To")
+              c("Devto2022", "Devto2023", "StackOverflow2022", "StackOverflow2023")
             ),
             circle = TRUE,
             status = "success",

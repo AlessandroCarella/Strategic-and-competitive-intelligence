@@ -357,10 +357,11 @@ shiny::shinyServer(function(input, output, session) {
   output$q4Table <- DT::renderDataTable({
     
     # Load the dataset based on user selection or default to Devto if none selected
-    dataset <- switch(ifelse(is.null(input$question3DatasetTable) || input$question3DatasetTable == "", "Twitter", input$question3DatasetTable),
-                      "Devto2022" = question4datasetTwitterFull(),
-                      "Dev.To" = question3datasetDevTo(),
-                      "Reddit" = question3datasetReddit())
+    dataset <- switch(ifelse(is.null(input$question4DatasetTable) || input$question4DatasetTable == "", "Devto2022", input$question4DatasetTable),
+                      "Devto2022" = question4datasetDevto2022(),
+                      "Devto2023" = question4datasetDevto2023(),
+                      "StackOverflow2022" = question4datasetStackOverflow2022(),
+                      "StackOverflow2023" = question4datasetStackOverflow2023())
     
     
     DT::datatable(
@@ -372,34 +373,34 @@ shiny::shinyServer(function(input, output, session) {
         searchHighlight = TRUE,
         dom = 'Bfrtip',
         buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
-        title= paste(input$question3DatasetTable, " Dataset")
+        title= paste(input$question4DatasetTable, " Dataset")
       )
     )
   }, server = FALSE)
 
   output$selectedDatasetq4 <- renderUI({
-    selected_dataset <- input$question3DatasetTable
+    selected_dataset <- input$question4DatasetTable
     h2(paste(selected_dataset, " Dataset"))
   })
   
   
-  plot_data <- reactiveValues(plot_type = "barplot")
-  plot_visibility <- reactiveValues(barplot = TRUE, treemap = FALSE, piechart=FALSE)
+  plot_data_q4 <- reactiveValues(plot_type = "barplot")
+  plot_visibility_q4 <- reactiveValues(barplot = TRUE, treemap = FALSE, piechart=FALSE)
   
   
-  output$q3dynamicplot <- renderPlotly({
+  output$q4dynamicplot <- renderPlotly({
     if (is.null(plot_data$plot_type)) {
       return(NULL)  # No plot selected yet
     }
-    # Load the dataset based on user selection or default to Twitter if none selected
+    # Load the dataset based on user selection or default to Devto if none selected
     dataset <- switch(ifelse(is.null(input$question4Dataset) || input$question4Dataset == "", "Devto2022", input$question4Dataset),
                       "Devto2022" = question4datasetDevto2022(),
                       "Devto2023" = question4datasetDevto2023(),
                       "StackOverflow2022" = question4datasetStackOverflow2022(),
                       "StackOverflow2023" = question4datasetStackOverflow2023())
     
-    if (plot_data$plot_type == "barplot") {
-      if (plot_visibility$barplot) {
+    if (plot_data_q4$plot_type == "barplot") {
+      if (plot_visibility_q4$barplot) {
         
         # Define color mapping
         colors <- setNames(c("lightblue", "blue", "darkblue","#7474f0" ), c("Devto2022", "Devto2023", "StackOverflow2022", "StackOverflow2023"))
@@ -413,8 +414,8 @@ shiny::shinyServer(function(input, output, session) {
         
         
         return(p)}
-    } else if (plot_data$plot_type == "treemap") {
-      if (plot_visibility$treemap) {
+    } else if (plot_data_q4$plot_type == "treemap") {
+      if (plot_visibility_q4$treemap) {
         treemap_data <- dataset
         print(treemap_data)
         p <- plot_ly(
@@ -434,7 +435,7 @@ shiny::shinyServer(function(input, output, session) {
           )
         )
         p}}
-    else if (plot_data$plot_type == "piechart") {
+    else if (plot_data_q4$plot_type == "piechart") {
       # Generate some sample data for the pie chart
       
       plot_ly(dataset, labels = ~name, values = ~mention, type = "pie")
@@ -442,26 +443,26 @@ shiny::shinyServer(function(input, output, session) {
   })
   
   observeEvent(input$move_to_barplot_q4, {
-    plot_data$plot_type <- "barplot"
-    plot_visibility$barplot <- TRUE
-    plot_visibility$treemap <- FALSE  # Hide treemap when bar plot is shown
-    plot_visibility$piechart <- FALSE  # Hide treemap when bar plot is shown
+    plot_data_q4$plot_type <- "barplot"
+    plot_visibility_q4$barplot <- TRUE
+    plot_visibility_q4$treemap <- FALSE  # Hide treemap when bar plot is shown
+    plot_visibility_q4$piechart <- FALSE  # Hide treemap when bar plot is shown
   })
   
   # Toggle visibility of the treemap
   observeEvent(input$move_to_treemap_q4, {
-    plot_data$plot_type <- "treemap"
-    plot_visibility$treemap <- TRUE
-    plot_visibility$barplot <- FALSE  # Hide bar plot when treemap is shown
-    plot_visibility$piechart <- FALSE  # Hide treemap when bar plot is shown
+    plot_data_q4$plot_type <- "treemap"
+    plot_visibility_q4$treemap <- TRUE
+    plot_visibility_q4$barplot <- FALSE  # Hide bar plot when treemap is shown
+    plot_visibility_q4$piechart <- FALSE  # Hide treemap when bar plot is shown
   })
   
   # Toggle visibility of the treemap
   observeEvent(input$move_to_piechart_q4, {
-    plot_data$plot_type <- "piechart"
-    plot_visibility$treemap <- FALSE
-    plot_visibility$barplot <- FALSE  # Hide bar plot when treemap is shown
-    plot_visibility$piechart <- TRUE  # Hide treemap when bar plot is shown
+    plot_data_q4$plot_type <- "piechart"
+    plot_visibility_q4$treemap <- FALSE
+    plot_visibility_q4$barplot <- FALSE  # Hide bar plot when treemap is shown
+    plot_visibility_q4$piechart <- TRUE  # Hide treemap when bar plot is shown
   })
 
 
