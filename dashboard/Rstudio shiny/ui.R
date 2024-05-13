@@ -37,6 +37,15 @@ dashboardPage(
         menuSubItem("Insights", tabName = "q3Insights", icon = icon("line-chart")),
         menuSubItem("Data", tabName = "q3Data", icon = icon("table"))
       ),
+
+            # Question 4 menu item
+      menuItem(
+        "Question 4",
+        icon = icon("cogs"),
+        tabName = "q4",
+        menuSubItem("Insights", tabName = "q4Insights", icon = icon("line-chart")),
+        menuSubItem("Data", tabName = "q4Data", icon = icon("table"))
+      ),
       
       #ADD OTHER QUESTIONS HERE
       br()
@@ -357,7 +366,130 @@ dashboardPage(
           )
         )
         )
+      ),
+
+      # Q4 Insights tab item
+      tabItem(
+        tabName = "q4Insights",
+        fluidRow(
+          box(
+            title = "Which programming languages were used before and after ChatGPT?",
+            status = "primary",
+            width = 12,
+            collapsible = TRUE,
+            tags$head(
+              tags$style(HTML("
+      /* Custom CSS for datatable */
+      
+      /* Custom CSS for datatable */
+      .dataTables_wrapper {
+        font-size: 14px; /* Adjust font size */
+        font-family: Ariel, sans-serif; /* Adjust font family */
+      }
+      .dataTable th {
+        background-color: #3498db; /* Blueish theme */
+        color: white; /* Text color */
+        font-weight: bold; /* Bold text */
+      }
+      .dataTable td, .dataTable th {
+        border: 2px solid #ddd; /* Add border to table cells */
+        padding: 8px; /* Add padding to table cells */
+      }
+      .dataTables_wrapper .dataTables_paginate {
+        margin-top: 20px; /* Adjust pagination margin */
+      }
+      .dataTable tr:nth-child(odd) {
+        background-color: #f2f2f2; /* Light gray background for odd rows */
+      }
+        /* CSS for custom button styles */
+        .custom-btn {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 10px;
+        }
+        .custom-btn:hover {
+          background-color: #45a049; /* Darker Green */
+        }
+      "))),
+            
+            fluidRow(
+              column(width = 3,
+                     actionButton("move_to_barplot", "Bar Plot", class="custom-btn")
+              ),
+              column(width = 3,
+                     actionButton("move_to_treemap", "Tree Map", class="custom-btn")
+              ),
+              column(width = 3,
+                     actionButton("move_to_piechart", "Pie Chart", class="custom-btn")
+              )
+            ),
+            br(),
+            plotly::plotlyOutput("q4dynamicplot"),
+            
+            dropdownButton(
+              # Panel title
+              h4("List of Datasets"),
+              
+            
+              selectInput(
+                "question4Dataset",
+                h5("Select Dataset:"),
+                c("Twitter", "Reddit", "Dev.To")
+              ),
+              circle = TRUE,
+              status = "success",
+              icon = shiny::icon("database"),
+              width = "300px",
+              tooltip = tooltipOptions(title = "Click to see possible datasets"),
+              up = TRUE
+            )
+          )
+        )
+      ),
+
+      # Q4 data tab item
+      tabItem(
+        tabName = "q4Data",
+        fluidRow(
+        box(
+          title= "Which programming languages were used before and after ChatGPT?",
+          status = "primary",
+          width = 12,
+          collapsible = T,
+          uiOutput("selectedDataset"),
+          
+          # Question 4 table
+          DT::dataTableOutput("q4Table"),
+          
+          dropdownButton(
+            # Panel title
+            h4("List of Datasets"),
+            
+            
+            selectInput(
+              "question4DatasetTable",
+              h5("Select Dataset:"),
+              c("Twitter", "Reddit", "Dev.To")
+            ),
+            circle = TRUE,
+            status = "success",
+            icon = icon("database"),
+            width = "300px",
+            tooltip = tooltipOptions(title = "Click to see possible datasets"),
+            up = TRUE
+          )
+        )
+        )
       )
+
     )
   ), 
   skin = 'green'
