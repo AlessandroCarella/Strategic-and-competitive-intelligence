@@ -433,24 +433,13 @@ dashboardPage(
             ),
             br(),
             plotly::plotlyOutput("q4dynamicplot"),
-            
-            dropdownButton(
-              # Panel title
-              h4("List of Datasets"),
-              
-            
+
               selectInput(
                 "question4Dataset",
                 h5("Select Dataset:"),
                 c("Devto2022", "Devto2023", "StackOverflow2022", "StackOverflow2023")
-              ),
-              circle = TRUE,
-              status = "success",
-              icon = shiny::icon("database"),
-              width = "300px",
-              tooltip = tooltipOptions(title = "Click to see possible datasets"),
-              up = TRUE
-            )
+              )
+
           )
         )
       ),
