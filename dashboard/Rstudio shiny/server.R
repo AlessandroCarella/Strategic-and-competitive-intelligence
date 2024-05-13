@@ -407,7 +407,7 @@ shiny::shinyServer(function(input, output, session) {
     
     if (plot_data_q4$plot_type == "barplot") {
       if (plot_visibility_q4$barplot) {
-                
+        output$question4YearSelect <- NULL
         # Initial plot setup with bar type
         p <- plot_ly(data = dataset, x = ~name, y = ~mention2022, name = "2022", type = 'bar') %>%
          add_trace(x = ~name, y = ~mention2023, name = "2023") %>%
