@@ -100,7 +100,7 @@ shiny::shinyServer(function(input, output, session) {
 
   # Create the datasets box
   output$datasetBox <- shiny::renderUI({
-    shinydashboard::valueBox(5,
+    shinydashboard::valueBox(6,
                              "Datasets",
                              icon = shiny::icon("database"),
                              color = "aqua")
