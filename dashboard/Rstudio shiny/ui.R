@@ -17,7 +17,8 @@ dashboardPage(
         "Question 1",
         icon = shiny::icon("building"),
         tabName = "q1",
-        menuSubItem("Insights", tabName = "q1Insights", icon = icon("line-chart"))
+        menuSubItem("Insights", tabName = "q1Insights", icon = icon("line-chart")),
+        menuSubItem("Data", tabName = "q1Data", icon = icon("table"))
       ),
       
       #Question 2 menu item
@@ -108,9 +109,11 @@ dashboardPage(
         )
       ),
       
+      #--------------------------------------------------------------------------------------------------
       
       #Q1 Insights tab item
-      tabItem(
+      # Q1 Insights tab item
+      tabItem( 
         tabName = "q1Insights",
         fluidRow(
           box(
@@ -118,11 +121,117 @@ dashboardPage(
             status = "primary",
             width = 12,
             collapsible = TRUE,
+            tags$head(
+              tags$style(HTML("
+      /* Custom CSS for datatable */
+      
+      /* Custom CSS for datatable */
+      .dataTables_wrapper {
+        font-size: 14px; /* Adjust font size */
+        font-family: Ariel, sans-serif; /* Adjust font family */
+      }
+      .dataTable th {
+        background-color: #3498db; /* Blueish theme */
+        color: white; /* Text color */
+        font-weight: bold; /* Bold text */
+      }
+      .dataTable td, .dataTable th {
+        border: 2px solid #ddd; /* Add border to table cells */
+        padding: 8px; /* Add padding to table cells */
+      }
+      .dataTables_wrapper .dataTables_paginate {
+        margin-top: 20px; /* Adjust pagination margin */
+      }
+      .dataTable tr:nth-child(odd) {
+        background-color: #f2f2f2; /* Light gray background for odd rows */
+      }
+        /* CSS for custom button styles */
+        .custom-btn {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 10px;
+        }
+        .custom-btn:hover {
+          background-color: #45a049; /* Darker Green */
+        }
+      "))),
             
-            uiOutput("mainPanelContent")
+            fluidRow(
+              column(width = 3,
+                     actionButton("move_to_treemap", "Tree Map", class="custom-btn")
+              ),
+              column(width = 3,
+                     actionButton("move_to_pyramid", "Pyramid Plot", class="custom-btn")
+              )
+            ),
+            br(),
+            plotly::plotlyOutput("q1dynamicplot"),
+            
+            dropdownButton(
+              # Panel title
+              h4("List of Datasets"),
+              
+            
+              selectInput(
+                "question1Dataset",
+                h5("Select Dataset:"),
+                c("Twitter", "Reddit")
+              ),
+              circle = TRUE,
+              status = "success",
+              icon = shiny::icon("database"),
+              width = "300px",
+              tooltip = tooltipOptions(title = "Click to see possible datasets"),
+              up = TRUE
+            )
           )
         )
       ),
+        
+      # Q1 data tab item
+      tabItem(
+        tabName = "q1Data",
+        fluidRow(
+        box(
+          title= "What organizations are mentioned most often in the genAI for coding public discourse?",
+          status = "primary",
+          width = 12,
+          collapsible = T,
+          uiOutput("selectedDataset"),
+          
+          # Question 3 table
+          DT::dataTableOutput("q1Table"),
+          
+          dropdownButton(
+            # Panel title
+            h4("List of Datasets"),
+            
+            
+            selectInput(
+              "question1DatasetTable",
+              h5("Select Dataset:"),
+              c("Twitter", "Reddit")
+            ),
+            circle = TRUE,
+            status = "success",
+            icon = icon("database"),
+            width = "300px",
+            tooltip = tooltipOptions(title = "Click to see possible datasets"),
+            up = TRUE
+          )
+        )
+        )
+      ),
+      
+      #--------------------------------------------------------------------------------------------------
       
       #Q2 Insights tab item
       tabItem(
@@ -242,7 +351,8 @@ dashboardPage(
           )
         )
       ),
-      
+
+      #--------------------------------------------------------------------------------------------------
       
       # Q3 Insights tab item
       tabItem(
@@ -331,8 +441,6 @@ dashboardPage(
         )
       ),
       
-      
-      
       # Q3 data tab item
       tabItem(
         tabName = "q3Data",
@@ -367,6 +475,8 @@ dashboardPage(
         )
         )
       ),
+
+      #--------------------------------------------------------------------------------------------------
 
       # Q4 Insights tab item
       tabItem(

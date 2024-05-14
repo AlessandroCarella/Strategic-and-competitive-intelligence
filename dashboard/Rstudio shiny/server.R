@@ -5,39 +5,46 @@ library(ggrepel)
 library(ggplot2)
 library(ggwordcloud)
 library(treemap)
+library(dplyr)
+
 # Define a server for the app
 shiny::shinyServer(function(input, output, session) {
   
+  #LOAD DATA
   # Load data for Question 1
-  datasetTwitter <- reactive({
+  question1datasetTwitter <- reactive({
     req(file.exists("data/question1TwitterData.csv"))
     read.csv("data/question1TwitterData.csv")
   })
   
-  datasetReddit <- reactive({
+  question1datasetReddit <- reactive({
     req(file.exists("data/question1RedditData.csv"))
     read.csv("data/question1RedditData.csv")
   })
   
-  dataRedditTwitterMergeOrderedTwitterQuestion1 <- reactive({
-    req(file.exists("data/question1reddit_twitter_counts_normalized_cut20_ordered_twitter.csv"))
-    read.csv("data/question1reddit_twitter_counts_normalized_cut20_ordered_twitter.csv")
+  question1dataRedditTwitterMerge <- reactive({
+    req(file.exists("data/question1reddit_twitter_counts_normalized.csv"))
+    read.csv("data/question1reddit_twitter_counts_normalized.csv")
   })
   
-  dataRedditTwitterMergeOrderedRedditQuestion1 <- reactive({
-    req(file.exists("data/question1reddit_twitter_counts_normalized_cut20_ordered_reddit.csv"))
-    read.csv("data/question1reddit_twitter_counts_normalized_cut20_ordered_reddit.csv")
-  })
-  
+  #--------------------------------------------------------------------------------------------------
+
   #Load data for Question 2
   question2datasetDevTo <- reactive({
     req(file.exists("data/question2discoveryDevToFiltered.csv"))
     read.csv("data/question2discoveryDevToFiltered.csv")
   })
+
+  question2datasetTwitter <- reactive({
+    req(file.exists("data/question2Twitter.csv"))
+    read.csv("data/question2Twitter.csv")
+  })
+
+  #--------------------------------------------------------------------------------------------------
   
   # Load data for Question 3
   
-  question3datasetTwitter <- reactive({
+  question3datasetTwitter <- reactive({ # nolint
     req(file.exists("data/question3discoveryTwitterFiltered.csv"))
     read.csv("data/question3discoveryTwitterFiltered.csv")
   })
@@ -56,8 +63,9 @@ shiny::shinyServer(function(input, output, session) {
     read.csv("data/question3discoveryRedditFiltered.csv")
   })
 
+  #--------------------------------------------------------------------------------------------------
+
   # Load data for Question 4
-  
   question4datasetDevto2022 <- reactive({
     req(file.exists("data/question4_devto_2022.csv"))
     read.csv("data/question4_devto_2022.csv")
@@ -87,6 +95,8 @@ shiny::shinyServer(function(input, output, session) {
     read.csv("data/question4_stackoverflow_2022_23.csv")
   })
 
+  #--------------------------------------------------------------------------------------------------
+  #--------------------------------------------------------------------------------------------------
   
   # Create the questions box
   output$questionBox <- shiny::renderUI({
@@ -106,17 +116,10 @@ shiny::shinyServer(function(input, output, session) {
                              color = "aqua")
   })
 
-  
+  #--------------------------------------------------------------------------------------------------
+  #--------------------------------------------------------------------------------------------------
   
   #QUESTION 1
-  output$treemapTwitter <- renderPlot({
-    treemap(datasetTwitter(), index=c("company"), vSize="count")
-  })
-  
-  output$treemapReddit <- renderPlot({
-    treemap(datasetReddit(), index=c("company"), vSize="count")
-  })
-  
   output$pyramidPlotOrderedTwitter <- renderPlot({
     ggplot(dataRedditTwitterMergeOrderedTwitterQuestion1(), aes(x = company, y = redditCount, fill = company)) +
       geom_bar(stat = "identity", position = "dodge") +
@@ -151,9 +154,114 @@ shiny::shinyServer(function(input, output, session) {
   output$mainPanelContent <- renderUI({
     mainPanelContentQuestion1()
   })
+
+  #--------------------------------------------------------------------------------------------------
+  # Show Q1 data table
+  output$q1Table <- DT::renderDataTable({
+    
+    # Load the dataset based on user selection or default to Twitter if none selected
+    dataset <- switch(ifelse(is.null(input$question1DatasetTable) || input$question1DatasetTable == "", "Twitter", input$question1DatasetTable),
+                      "Twitter" = question1datasetTwitter(),
+                      "Reddit" = question1datasetReddit())
+    
+    DT::datatable(
+     dataset,
+      rownames = FALSE,
+      colnames = c('Company','Number of Mentions'),
+      extensions = c('Responsive', 'Buttons'),
+      options = list(
+        searchHighlight = TRUE,
+        dom = 'Bfrtip',
+        buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+        title= paste(input$question1DatasetTable, " Dataset")
+      )
+    )
+  }, server = FALSE)
+
+  output$selectedDataset <- renderUI({
+    selected_dataset <- input$question1DatasetTable
+    h2(paste(selected_dataset, " Dataset"))
+  })
+  
+  plot_data <- reactiveValues(plot_type = "treemap")
+  plot_visibility <- reactiveValues(pyramid = FALSE, treemap = TRUE)
+  
+  output$q1dynamicplot <- renderPlotly({
+    if (is.null(plot_data$plot_type)) {
+      return(NULL)  # No plot selected yet
+    }
+    # Load the dataset based on user selection or default to Twitter if none selected
+    dataset <- switch(ifelse(is.null(input$question1Dataset) || input$question1Dataset == "", "Twitter", input$question1Dataset),
+                      "Twitter" = question1datasetTwitter(),
+                      "Reddit" = question1datasetReddit())
+
+    # Load the dataset based on user selection or default to Twitter if none selected
+    datasetPyramid <- question1dataRedditTwitterMerge()
+    
+    if (plot_data$plot_type == "pyramid") {
+      if (plot_visibility$pyramid) {
+  data <- datasetPyramid
+  
+  # Calculate total frequency
+  data <- data %>%
+    mutate(totalCount = abs(redditCount) + abs(twitterCount))
+  
+  # Reorder data by total frequency
+  data <- data[order(data$totalCount, decreasing = TRUE), ]
+  
+  data %>%
+    mutate(redditCount = -redditCount) %>%
+    mutate(abs_reddit = abs(redditCount)) %>%
+    plot_ly(x = ~redditCount, y = ~company, color = I("red")) %>% 
+    add_bars(orientation = 'h', hoverinfo = 'text', text = ~abs_reddit, name = "Reddit") %>%
+    add_trace(x = ~twitterCount, y = ~company, color = I("blue"), type = 'bar', orientation = 'h', hoverinfo = 'text', name = "Twitter") %>%
+    layout(bargap = 0.1, barmode = 'overlay',
+           xaxis = list(title = "Count", tickmode = 'array', tickvals = c(-300, -200, -100, 0, 100, 200, 300),
+                        ticktext = c('300', '200', '100', '0', '100', '200', '300')))
+      }
+
+    } else if (plot_data$plot_type == "treemap") {
+      if (plot_visibility$treemap) {
+        treemap_data <- dataset
+        print(treemap_data)
+        p <- plot_ly(
+          data = treemap_data,
+          ids = ~company,
+          labels = ~company,
+          parents = ~"",
+          values = ~count,
+          type = "treemap",
+          hoverinfo = "label+value+percent root",
+          treemapcolorway = c("white"),
+          marker = list(
+            colorscale = list(
+              c(0, 0.5, 1),
+              c("lightblue", "blue", "darkblue")
+            )
+          )
+        )
+        p
+      }
+    }
+  })
+  
+  observeEvent(input$move_to_pyramid, {
+    plot_data$plot_type <- "pyramid"
+    plot_visibility$pyramid <- TRUE
+    plot_visibility$treemap <- FALSE  # Hide treemap when bar plot is shown
+  })
+  
+  # Toggle visibility of the treemap
+  observeEvent(input$move_to_treemap, {
+    plot_data$plot_type <- "treemap"
+    plot_visibility$treemap <- TRUE
+    plot_visibility$pyramid <- FALSE  # Hide bar plot when treemap is shown
+  })
+
+
+  #--------------------------------------------------------------------------------------------------
   
   #QUESTION 2
-  
   # Show Q2 data table
   output$q2Table <- DT::renderDataTable({
     
@@ -247,6 +355,8 @@ shiny::shinyServer(function(input, output, session) {
   })
   
   
+  #--------------------------------------------------------------------------------------------------
+  
   # QUESTION3
   
   # Show Q3 data table
@@ -278,10 +388,8 @@ shiny::shinyServer(function(input, output, session) {
     h2(paste(selected_dataset, " Dataset"))
   })
   
-  
   plot_data <- reactiveValues(plot_type = "barplot")
   plot_visibility <- reactiveValues(barplot = TRUE, treemap = FALSE, piechart=FALSE)
-  
   
   output$q3dynamicplot <- renderPlotly({
     if (is.null(plot_data$plot_type)) {
@@ -359,6 +467,8 @@ shiny::shinyServer(function(input, output, session) {
     plot_visibility$piechart <- TRUE  # Hide treemap when bar plot is shown
   })
 
+  #--------------------------------------------------------------------------------------------------
+  
   # QUESTION4
   
   # Show Q4 data table
@@ -391,10 +501,8 @@ shiny::shinyServer(function(input, output, session) {
     h2(paste(selected_dataset, " Dataset"))
   })
   
-  
   plot_data_q4 <- reactiveValues(plot_type = "barplot")
   plot_visibility_q4 <- reactiveValues(barplot = TRUE, treemap = FALSE, piechart=FALSE)
-  
   
   output$q4dynamicplot <- renderPlotly({
     if (is.null(plot_data$plot_type)) {
@@ -506,7 +614,4 @@ shiny::shinyServer(function(input, output, session) {
     plot_visibility_q4$barplot <- FALSE  # Hide bar plot when treemap is shown
     plot_visibility_q4$piechart <- TRUE  # Hide treemap when bar plot is shown
   })
-
-
-
 })
