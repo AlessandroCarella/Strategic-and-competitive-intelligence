@@ -32,7 +32,7 @@ dashboardPage(
       # Question 3 menu item
       menuItem(
         "Question 3",
-        icon = icon("cogs"),
+        icon = shiny::icon("microchip"),
         tabName = "q3",
         menuSubItem("Insights", tabName = "q3Insights", icon = icon("line-chart")),
         menuSubItem("Data", tabName = "q3Data", icon = icon("table"))
