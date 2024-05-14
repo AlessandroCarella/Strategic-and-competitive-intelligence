@@ -304,7 +304,7 @@ dashboardPage(
               selectInput(
                 "question2Dataset",
                 h5("Select Dataset:"),
-                c( "Dev.To","Twitter")
+                c( "Dev.To","Twitter sentiment", "Twitter subjects", "Twitter predicates", "Twitter objects", "Twitter topics")
               ),
               circle = TRUE,
               status = "success",
@@ -339,7 +339,7 @@ dashboardPage(
               selectInput(
                 "question2DatasetTable",
                 h5("Select Dataset:"),
-                c("Dev.To", "Twitter")
+                c("Dev.To", "Twitter sentiment", "Twitter subjects", "Twitter predicates", "Twitter objects", "Twitter topics")
               ),
               circle = TRUE,
               status = "success",

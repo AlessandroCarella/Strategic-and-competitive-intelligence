@@ -35,9 +35,25 @@ shiny::shinyServer(function(input, output, session) {
     read.csv("data/question2discoveryDevToFiltered.csv")
   })
 
-  question2datasetTwitter <- reactive({
-    req(file.exists("data/question2Twitter.csv"))
-    read.csv("data/question2Twitter.csv")
+  question2ObjectsTwitter <- reactive({
+    req(file.exists("data/question2ObjectsTwitter.csv"))
+    read.csv("data/question2ObjectsTwitter.csv")
+  })
+  question2PredicatesTwitter <- reactive({
+    req(file.exists("data/question2PredicatesTwitter.csv"))
+    read.csv("data/question2PredicatesTwitter.csv")
+  })
+  question2SentimentTwitter <- reactive({
+    req(file.exists("data/question2SentimentTwitter.csv"))
+    read.csv("data/question2SentimentTwitter.csv")
+  })
+  question2SubjectsTwitter <- reactive({
+    req(file.exists("data/question2SubjectsTwitter.csv"))
+    read.csv("data/question2SubjectsTwitter.csv")
+  })
+  question2TopicsTwitter <- reactive({
+    req(file.exists("data/question2TopicsTwitter.csv"))
+    read.csv("data/question2TopicsTwitter.csv")
   })
 
   #--------------------------------------------------------------------------------------------------
@@ -267,10 +283,13 @@ shiny::shinyServer(function(input, output, session) {
     
     # Load the dataset based on user selection or default to Twitter if none selected
     dataset <- switch(ifelse(is.null(input$question2DatasetTable) || input$question2DatasetTable == "", "Dev.To", input$question2DatasetTable),
-                      #"Twitter" = question2datasetTwitterFull(),
+                      "Twitter sentiment" = question2SentimentTwitter(), 
+                      "Twitter subjects" = question2SubjectsTwitter(), 
+                      "Twitter predicates" = question2PredicatesTwitter(), 
+                      "Twitter objects" = question2ObjectsTwitter(), 
+                      "Twitter topics" = question2TopicsTwitter(),
                       "Dev.To" = question2datasetDevTo())
-    
-    
+
     DT::datatable(
       dataset,
       rownames = FALSE,
@@ -298,21 +317,41 @@ shiny::shinyServer(function(input, output, session) {
     if (is.null(plot_data_q2$plot_type)) {
       return(NULL)  # No plot selected yet
     }
+    
     # Load the dataset based on user selection or default to Twitter if none selected
     dataset <- switch(ifelse(is.null(input$question2Dataset) || input$question2Dataset == "", "Dev.To", input$question2Dataset),
-                      #"Twitter" = question2datasetTwitter(),
+                      "Twitter sentiment" = question2SentimentTwitter(), 
+                      "Twitter subjects" = question2SubjectsTwitter(), 
+                      "Twitter predicates" = question2PredicatesTwitter(), 
+                      "Twitter objects" = question2ObjectsTwitter(), 
+                      "Twitter topics" = question2TopicsTwitter(),
                       "Dev.To" = question2datasetDevTo())
+    # Load the dataset based on user selection or default to Twitter if none selected
+    name_column <- switch(ifelse(is.null(input$question2Dataset) || input$question2Dataset == "", "Dev.To", input$question2Dataset),
+                      "Twitter sentiment" = "sentiment", 
+                      "Twitter subjects" = "subject", 
+                      "Twitter predicates" = "predicate", 
+                      "Twitter objects" = "object", 
+                      "Twitter topics" = "topic",
+                      "Dev.To" = "name")
+    # Load the dataset based on user selection or default to Twitter if none selected
+    mention_column <- switch(ifelse(is.null(input$question2Dataset) || input$question2Dataset == "", "Dev.To", input$question2Dataset),
+                      "Twitter sentiment" = "count", 
+                      "Twitter subjects" = "count", 
+                      "Twitter predicates" = "count", 
+                      "Twitter objects" = "count", 
+                      "Twitter topics" = "count",
+                      "Dev.To" = "mention")
     
     if (plot_data_q2$plot_type == "treemap") {
-      if (plot_visibility_q2$treemap) {
+      if (plot_visibility_q2$treemap) {       
         treemap_data <- dataset
-        print(treemap_data)
         p <- plot_ly(
           data = treemap_data,
-          ids = ~name,
-          labels = ~name,
+          ids = ~get(name_column),
+          labels = ~get(name_column),
           parents = ~"",
-          values = ~mention,
+          values = ~get(mention_column),
           type = "treemap",
           hoverinfo = "label+value+percent root",
           treemapcolorway = c("white"),
@@ -331,16 +370,17 @@ shiny::shinyServer(function(input, output, session) {
         colors <- setNames(c("lightblue", "darkblue"), c("Twitter", "Dev.To"))
         
         # Initial plot setup with bar type
-        p <- plot_ly(data = dataset, x = ~name, y = ~mention, type = 'bar', color = ~input$question2Dataset, colors = colors) %>%
+        p <- plot_ly(data = dataset, x = ~get(name_column), y = ~get(mention_column), type = 'bar', color = ~input$question2Dataset, colors = colors) %>%
           layout(xaxis = list(title = "Opinon/Sentiment"),
-                 yaxis = list(title = "Number of Mentions"),
-                 title = "Predominant Opinions/Sentiments on Q2",
-                 barmode = 'group')
-        
+                yaxis = list(title = "Number of Mentions"),
+                title = "Predominant Opinions/Sentiments on Q2",
+                barmode = 'group')
         
         return(p)
-        }}
+      }
+    }
   })
+
   
   observeEvent(input$move_to_treemap_q2, {
     plot_data_q2$plot_type <- "treemap"
