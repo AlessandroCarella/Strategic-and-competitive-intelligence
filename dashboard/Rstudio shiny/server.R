@@ -367,13 +367,14 @@ shiny::shinyServer(function(input, output, session) {
     } else if (plot_data_q2$plot_type == "barplot") {
       if (plot_visibility_q2$barplot) {
         # Define color mapping
-        colors <- setNames(c("lightblue", "darkblue"), c("Twitter", "Dev.To"))
-        
+        colors <- setNames(c("lightblue", "skyblue", "#3030ffa6", "blue", "#0303b1", "darkblue"), 
+                   c("Twitter sentiment", "Twitter subjects", "Twitter predicates", "Twitter objects", "Twitter topics", "Dev.To"))
+
         # Initial plot setup with bar type
         p <- plot_ly(data = dataset, x = ~get(name_column), y = ~get(mention_column), type = 'bar', color = ~input$question2Dataset, colors = colors) %>%
           layout(xaxis = list(title = "Opinon/Sentiment"),
                 yaxis = list(title = "Number of Mentions"),
-                title = "Predominant Opinions/Sentiments on Q2",
+                title = "Predominant Opinions, Sentiments and others on Q2",
                 barmode = 'group')
         
         return(p)
