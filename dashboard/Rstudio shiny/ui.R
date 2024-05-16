@@ -5,6 +5,7 @@ library(shinyWidgets)
 dashboardPage(
   header = dashboardHeader(title = "techAnalytics"),
   sidebar = dashboardSidebar(
+    width = 250, 
     sidebarMenu(
       # Home menu item
       menuItem("Home",
@@ -32,7 +33,7 @@ dashboardPage(
       
       # Question 3 menu item
       menuItem(
-        "What innovative...",
+        "Innovative Tech Approaches",
         icon = shiny::icon("microchip"),
         tabName = "q3",
         menuSubItem("Insights", tabName = "q3Insights", icon = icon("line-chart")),
@@ -95,7 +96,6 @@ dashboardPage(
             h4(
               "For this project, we compiled a  list of 6 questions which aim to delve into today's age opinions & trends on coding."
             ),
-            h4("To get started, select a question in the sidepanel."),
             br(),
             h4(
               HTML('&copy'),
@@ -105,7 +105,11 @@ dashboardPage(
           
           # Projects, companies, and facilities value boxes
           uiOutput("questionBox"),
-          uiOutput("datasetBox")
+          uiOutput("datasetBox"),
+          column(
+            width = 4,
+            uiOutput("instructionsBox")
+          )
         )
       ),
       
@@ -408,36 +412,39 @@ dashboardPage(
         }
       "))),
             
-            fluidRow(
-              column(width = 3,
-                     actionButton("move_to_barplot", "Bar Plot", class="custom-btn")
-              ),
-              column(width = 3,
-                     actionButton("move_to_treemap", "Tree Map", class="custom-btn")
-              ),
-              column(width = 3,
-                     actionButton("move_to_piechart", "Pie Chart", class="custom-btn")
-              )
-            ),
             br(),
             plotly::plotlyOutput("q3dynamicplot"),
             
-            dropdownButton(
-              # Panel title
-              h4("List of Datasets"),
-              
-            
-              selectInput(
-                "question3Dataset",
-                h5("Select Dataset:"),
-                c("Twitter", "Reddit", "Dev.To")
+            fluidRow(
+              column(width = 1,
+                     dropdownButton(
+                       # Panel title
+                       h4("List of Datasets"),
+                       selectInput(
+                         "question3Dataset",
+                         h5("Select Dataset:"),
+                         c("Twitter", "Reddit", "Dev.To")
+                       ),
+                       circle = TRUE,
+                       status = "success",
+                       icon = icon("database"),
+                       width = "300px",
+                       tooltip = tooltipOptions(title = "Click to see possible datasets"),
+                       up = TRUE
+                     )
               ),
-              circle = TRUE,
-              status = "success",
-              icon = shiny::icon("database"),
-              width = "300px",
-              tooltip = tooltipOptions(title = "Click to see possible datasets"),
-              up = TRUE
+              column(width = 1,dropdownButton(
+                label = h4("Instructions"),
+                icon = icon("info-circle"),
+                menu = p("Hover over each bar to see the percentages of each instance."),
+                circle = TRUE,
+                status = "info-circle",
+                width = "300px",
+                tooltip = tooltipOptions(title = "Click for instructions"),
+                up =TRUE
+              ))
+              
+              
             )
           ),
           verbatimTextOutput("question3Answer")
@@ -458,26 +465,42 @@ dashboardPage(
           # Question 3 table
           DT::dataTableOutput("q3Table"),
           
-          dropdownButton(
-            # Panel title
-            h4("List of Datasets"),
-            
-            
-            selectInput(
-              "question3DatasetTable",
-              h5("Select Dataset:"),
-              c("Twitter", "Reddit", "Dev.To")
+          fluidRow(
+            column(width = 1,
+                   dropdownButton(
+                     # Panel title
+                     h4("List of Datasets"),
+                     selectInput(
+                       "question3DatasetTable",
+                       h5("Select Dataset:"),
+                       c("Twitter", "Reddit", "Dev.To")
+                     ),
+                     circle = TRUE,
+                     status = "success",
+                     icon = icon("database"),
+                     width = "300px",
+                     tooltip = tooltipOptions(title = "Click to see possible datasets"),
+                     up = TRUE
+                   )
             ),
-            circle = TRUE,
-            status = "success",
-            icon = icon("database"),
-            width = "300px",
-            tooltip = tooltipOptions(title = "Click to see possible datasets"),
-            up = TRUE
+            column(width = 1,dropdownButton(
+              label = h4("Instructions"),
+              icon = icon("info-circle"),
+              menu = p("Click on any of the buttons to export dataset in the desired format. 
+                       Use pagination to go to the next set of records.
+                       Use search bar to search by keywords."),
+              circle = TRUE,
+              status = "info-circle",
+              width = "300px",
+              tooltip = tooltipOptions(title = "Click for instructions"),
+              up =TRUE
+            ))
+           
+            
           )
+          
         )
-        )
-      ),
+      )),
 
       #--------------------------------------------------------------------------------------------------
 

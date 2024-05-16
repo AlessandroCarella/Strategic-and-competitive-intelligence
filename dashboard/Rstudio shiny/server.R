@@ -150,7 +150,27 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
     shinydashboard::valueBox(6,
                              "Datasets",
                              icon = shiny::icon("database"),
-                             color = "aqua")
+                             color = "light-blue")
+  })
+  #Valid colors are: red, yellow, aqua, blue, light-blue, green, navy, teal, olive, lime, orange, fuchsia, purple, maroon, black.
+  # Create the insstructions box
+  output$instructionsBox <- shiny::renderUI({
+    shinydashboard::box(
+      title = tagList(shiny::icon("info-circle"), "Instructions"),
+      status = "info",
+      solidHeader = TRUE,
+      width = 12,
+      HTML("
+        <p>To navigate the dashboard, please follow these instructions:</p>
+        <ol>
+          <li>Click on the side pannel to choose the topic you want to learn more about.</li>
+          <li>For each topic, select the dataset you are interested in by clicking on the \"Database icon\".</li>
+          <li>For each topic, select the plot type you are interesting on viewing by clicking on the buttons with names of the plots situated in the topic page.</li>
+          <li>For each plot, hover over one of the plot items to see the percentage that they represent and other details.</li>
+        </ol>
+        <p>If you have any questions, please refer to the help section on each topic or contact us.</p>
+      ")
+    )
   })
 
   #--------------------------------------------------------------------------------------------------
@@ -462,8 +482,12 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
         # Define color mapping
         colors <- setNames(c("lightblue", "blue", "darkblue"), c("Twitter", "Dev.To", "Reddit"))
         
+        ordered_dataset <- dataset %>%
+          arrange(desc(mention))
+        ordered_dataset$name <- factor(ordered_dataset$name, levels = ordered_dataset$name)
+        
         # Initial plot setup with bar type
-        p <- plot_ly(data = dataset, x = ~name, y = ~mention, type = 'bar', color = ~input$question3Dataset, colors = colors) %>%
+        p <- plot_ly(data = ordered_dataset, x = ~name, y = ~mention, type = 'bar', color = ~color = ~input$question3Dataset, colors = colors) %>%
           layout(xaxis = list(title = "Technology"),
                  yaxis = list(title = "Number of Mentions"),
                  title = "Predominant Technologies on Q3",
