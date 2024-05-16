@@ -115,7 +115,10 @@ shiny::shinyServer(function(input, output, session) {
   #--------------------------------------------------------------------------------------------------
   
   output$question1Answer <- renderText({
-    "TODO, SEARCH \"output$question1Answer\" IN THE SERVER FILE"
+    "The takeaway from this data is that the organizations that are mentioned most often in the genAI for coding public discourse are mostly very big tech companies.
+There are some minor differences between the data extracted from twitter and reddit but not really meaningful ones since the most cited are always the same.
+In the list we found there are some interesting names that stand out when considering the names that one would assume to be more related to the generative ai 
+public discussions (such as NVIDIA) and one can observe them in the treemap above."
   })
   output$question2Answer <- renderText({
     "TODO, SEARCH \"output$question2Answer\" IN THE SERVER FILE"
