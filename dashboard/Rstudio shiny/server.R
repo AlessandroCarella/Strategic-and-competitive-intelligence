@@ -137,12 +137,17 @@ shiny::shinyServer(function(input, output, session) {
   
   #QUESTION 1
   output$pyramidPlotOrderedTwitter <- renderPlot({
-    ggplot(dataRedditTwitterMergeOrderedTwitterQuestion1(), aes(x = company, y = redditCount, fill = company)) +
+      data <- dataRedditTwitterMergeOrderedTwitterQuestion1()
+
+    # Arrange the data frame by Twitter count
+    data <- arrange(data, desc(twitterCount))
+
+    ggplot(data, aes(x = reorder(company, -twitterCount), y = redditCount, fill = company)) +
       geom_bar(stat = "identity", position = "dodge") +
       geom_bar(aes(y = -twitterCount), stat = "identity", position = "dodge") +
       coord_flip() +
       labs(title = "Reddit and Twitter Counts by Company (most frequent ordered by twitter)",
-           x = "Company", y = "Count") +
+          x = "Company", y = "Count") +
       theme_minimal()
   })
   
