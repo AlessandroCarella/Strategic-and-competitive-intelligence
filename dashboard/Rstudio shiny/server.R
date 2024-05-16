@@ -289,9 +289,6 @@ shiny::shinyServer(function(input, output, session) {
     # Load the dataset based on user selection or default to Twitter if none selected
     dataset <- switch(ifelse(is.null(input$question2DatasetTable) || input$question2DatasetTable == "", "Dev.To", input$question2DatasetTable),
                       "Twitter sentiment" = question2SentimentTwitter(), 
-                      "Twitter subjects" = question2SubjectsTwitter(), 
-                      "Twitter predicates" = question2PredicatesTwitter(), 
-                      "Twitter objects" = question2ObjectsTwitter(), 
                       "Twitter topics" = question2TopicsTwitter(),
                       "Dev.To" = question2datasetDevTo())
 
@@ -326,25 +323,16 @@ shiny::shinyServer(function(input, output, session) {
     # Load the dataset based on user selection or default to Twitter if none selected
     dataset <- switch(ifelse(is.null(input$question2Dataset) || input$question2Dataset == "", "Dev.To", input$question2Dataset),
                       "Twitter sentiment" = question2SentimentTwitter(), 
-                      "Twitter subjects" = question2SubjectsTwitter(), 
-                      "Twitter predicates" = question2PredicatesTwitter(), 
-                      "Twitter objects" = question2ObjectsTwitter(), 
                       "Twitter topics" = question2TopicsTwitter(),
                       "Dev.To" = question2datasetDevTo())
     # Load the dataset based on user selection or default to Twitter if none selected
     name_column <- switch(ifelse(is.null(input$question2Dataset) || input$question2Dataset == "", "Dev.To", input$question2Dataset),
                       "Twitter sentiment" = "sentiment", 
-                      "Twitter subjects" = "subject", 
-                      "Twitter predicates" = "predicate", 
-                      "Twitter objects" = "object", 
                       "Twitter topics" = "topic",
                       "Dev.To" = "name")
     # Load the dataset based on user selection or default to Twitter if none selected
     mention_column <- switch(ifelse(is.null(input$question2Dataset) || input$question2Dataset == "", "Dev.To", input$question2Dataset),
                       "Twitter sentiment" = "count", 
-                      "Twitter subjects" = "count", 
-                      "Twitter predicates" = "count", 
-                      "Twitter objects" = "count", 
                       "Twitter topics" = "count",
                       "Dev.To" = "mention")
     
@@ -372,8 +360,8 @@ shiny::shinyServer(function(input, output, session) {
     } else if (plot_data_q2$plot_type == "barplot") {
       if (plot_visibility_q2$barplot) {
         # Define color mapping
-        colors <- setNames(c("lightblue", "skyblue", "#3030ffa6", "blue", "#0303b1", "darkblue"), 
-                   c("Twitter sentiment", "Twitter subjects", "Twitter predicates", "Twitter objects", "Twitter topics", "Dev.To"))
+        colors <- setNames(c("lightblue", "blue", "darkblue"), 
+                   c("Twitter sentiment", "Twitter topics", "Dev.To"))
 
         # Initial plot setup with bar type
         p <- plot_ly(data = dataset, x = ~get(name_column), y = ~get(mention_column), type = 'bar', color = ~input$question2Dataset, colors = colors) %>%
