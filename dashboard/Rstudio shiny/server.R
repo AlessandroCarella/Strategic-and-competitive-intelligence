@@ -114,6 +114,24 @@ shiny::shinyServer(function(input, output, session) {
   #--------------------------------------------------------------------------------------------------
   #--------------------------------------------------------------------------------------------------
   
+  output$question1Answer <- renderText({
+    "TODO, SEARCH \"output$question1Answer\" IN THE SERVER FILE"
+  })
+  output$question2Answer <- renderText({
+    "TODO, SEARCH \"output$question2Answer\" IN THE SERVER FILE"
+  })
+  output$question3Answer <- renderText({
+    "TODO, SEARCH \"output$question3Answer\" IN THE SERVER FILE"
+  })
+  output$question4Answer <- renderText({
+    "TODO, SEARCH \"output$question4Answer\" IN THE SERVER FILE"
+  })
+  #ADD OTHER ANSWERS HERER
+
+
+  #--------------------------------------------------------------------------------------------------
+  #--------------------------------------------------------------------------------------------------
+  
   # Create the questions box
   output$questionBox <- shiny::renderUI({
     shinydashboard::valueBox(

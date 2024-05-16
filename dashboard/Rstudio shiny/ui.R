@@ -193,7 +193,8 @@ dashboardPage(
               up = TRUE
             )
           )
-        )
+        ),
+          verbatimTextOutput("question1Answer")
       ),
         
       # Q1 data tab item
@@ -313,7 +314,8 @@ dashboardPage(
               tooltip = tooltipOptions(title = "Click to see possible datasets"),
               up = TRUE
             )
-          )
+          ),
+          verbatimTextOutput("question2Answer")
         )
       ),
       
@@ -437,7 +439,8 @@ dashboardPage(
               tooltip = tooltipOptions(title = "Click to see possible datasets"),
               up = TRUE
             )
-          )
+          ),
+          verbatimTextOutput("question3Answer")
         )
       ),
       
@@ -552,7 +555,8 @@ dashboardPage(
 
               uiOutput("question4YearSelect")
 
-          )
+          ),
+          verbatimTextOutput("question3Answer")
         )
       ),
 
