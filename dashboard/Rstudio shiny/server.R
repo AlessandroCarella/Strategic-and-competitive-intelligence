@@ -244,7 +244,7 @@ shiny::shinyServer(function(input, output, session) {
     } else if (plot_data$plot_type == "treemap") {
       if (plot_visibility$treemap) {
         treemap_data <- dataset
-        print(treemap_data)
+        print("ciao\n\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao\nciao")
         p <- plot_ly(
           data = treemap_data,
           ids = ~company,
@@ -304,15 +304,15 @@ shiny::shinyServer(function(input, output, session) {
         title= paste(input$question2DatasetTable, " Dataset")
       )
     )
-  }, server = FALSE)
+  },  server = FALSE)
   
   output$selectedDatasetq2 <- renderUI({
     selected_dataset <- input$question2DatasetTable
     h2(paste(selected_dataset, " Dataset"))
   })
   
-  plot_data_q2 <- reactiveValues(plot_type = "barplot")
-  plot_visibility_q2 <- reactiveValues(treemap = FALSE, barplot=TRUE)
+  plot_data_q2 <- reactiveValues(plot_type = "treemap")
+  plot_visibility_q2 <- reactiveValues(treemap = TRUE, barplot=FALSE)
   
   
   output$q2dynamicplot <- renderPlotly({

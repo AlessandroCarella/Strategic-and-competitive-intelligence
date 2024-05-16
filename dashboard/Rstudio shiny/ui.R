@@ -14,7 +14,7 @@ dashboardPage(
       
       #Question 1 menu item
       menuItem(
-        "Question 1",
+        "What organizations are...",
         icon = shiny::icon("building"),
         tabName = "q1",
         menuSubItem("Insights", tabName = "q1Insights", icon = icon("line-chart")),
@@ -23,7 +23,7 @@ dashboardPage(
       
       #Question 2 menu item
       menuItem(
-        "Question 2",
+        "How are discussions...",
         icon = shiny::icon("comments"),
         tabName = "q2",
         menuSubItem("Insights", tabName = "q2Insights", icon = icon("line-chart")),
@@ -32,7 +32,7 @@ dashboardPage(
       
       # Question 3 menu item
       menuItem(
-        "Question 3",
+        "What innovative...",
         icon = shiny::icon("microchip"),
         tabName = "q3",
         menuSubItem("Insights", tabName = "q3Insights", icon = icon("line-chart")),
@@ -41,13 +41,13 @@ dashboardPage(
 
             # Question 4 menu item
       menuItem(
-        "Question 4",
+        "Which programming...",
         icon = icon("cogs"),
         tabName = "q4",
         menuSubItem("Insights", tabName = "q4Insights", icon = icon("line-chart")),
         menuSubItem("Data", tabName = "q4Data", icon = icon("table"))
       ),
-      
+        
       #ADD OTHER QUESTIONS HERE
       br()
     )
@@ -164,16 +164,16 @@ dashboardPage(
         }
       "))),
             
-            fluidRow(
-              column(width = 3,
-                     actionButton("move_to_treemap", "Tree Map", class="custom-btn")
-              ),
-              column(width = 3,
-                     actionButton("move_to_pyramid", "Pyramid Plot", class="custom-btn")
-              )
-            ),
-            br(),
-            plotly::plotlyOutput("q1dynamicplot"),
+            # fluidRow(
+            #   column(width = 3,
+            #          actionButton("move_to_treemap", "Tree Map", class="custom-btn")
+            #   ),
+            #   column(width = 3,
+            #          actionButton("move_to_pyramid", "Pyramid Plot", class="custom-btn")
+            #   )
+            # ),
+            # br(),
+            plotlyOutput("q1dynamicplot"),
             
             dropdownButton(
               # Panel title
@@ -285,15 +285,15 @@ dashboardPage(
         }
       "))),
             
-            fluidRow(
-              column(width = 3,
-                     actionButton("move_to_barplot_q2", "Bar Plot", class="custom-btn")
-              ),
-              column(width = 3,
-                     actionButton("move_to_treemap_q2", "Tree Plot", class="custom-btn")
-              )
-            ),
-            br(),
+            # fluidRow(
+            #   column(width = 3,
+            #          actionButton("move_to_barplot_q2", "Bar Plot", class="custom-btn")
+            #   ),
+            #   column(width = 3,
+            #          actionButton("move_to_treemap_q2", "Tree Plot", class="custom-btn")
+            #   )
+            # ),
+            # br(),
             plotlyOutput("q2dynamicplot"),
             
             dropdownButton(
