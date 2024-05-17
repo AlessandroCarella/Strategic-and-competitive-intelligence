@@ -510,7 +510,7 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
         p <- plot_ly(data = ordered_dataset_q4, x = ~name, y = ~mention2022, name = "2022", type = 'bar') %>%
          add_trace(x = ~name, y = ~mention2023, name = "2023") %>%
           layout(xaxis = list(title = "Technology"),
-                 yaxis = list(title = "Mentions"),
+                 yaxis = list(title = "% Mentions"),
                  title = "Programming languages adoption before and after the release of ChatGPT on Q4",
                  barmode = 'group')
         return(p)}
