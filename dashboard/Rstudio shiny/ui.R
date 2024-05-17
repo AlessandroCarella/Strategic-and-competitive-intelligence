@@ -53,8 +53,8 @@ dashboardPage(
         "Tools",
         icon = icon("cogs"),
         tabName = "q5",
-        menuSubItem("Insights", tabName = "q5Insights", icon = icon("line-chart")),
-        menuSubItem("Data", tabName = "q5Data", icon = icon("table"))
+        menuSubItem("Insights", tabName = "q5Insights", icon = icon("line-chart"))
+
       ),
 
       # Question 6 menu item
@@ -62,8 +62,7 @@ dashboardPage(
         "Ethics",
         icon = icon("cogs"),
         tabName = "q6",
-        menuSubItem("Insights", tabName = "q6Insights", icon = icon("line-chart")),
-        menuSubItem("Data", tabName = "q6Data", icon = icon("table"))
+        menuSubItem("Insights", tabName = "q6Insights", icon = icon("line-chart"))
       ),
 
       #ADD OTHER QUESTIONS HERE
@@ -718,6 +717,93 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
           )
           )
         )
+        )
+      ),
+
+      #--------------------------------------------------------------------------------------------------
+
+      # Q5 Insights tab item
+      tabItem(
+        tabName = "q5Insights",
+        fluidRow(
+          box(
+            title = "How do online conversations about competitive intelligence tools and software solutions compare in terms of user satisfaction, functionality, and ease of integration?",
+            status = "primary",
+            width = 12,
+            collapsible = TRUE,
+            tags$head(
+              tags$style(HTML("
+      /* Custom CSS for datatable */
+      
+      /* Custom CSS for datatable */
+      .dataTables_wrapper {
+        font-size: 14px; /* Adjust font size */
+        font-family: Ariel, sans-serif; /* Adjust font family */
+      }
+      .dataTable th {
+        background-color: #3498db; /* Blueish theme */
+        color: white; /* Text color */
+        font-weight: bold; /* Bold text */
+      }
+      .dataTable td, .dataTable th {
+        border: 2px solid #ddd; /* Add border to table cells */
+        padding: 8px; /* Add padding to table cells */
+      }
+      .dataTables_wrapper .dataTables_paginate {
+        margin-top: 20px; /* Adjust pagination margin */
+      }
+      .dataTable tr:nth-child(odd) {
+        background-color: #f2f2f2; /* Light gray background for odd rows */
+      }
+        /* CSS for custom button styles */
+        .custom-btn {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 10px;
+        }
+        .custom-btn:hover {
+          background-color: #45a049; /* Darker Green */
+        }
+      "))),
+            
+            br(),
+
+           box(
+            title= "Key Findings",
+            status = "success",
+            width = 12,
+            h4("Based on online conversations and reviews, users are most satisfied with Similarweb and Semrush when it comes to competitive intelligence tools and software solutions. This aligns with the findings of Lopes et al. (2023), who conducted a bibliometric analysis to assess competitive intelligence and business intelligence concepts.
+                In terms of functionality, Similarweb is often praised for its market research capabilities, Sprout Social for its social listening features, Ahrefs for its SEO tools, and Semrush is frequently mentioned as a comprehensive all-in-one solution. This is consistent with the systematic literature review by Hatzijordanou et al. (2019) on competitor analysis, which identifies and compares major market measurements that help distinguish the services and goods of the competitors.
+             As for ease of integration, the general consensus is that these tools should ideally be able to integrate with existing systems like Salesforce and provide workbench capabilities for consolidated analysis. However, the best tool ultimately depends on specific requirements and budget. It’s always recommended to read user reviews before making a decision
+              ")
+            ),
+           box(
+            title= "Sources",
+            status = "success",
+            width = 12,
+            collapsible = T,
+            h6("Lopes, B. de S., Amorim, V., Au-Yong-Oliveira, M., & Lima Rua, O. (2023). Competitive and Business Intelligence: A Bibliometric Analysis. In Quality Innovation and Sustainability (pp. 187–197). https://link.springer.com/chapter/10.1007/978-3-031-12914-8_15."),
+            h6("Hatzijordanou, N., Bohn, N., & Terzidis, O. (2019). A systematic literature review on competitor analysis: status quo and start-up specifics. Management Review Quarterly, 69, 415–4582 https://link.springer.com/article/10.1007/s11301-019-00158-5."),
+            h6("G2. (2024). Best Competitive Intelligence Tools in 2024. Retrieved from https://www.g2.com/categories/competitive-intelligence"),
+            h6("G2. (2024). Best Enterprise Competitive Intelligence Tools in 2024. Retrieved from https://www.g2.com/categories/competitive-intelligence/enterprise"),
+            h6("G2. (2024). Best Competitive Intelligence Tools for Small Business. Retrieved from https://www.g2.com/categories/competitive-intelligence/small-business"),
+            h6("G2. (2024). Best Competitive Intelligence Tools for Medium-Sized Businesses. Retrieved from https://www.g2.com/categories/competitive-intelligence/mid-market"),
+            h6("Zapier. (2024). The 9 best competitor analysis tools in 2024. Retrieved from https://zapier.com/blog/competitor-analysis-tools/"),
+            h6("Evalueserve. (n.d.). Competitive Intelligence Solutions: 5 Ways to Ease Your Job. Retrieved from https://www.evalueserve.com/blog/competitive-intelligence-solutions-easier-job/"),
+            h6("Content Boomerang. (n.d.). Competitive Intelligence Tools: Key Solutions for Strategic Business. Retrieved from https://contentboomerang.com/blog/competitive-intelligence-tools/"),
+            h6("Semrush. (n.d.). The 14 Best Competitive Intelligence Tools for Market Research. Retrieved from https://www.semrush.com/blog/best-competitive-intelligence-tools/"),
+            ),
+
+
+          ),
         )
       )
 
