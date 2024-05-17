@@ -237,8 +237,8 @@ shiny::shinyServer(function(input, output, session) {
     h2(paste(selected_dataset, " Dataset"))
   })
   
-  plot_data <- reactiveValues(plot_type = "pyramid")
-  plot_visibility <- reactiveValues(pyramid = TRUE, treemap = FALSE)
+  plot_data <- reactiveValues(plot_type = "treemap")
+  plot_visibility <- reactiveValues(pyramid = FALSE, treemap = TRUE)
   
   output$q1dynamicplot <- renderPlotly({
     if (is.null(plot_data$plot_type)) {
