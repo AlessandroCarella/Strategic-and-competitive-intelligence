@@ -114,23 +114,6 @@ shiny::shinyServer(function(input, output, session) {
   #--------------------------------------------------------------------------------------------------
   #--------------------------------------------------------------------------------------------------
   
-  output$question1Answer <- renderText({
-    "The takeaway from this data is that the organizations that are mentioned most often in the genAI for coding public discourse are mostly very big tech companies.
-There are some minor differences between the data extracted from twitter and reddit but not really meaningful ones since the most cited are always the same.
-In the list we found there are some interesting names that stand out when considering the names that one would assume to be more related to the generative ai 
-public discussions (such as NVIDIA) and one can observe them in the treemap above."
-  })
-  output$question2Answer <- renderText({
-    "TODO, SEARCH \"output$question2Answer\" IN THE SERVER FILE"
-  })
-  output$question3Answer <- renderText({
-    "TODO, SEARCH \"output$question3Answer\" IN THE SERVER FILE"
-  })
-  output$question4Answer <- renderText({
-    "We gathered data from the two main user driven publications for software developers - Stack Overflow and Dev.to, to understand how the usage of top programming languages changed before and after the release of the most popular LLM - ChatGPT."
-  })
-  #ADD OTHER ANSWERS HERER
-
 
   #--------------------------------------------------------------------------------------------------
   #--------------------------------------------------------------------------------------------------
@@ -141,7 +124,7 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
       6,
       "Questions",
       icon = shiny::icon("question-circle"),
-      color = "green"
+      color = "olive"
     )
   })
 
@@ -152,26 +135,35 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
                              icon = shiny::icon("database"),
                              color = "light-blue")
   })
-  #Valid colors are: red, yellow, aqua, blue, light-blue, green, navy, teal, olive, lime, orange, fuchsia, purple, maroon, black.
-  # Create the insstructions box
+  
+  
+  # Define a CSS class for smaller text
+  smaller_text <- "
+.smaller-text {
+  font-size: small;
+}"
+  
+  # Render the UI
   output$instructionsBox <- shiny::renderUI({
-    shinydashboard::box(
-      title = tagList(shiny::icon("info-circle"), "Instructions"),
-      status = "info",
-      solidHeader = TRUE,
-      width = 12,
-      HTML("
-        <p>To navigate the dashboard, please follow these instructions:</p>
-        <ol>
-          <li>Click on the side pannel to choose the topic you want to learn more about.</li>
-          <li>For each topic, select the dataset you are interested in by clicking on the \"Database icon\".</li>
-          <li>For each topic, select the plot type you are interesting on viewing by clicking on the buttons with names of the plots situated in the topic page.</li>
-          <li>For each plot, hover over one of the plot items to see the percentage that they represent and other details.</li>
-        </ol>
-        <p>If you have any questions, please refer to the help section on each topic or contact us.</p>
-      ")
+    shiny::tags$style(smaller_text) # Inject the CSS into the UI
+    
+    shinydashboard::valueBox(
+      value = "Instructions",
+      subtitle = HTML("
+      <p class='smaller-text'>To navigate the dashboard, please follow these instructions:</p>
+      <ol class='smaller-text'>
+        <li>Click on the side panel to choose the topic you want to learn more about.</li>
+        <li>For each topic, select the dataset you are interested in by clicking on the \"Database icon\".</li>
+        <li>For each topic, select the plot type you are interested in viewing by clicking on the buttons with names of the plots situated in the topic page.</li>
+        <li>For each plot, hover over one of the plot items to see the percentage that they represent and other details.</li>
+      </ol>
+      <p class='smaller-text'>If you have any questions, please refer to the help section on each topic or contact us.</p>
+    "),
+      icon = shiny::icon("info-circle"),
+      color = "green"
     )
   })
+  
 
   #--------------------------------------------------------------------------------------------------
   #--------------------------------------------------------------------------------------------------
@@ -245,8 +237,8 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
     h2(paste(selected_dataset, " Dataset"))
   })
   
-  plot_data <- reactiveValues(plot_type = "treemap")
-  plot_visibility <- reactiveValues(pyramid = FALSE, treemap = TRUE)
+  plot_data <- reactiveValues(plot_type = "pyramid")
+  plot_visibility <- reactiveValues(pyramid = TRUE, treemap = FALSE)
   
   output$q1dynamicplot <- renderPlotly({
     if (is.null(plot_data$plot_type)) {
@@ -274,7 +266,7 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
   data %>%
     mutate(redditCount = -redditCount) %>%
     mutate(abs_reddit = abs(redditCount)) %>%
-    plot_ly(x = ~redditCount, y = ~company, color = I("red")) %>% 
+    plot_ly(x = ~redditCount, y = ~company, color = I("orange")) %>% 
     add_bars(orientation = 'h', hoverinfo = 'text', text = ~abs_reddit, name = "Reddit") %>%
     add_trace(x = ~twitterCount, y = ~company, color = I("blue"), type = 'bar', orientation = 'h', hoverinfo = 'text', name = "Twitter") %>%
     layout(bargap = 0.1, barmode = 'overlay',

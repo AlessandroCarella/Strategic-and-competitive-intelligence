@@ -103,13 +103,12 @@ dashboardPage(
             )
           ),
           
+       
           # Projects, companies, and facilities value boxes
+          uiOutput("instructionsBox"),
           uiOutput("questionBox"),
           uiOutput("datasetBox"),
-          column(
-            width = 4,
-            uiOutput("instructionsBox")
-          )
+          
         )
       ),
       
@@ -178,8 +177,9 @@ dashboardPage(
             # ),
             # br(),
             plotlyOutput("q1dynamicplot"),
-            
-            dropdownButton(
+            fluidRow(
+              
+            column(width=1,dropdownButton(
               # Panel title
               h4("List of Datasets"),
               
@@ -195,11 +195,31 @@ dashboardPage(
               width = "300px",
               tooltip = tooltipOptions(title = "Click to see possible datasets"),
               up = TRUE
-            )
+            )),
+            column(width = 1,dropdownButton(
+              label = h4("Instructions"),
+              icon = icon("info-circle"),
+              menu = p("Hover over each bar  to see the number of mentions of each instance.
+                         Click on the camera button on the upper right side to save the plot as a PNG file."),
+              circle = TRUE,
+              status = "info-circle",
+              width = "300px",
+              tooltip = tooltipOptions(title = "Click for instructions"),
+              up =TRUE
+            )))
           )
-        ),
-          verbatimTextOutput("question1Answer")
-      ),
+        ,
+        box(
+          title= "Key Findings",
+          status = "success",
+          width = 12,
+          collapsible = T,
+          h4("The takeaway from this data is that the organizations that are mentioned most often in the genAI for coding public discourse are mostly very big tech companies.
+There are some minor differences between the data extracted from twitter and reddit but not really meaningful ones since the most cited are always the same.
+In the list we found there are some interesting names that stand out when considering the names that one would assume to be more related to the generative ai 
+public discussions (such as NVIDIA) and one can observe them in the treemap above.")
+          
+      ))),
         
       # Q1 data tab item
       tabItem(
@@ -212,10 +232,11 @@ dashboardPage(
           collapsible = T,
           uiOutput("selectedDataset"),
           
-          # Question 3 table
+          # Question 1 table
           DT::dataTableOutput("q1Table"),
           
-          dropdownButton(
+          fluidRow(
+            column(width = 1, dropdownButton(
             # Panel title
             h4("List of Datasets"),
             
@@ -231,6 +252,19 @@ dashboardPage(
             width = "300px",
             tooltip = tooltipOptions(title = "Click to see possible datasets"),
             up = TRUE
+          )),
+          column(width = 1,dropdownButton(
+            label = h4("Instructions"),
+            icon = icon("info-circle"),
+            menu = p("Click on any of the buttons to export dataset in the desired format. 
+                       Use pagination to go to the next set of records.
+                       Use search bar to search by keywords."),
+            circle = TRUE,
+            status = "info-circle",
+            width = "300px",
+            tooltip = tooltipOptions(title = "Click for instructions"),
+            up =TRUE
+          ))
           )
         )
         )
@@ -334,10 +368,11 @@ dashboardPage(
           )),
           
           box( 
-            title= "TODO Key Findings",
+            title= "Key Findings",
             status = "success",
             width = 12,
             collapsible = T,
+            h4("TODO")
           )
         )
       ),
@@ -470,7 +505,8 @@ dashboardPage(
               column(width = 1,dropdownButton(
                 label = h4("Instructions"),
                 icon = icon("info-circle"),
-                menu = p("Hover over each bar to see the percentages of each instance."),
+                menu = p("Hover over each slice of the pie to see the percentages of each instance.
+                         Click on the camera button on the upper right side to save the plot as a PNG file."),
                 circle = TRUE,
                 status = "info-circle",
                 width = "300px",
@@ -486,14 +522,9 @@ dashboardPage(
             status = "success",
             width = 12,
             collapsible = T,
-            h4("On Twitter, the conversation is predominantly centered around cutting-edge technologies such as \"chatgpt\" & \"ai\". There is also notable interest in new emerging technologies such as \"web3\", \"iot\", \"ar\", and \"metaverse\".
-            The frequent mention of terms like \"python\" and \"data\" suggests a strong focus on data science within the Twitter tech community."),
-            h4("In contrast, Reddit discussions are more focused on specific companies and broader tech issues. \"Comcast\" is the most mentioned , reflecting its prominence in discussions, possibly about customer service or broadband issues. Other frequently mentioned entities include major tech companies like \"Google\" , \"Microsoft\", and \"Apple\". The presence of \"AI\" and cybersecurity terms like \"NSA\" and \"WannaCry\"  highlights a mix of interests in both artificial intelligence and security concerns."),
-            h4("On Dev.To, the focus shifts towards technical terms and tools relevant to developers. \"AI\" is again a major topic. Other notable terms include \"LLM\", \"JMX\", and \"Node.js\" reflecting a concentration on large language models, Java management extensions, and server-side JavaScript environments. Mentions of \"GitHub\"  and \"Spring\"  indicate the platform's strong community of software developers engaged in discussing coding frameworks and repositories."),
-            h3("Overall, these findings highlight that while Twitter is abuzz with trending tech terms and broader AI discussions, Reddit hosts more company-specific and security-related conversations. Meanwhile, Dev.To is distinctly developer-centric, focusing on tools, programming languages, and development practices.")
-            )
+            h4("TODO")
         )
-      ),
+      )),
       
       # Q3 data tab item
       tabItem(
