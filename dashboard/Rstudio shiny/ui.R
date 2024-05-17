@@ -522,7 +522,11 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
             status = "success",
             width = 12,
             collapsible = T,
-            h4("TODO")
+            h4("On Twitter, discussions revolve mostly around AI tech like \"chatgpt\", as well as ongoing tech like \"web3\", \"iot\", \"ar\", and \"metaverse\". The presence of \"python\" and \"data\" shows an interest in Data Science."),
+            h4("Conversely, Reddit focuses more on specific companies like \"Comcast\" and \"Google\". Important to note is that AI and cybersecurity are too prevalent, as seen by mentions of terms like \"NSA\" and \"WannaCry\"."),
+            h4("Dev.To data shows to be more developer-centric, focusing on tools and programming languages most used by professionals. Such can be seen by the high mentions of terms like \"LLM\", \"JMX\", and \"Node.js\"."),
+            h4("What can be seen from all datasets is that AI and its derivations are a main part of the emerging technology landscape of today.")
+          
         )
       )),
       
