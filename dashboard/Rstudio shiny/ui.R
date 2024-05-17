@@ -680,7 +680,7 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
             status = "success",
             width = 12,
             collapsible = T,
-            h4("This analysis gathers data from Dev.to and StackOverflow. These are the two main user generated content websites where programming languages users share opinions. The above Data represents mentions that programming languages received in 2022 and 2023, before and after the release of ChatGPT. These mentions are generative AI agnostic."),
+            h4("This analysis gathers data from Dev.to and StackOverflow.The above Data represents mentions that programming languages received in 2022 and 2023, before and after the release of ChatGPT. These mentions are generative AI agnostic."),
             h4("The analysis hilights small changes in the mention of programming languages before and after the release of ChatGPT. According to the data, the pace of innovation in Generative AI technology is higher than the pace of change in the adoption of programming languages. "),
             h4("Limitations: ChatGpt was release in November 2022, hence this analysis only takes into considerations two years, 2022 and 2023. It would be interesting for future studies to look at a wider window of time")
             )
