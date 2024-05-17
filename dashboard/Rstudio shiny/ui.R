@@ -110,7 +110,7 @@ dashboardPage(
               "dashboard built to give insights onto trends related to technology."
             ),
             h4(
-              "For this project, we compiled a  list of 6 questions which aim to delve into today's age opinions & trends on coding."
+              "This piece of research investigates the intersection of generative AI and coding. Using both qualitative and quantitative approaches, it seeks to research competitive intelligence topics such as main players in the ecosystem, the future of work, innovation, tech stacks and ethics."
             ),
             br(),
             h4(
