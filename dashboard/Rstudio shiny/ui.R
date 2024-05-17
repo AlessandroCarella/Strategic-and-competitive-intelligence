@@ -665,11 +665,38 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
             br(),
             plotly::plotlyOutput("q4dynamicplot"),
 
-              selectInput(
-                "question4Dataset",
-                h5("Select Dataset:"),
-                c("Devto", "StackOverflow")
+             fluidRow(
+              column(width = 1,
+                     dropdownButton(
+                       # Panel title
+                       h4("List of Datasets"),
+                       selectInput(
+                         "question4Dataset",
+                         h5("Select Dataset:"),
+                         c("Devto", "StackOverflow")
+                       ),
+                       circle = TRUE,
+                       status = "success",
+                       icon = icon("database"),
+                       width = "300px",
+                       tooltip = tooltipOptions(title = "Click to see possible datasets"),
+                       up = TRUE
+                     )
               ),
+              column(width = 1,dropdownButton(
+                label = h4("Instructions"),
+                icon = icon("info-circle"),
+                menu = p("Hover over each bar to see the percentages of each instance.
+                         Click on the camera button on the upper right side to save the plot as a PNG file."),
+                circle = TRUE,
+                status = "info-circle",
+                width = "300px",
+                tooltip = tooltipOptions(title = "Click for instructions"),
+                up =TRUE
+              ))
+              
+              
+            ),
 
               uiOutput("question4YearSelect")
 
