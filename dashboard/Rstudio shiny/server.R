@@ -463,21 +463,15 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
     h2(paste(selected_dataset, " Dataset"))
   })
   
-  plot_data <- reactiveValues(plot_type = "barplot")
-  plot_visibility <- reactiveValues(barplot = TRUE, treemap = FALSE, piechart=FALSE)
   
   output$q3dynamicplot <- renderPlotly({
-    if (is.null(plot_data$plot_type)) {
-      return(NULL)  # No plot selected yet
-    }
     # Load the dataset based on user selection or default to Twitter if none selected
     dataset <- switch(ifelse(is.null(input$question3Dataset) || input$question3Dataset == "", "Twitter", input$question3Dataset),
                       "Twitter" = question3datasetTwitter(),
                       "Dev.To" = question3datasetDevTo(),
                       "Reddit" = question3datasetReddit())
     
-    if (plot_data$plot_type == "barplot") {
-      if (plot_visibility$barplot) {
+  
         
         # Define color mapping
         colors <- setNames(c("lightblue", "blue", "darkblue"), c("Twitter", "Dev.To", "Reddit"))
@@ -487,64 +481,17 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
         ordered_dataset$name <- factor(ordered_dataset$name, levels = ordered_dataset$name)
         
         # Initial plot setup with bar type
-        p <- plot_ly(data = ordered_dataset, x = ~name, y = ~mention, type = 'bar', color = ~color = ~input$question3Dataset, colors = colors) %>%
+        p <- plot_ly(data = ordered_dataset, x = ~name, y = ~mention, type = 'bar', color =  ~input$question3Dataset, colors = colors) %>%
           layout(xaxis = list(title = "Technology"),
                  yaxis = list(title = "Number of Mentions"),
                  title = "Predominant Technologies on Q3",
                  barmode = 'group')
         
         
-        return(p)}
-    } else if (plot_data$plot_type == "treemap") {
-      if (plot_visibility$treemap) {
-        treemap_data <- dataset
-        print(treemap_data)
-        p <- plot_ly(
-          data = treemap_data,
-          ids = ~name,
-          labels = ~name,
-          parents = ~"",
-          values = ~mention,
-          type = "treemap",
-          hoverinfo = "label+value+percent root",
-          treemapcolorway = c("white"),
-          marker = list(
-            colorscale = list(
-              c(0, 0.5, 1),
-              c("lightblue", "blue", "darkblue")
-            )
-          )
-        )
-        p}}
-    else if (plot_data$plot_type == "piechart") {
-      # Generate some sample data for the pie chart
-      
-      plot_ly(dataset, labels = ~name, values = ~mention, type = "pie")
-    }
+        return(p)
+  
   })
   
-  observeEvent(input$move_to_barplot, {
-    plot_data$plot_type <- "barplot"
-    plot_visibility$barplot <- TRUE
-    plot_visibility$treemap <- FALSE  # Hide treemap when bar plot is shown
-    plot_visibility$piechart <- FALSE  # Hide treemap when bar plot is shown
-  })
-  
-  # Toggle visibility of the treemap
-  observeEvent(input$move_to_treemap, {
-    plot_data$plot_type <- "treemap"
-    plot_visibility$treemap <- TRUE
-    plot_visibility$barplot <- FALSE  # Hide bar plot when treemap is shown
-    plot_visibility$piechart <- FALSE  # Hide treemap when bar plot is shown
-  })
-  
-  # Toggle visibility of the treemap
-  observeEvent(input$move_to_piechart, {
-    plot_data$plot_type <- "piechart"
-    plot_visibility$treemap <- FALSE
-    plot_visibility$barplot <- FALSE  # Hide bar plot when treemap is shown
-    plot_visibility$piechart <- TRUE  # Hide treemap when bar plot is shown
-  })
 
   #--------------------------------------------------------------------------------------------------
   
