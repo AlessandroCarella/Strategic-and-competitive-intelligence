@@ -541,9 +541,12 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
     
     if (plot_data_q4$plot_type == "barplot") {
       if (plot_visibility_q4$barplot) {
+      ordered_dataset_q4 <- dataset %>%
+      arrange(desc(mention2023))
+      ordered_dataset_q4$name <- factor(ordered_dataset_q4$name, levels = ordered_dataset_q4$name)
         output$question4YearSelect <- NULL
         # Initial plot setup with bar type
-        p <- plot_ly(data = dataset, x = ~name, y = ~mention2022, name = "2022", type = 'bar') %>%
+        p <- plot_ly(data = ordered_dataset_q4, x = ~name, y = ~mention2022, name = "2022", type = 'bar') %>%
          add_trace(x = ~name, y = ~mention2023, name = "2023") %>%
           layout(xaxis = list(title = "Technology"),
                  yaxis = list(title = "Number of Mentions"),
