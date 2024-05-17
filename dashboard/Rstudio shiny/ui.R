@@ -25,7 +25,7 @@ dashboardPage(
       #Question 2 menu item
       menuItem(
         "Digital Nomadism",
-        icon = shiny::icon("comments"),
+        icon = shiny::icon("umbrella-beach"),
         tabName = "q2",
         menuSubItem("Insights", tabName = "q2Insights", icon = icon("line-chart")),
         menuSubItem("Data", tabName = "q2Data", icon = icon("table"))
@@ -43,7 +43,7 @@ dashboardPage(
             # Question 4 menu item
       menuItem(
         "Languages",
-        icon = icon("cogs"),
+        icon = icon("comments"),
         tabName = "q4",
         menuSubItem("Insights", tabName = "q4Insights", icon = icon("line-chart")),
         menuSubItem("Data", tabName = "q4Data", icon = icon("table"))
@@ -51,7 +51,7 @@ dashboardPage(
       # Question 5 menu item
       menuItem(
         "Tools",
-        icon = icon("cogs"),
+        icon = icon("toolbox"),
         tabName = "q5",
         menuSubItem("Insights", tabName = "q5Insights", icon = icon("line-chart"))
 
