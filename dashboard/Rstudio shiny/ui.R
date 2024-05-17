@@ -22,15 +22,6 @@ dashboardPage(
         menuSubItem("Data", tabName = "q1Data", icon = icon("table"))
       ),
       
-      #Question 2 menu item
-      menuItem(
-        "Digital Nomadism",
-        icon = shiny::icon("umbrella-beach"),
-        tabName = "q2",
-        menuSubItem("Insights", tabName = "q2Insights", icon = icon("line-chart")),
-        menuSubItem("Data", tabName = "q2Data", icon = icon("table"))
-      ),
-      
       # Question 3 menu item
       menuItem(
         "Innovations",
@@ -48,6 +39,16 @@ dashboardPage(
         menuSubItem("Insights", tabName = "q4Insights", icon = icon("line-chart")),
         menuSubItem("Data", tabName = "q4Data", icon = icon("table"))
       ),
+
+            #Question 2 menu item
+      menuItem(
+        "Future of work",
+        icon = shiny::icon("umbrella-beach"),
+        tabName = "q2",
+        menuSubItem("Insights", tabName = "q2Insights", icon = icon("line-chart")),
+        menuSubItem("Data", tabName = "q2Data", icon = icon("table"))
+      ),
+
       # Question 5 menu item
       menuItem(
         "Tools",
