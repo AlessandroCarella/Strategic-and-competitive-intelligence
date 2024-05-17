@@ -812,10 +812,9 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
             title= "Key Findings",
             status = "success",
             width = 12,
-            h5("Based on online conversations and reviews, users are most satisfied with Similarweb and Semrush when it comes to competitive intelligence tools and software solutions. This aligns with the findings of Lopes et al. (2023), who conducted a bibliometric analysis to assess competitive intelligence and business intelligence concepts.
-                In terms of functionality, Similarweb is often praised for its market research capabilities, Sprout Social for its social listening features, Ahrefs for its SEO tools, and Semrush is frequently mentioned as a comprehensive all-in-one solution. This is consistent with the systematic literature review by Hatzijordanou et al. (2019) on competitor analysis, which identifies and compares major market measurements that help distinguish the services and goods of the competitors.
-             As for ease of integration, the general consensus is that these tools should ideally be able to integrate with existing systems like Salesforce and provide workbench capabilities for consolidated analysis. However, the best tool ultimately depends on specific requirements and budget. It’s always recommended to read user reviews before making a decision
-              ")
+            h5("Based on online conversations and reviews, users are most satisfied with Similarweb and Semrush when it comes to competitive intelligence tools and software solutions. This aligns with the findings of Lopes et al. (2023), who conducted a bibliometric analysis to assess competitive intelligence and business intelligence concepts."),
+            h5("In terms of functionality, Similarweb is often praised for its market research capabilities, Sprout Social for its social listening features, Ahrefs for its SEO tools, and Semrush is frequently mentioned as a comprehensive all-in-one solution. This is consistent with the systematic literature review by Hatzijordanou et al. (2019) on competitor analysis, which identifies and compares major market measurements that help distinguish the services and goods of the competitors."),
+            h5("As for ease of integration, the general consensus is that these tools should ideally be able to integrate with existing systems like Salesforce and provide workbench capabilities for consolidated analysis. However, the best tool ultimately depends on specific requirements and budget. It’s always recommended to read user reviews before making a decision"),
             ),
            box(
             title= "Sources",
