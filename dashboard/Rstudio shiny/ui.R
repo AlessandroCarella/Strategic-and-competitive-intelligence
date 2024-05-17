@@ -15,7 +15,7 @@ dashboardPage(
       
       #Question 1 menu item
       menuItem(
-        "What organizations are...",
+        "Organizations",
         icon = shiny::icon("building"),
         tabName = "q1",
         menuSubItem("Insights", tabName = "q1Insights", icon = icon("line-chart")),
@@ -24,7 +24,7 @@ dashboardPage(
       
       #Question 2 menu item
       menuItem(
-        "Outlook on Digital Nomadism",
+        "Digital Nomadism",
         icon = shiny::icon("comments"),
         tabName = "q2",
         menuSubItem("Insights", tabName = "q2Insights", icon = icon("line-chart")),
@@ -33,7 +33,7 @@ dashboardPage(
       
       # Question 3 menu item
       menuItem(
-        "Innovative Tech Approaches",
+        "Innovations",
         icon = shiny::icon("microchip"),
         tabName = "q3",
         menuSubItem("Insights", tabName = "q3Insights", icon = icon("line-chart")),
@@ -42,7 +42,7 @@ dashboardPage(
 
             # Question 4 menu item
       menuItem(
-        "Which programming...",
+        "Languages",
         icon = icon("cogs"),
         tabName = "q4",
         menuSubItem("Insights", tabName = "q4Insights", icon = icon("line-chart")),
@@ -623,7 +623,16 @@ dashboardPage(
               uiOutput("question4YearSelect")
 
           ),
-          verbatimTextOutput("question4Answer")
+          
+           box(
+            title= "Key Findings",
+            status = "success",
+            width = 12,
+            collapsible = T,
+            h4("This analysis gathers data from Dev.to and StackOverflow. These are the two main user generated content websites where programming languages users share opinions. The above Data represents mentions that programming languages received in 2022 and 2023, before and after the release of ChatGPT. These mentions are generative AI agnostic."),
+            h4("The analysis hilights small changes in the mention of programming languages before and after the release of ChatGPT. According to the data, the pace of innovation in Generative AI technology is higher than the pace of change in the adoption of programming languages. "),
+            h4("Limitations: ChatGpt was release in November 2022, hence this analysis only takes into considerations two years, 2022 and 2023. It would be interesting for future studies to look at a wider window of time")
+            )
         )
       ),
 
@@ -632,7 +641,7 @@ dashboardPage(
         tabName = "q4Data",
         fluidRow(
         box(
-          title= "A generative AI agnostic analysis of programming languages adoption before and after the release of ChatGPT",
+          title= "Programming languages adoption before and after the release of ChatGPT",
           status = "primary",
           width = 12,
           collapsible = T,
@@ -659,20 +668,6 @@ dashboardPage(
             tooltip = tooltipOptions(title = "Click to see possible datasets"),
             up = TRUE
           )
-          ),
-          fluidRow(
-          dropdownButton(
-              label = h4("Instructions"),
-              icon = icon("info-circle"),
-              menu = p("Click on any of the buttons to export dataset in the desired format. 
-                       Use pagination to go to the next set of records.
-                       Use search bar to search by keywords."),
-              circle = TRUE,
-              status = "info-circle",
-              width = "300px",
-              tooltip = tooltipOptions(title = "Click for instructions"),
-              up =TRUE
-            )
           )
         )
         )

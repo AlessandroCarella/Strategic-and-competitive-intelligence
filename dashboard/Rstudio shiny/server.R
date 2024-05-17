@@ -511,7 +511,7 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
          add_trace(x = ~name, y = ~mention2023, name = "2023") %>%
           layout(xaxis = list(title = "Technology"),
                  yaxis = list(title = "Mentions"),
-                 title = "A generative AI agnostic analysis of programming languages adoption before and after the release of ChatGPT on Q4",
+                 title = "Programming languages adoption before and after the release of ChatGPT on Q4",
                  barmode = 'group')
         return(p)}
     } else if (plot_data_q4$plot_type == "treemap") {
