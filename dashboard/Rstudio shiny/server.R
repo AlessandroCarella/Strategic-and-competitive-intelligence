@@ -433,21 +433,11 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
                       "Reddit" = question3datasetReddit())
     
   
+    colors <- setNames(c("lightblue", "blue", "darkblue"), c("Twitter", "Dev.To", "Reddit"))
+    
+        p <- plot_ly(dataset, labels = ~name, values = ~mention, type = "pie")
         
-        # Define color mapping
-        colors <- setNames(c("lightblue", "blue", "darkblue"), c("Twitter", "Dev.To", "Reddit"))
-        
-        ordered_dataset <- dataset %>%
-          arrange(desc(mention))
-        ordered_dataset$name <- factor(ordered_dataset$name, levels = ordered_dataset$name)
-        
-        # Initial plot setup with bar type
-        p <- plot_ly(data = ordered_dataset, x = ~name, y = ~mention, type = 'bar', color =  ~input$question3Dataset, colors = colors) %>%
-          layout(xaxis = list(title = "Technology"),
-                 yaxis = list(title = "Number of Mentions"),
-                 title = "Predominant Technologies",
-                 barmode = 'group')
-        
+
         
         return(p)
   
