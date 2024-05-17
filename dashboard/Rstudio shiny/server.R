@@ -127,7 +127,7 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
     "TODO, SEARCH \"output$question3Answer\" IN THE SERVER FILE"
   })
   output$question4Answer <- renderText({
-    "TODO, SEARCH \"output$question4Answer\" IN THE SERVER FILE"
+    "We gathered data from the two main user driven publications for software developers - Stack Overflow and Dev.to, to understand how the usage of top programming languages changed before and after the release of the most popular LLM - ChatGPT."
   })
   #ADD OTHER ANSWERS HERER
 
@@ -549,8 +549,8 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
         p <- plot_ly(data = ordered_dataset_q4, x = ~name, y = ~mention2022, name = "2022", type = 'bar') %>%
          add_trace(x = ~name, y = ~mention2023, name = "2023") %>%
           layout(xaxis = list(title = "Technology"),
-                 yaxis = list(title = "Number of Mentions"),
-                 title = "Predominant Technologies on Q4",
+                 yaxis = list(title = "Mentions"),
+                 title = "A generative AI agnostic analysis of programming languages adoption before and after the release of ChatGPT on Q4",
                  barmode = 'group')
         return(p)}
     } else if (plot_data_q4$plot_type == "treemap") {
