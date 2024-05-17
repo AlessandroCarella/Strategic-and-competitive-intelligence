@@ -692,7 +692,7 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
         tabName = "q4Data",
         fluidRow(
         box(
-          title= "Programming languages adoption before and after the release of ChatGPT",
+          title= "Which programming languages were used before and after ChatGPT?",
           status = "primary",
           width = 12,
           collapsible = T,
