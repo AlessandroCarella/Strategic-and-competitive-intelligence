@@ -336,7 +336,7 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
     DT::datatable(
       dataset,
       rownames = FALSE,
-      colnames = c('Opinion/Sentiments','Number of Mentions'),
+      colnames = c('Opinion','Number of Mentions'),
       extensions = c('Responsive', 'Buttons'),
       options = list(
         searchHighlight = TRUE,
@@ -352,14 +352,7 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
     h2(paste(selected_dataset, " Dataset"))
   })
   
-  plot_data_q2 <- reactiveValues(plot_type = "treemap")
-  plot_visibility_q2 <- reactiveValues(treemap = TRUE, barplot=FALSE)
-  
-  
   output$q2dynamicplot <- renderPlotly({
-    if (is.null(plot_data_q2$plot_type)) {
-      return(NULL)  # No plot selected yet
-    }
     
     # Load the dataset based on user selection or default to Twitter if none selected
     dataset <- switch(ifelse(is.null(input$question2Dataset) || input$question2Dataset == "", "Dev.To", input$question2Dataset),
@@ -376,9 +369,7 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
                       "Twitter sentiment" = "count", 
                       "Twitter topics" = "count",
                       "Dev.To" = "mention")
-    
-    if (plot_data_q2$plot_type == "treemap") {
-      if (plot_visibility_q2$treemap) {       
+       
         treemap_data <- dataset
         p <- plot_ly(
           data = treemap_data,
@@ -397,36 +388,6 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
           )
         )
         p
-      }
-    } else if (plot_data_q2$plot_type == "barplot") {
-      if (plot_visibility_q2$barplot) {
-        # Define color mapping
-        colors <- setNames(c("lightblue", "blue", "darkblue"), 
-                   c("Twitter sentiment", "Twitter topics", "Dev.To"))
-
-        # Initial plot setup with bar type
-        p <- plot_ly(data = dataset, x = ~get(name_column), y = ~get(mention_column), type = 'bar', color = ~input$question2Dataset, colors = colors) %>%
-          layout(xaxis = list(title = "Opinon/Sentiment"),
-                yaxis = list(title = "Number of Mentions"),
-                title = "Predominant Opinions, Sentiments and others on Q2",
-                barmode = 'group')
-        
-        return(p)
-      }
-    }
-  })
-
-  
-  observeEvent(input$move_to_treemap_q2, {
-    plot_data_q2$plot_type <- "treemap"
-    plot_visibility_q2$treemap <- TRUE
-    plot_visibility_q2$barplot <- FALSE
-  })
-  
-  observeEvent(input$move_to_barplot_q2, {
-    plot_data_q2$plot_type <- "barplot"
-    plot_visibility_q2$wordcloud <- FALSE
-    plot_visibility_q2$barplot <- TRUE
   })
   
   
@@ -484,7 +445,7 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
         p <- plot_ly(data = ordered_dataset, x = ~name, y = ~mention, type = 'bar', color =  ~input$question3Dataset, colors = colors) %>%
           layout(xaxis = list(title = "Technology"),
                  yaxis = list(title = "Number of Mentions"),
-                 title = "Predominant Technologies on Q3",
+                 title = "Predominant Technologies",
                  barmode = 'group')
         
         

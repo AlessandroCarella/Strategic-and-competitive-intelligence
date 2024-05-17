@@ -24,7 +24,7 @@ dashboardPage(
       
       #Question 2 menu item
       menuItem(
-        "How are discussions...",
+        "Outlook on Digital Nomadism",
         icon = shiny::icon("comments"),
         tabName = "q2",
         menuSubItem("Insights", tabName = "q2Insights", icon = icon("line-chart")),
@@ -301,6 +301,8 @@ dashboardPage(
             # br(),
             plotlyOutput("q2dynamicplot"),
             
+            fluidRow(
+              column(width = 1,
             dropdownButton(
               # Panel title
               h4("List of Datasets"),
@@ -317,9 +319,26 @@ dashboardPage(
               width = "300px",
               tooltip = tooltipOptions(title = "Click to see possible datasets"),
               up = TRUE
-            )
-          ),
-          verbatimTextOutput("question2Answer")
+            )),
+            column(width = 1,dropdownButton(
+              label = h4("Instructions"),
+              icon = icon("info-circle"),
+              menu = p("Hover over each square to see the percentages of each instance."),
+              circle = TRUE,
+              status = "info-circle",
+              width = "300px",
+              tooltip = tooltipOptions(title = "Click for instructions"),
+              up =TRUE
+            ))
+            
+          )),
+          
+          box( 
+            title= "TODO Key Findings",
+            status = "success",
+            width = 12,
+            collapsible = T,
+          )
         )
       ),
       
@@ -336,7 +355,8 @@ dashboardPage(
             
             # Question 2 table
             DT::dataTableOutput("q2Table"),
-            
+            fluidRow(
+            column(width = 1,
             dropdownButton(
               # Panel title
               h4("List of Datasets"),
@@ -353,6 +373,20 @@ dashboardPage(
               width = "300px",
               tooltip = tooltipOptions(title = "Click to see possible datasets"),
               up = TRUE
+            )),
+            column(width = 1,dropdownButton(
+              label = h4("Instructions"),
+              icon = icon("info-circle"),
+              menu = p("Click on any of the buttons to export dataset in the desired format. 
+                       Use pagination to go to the next set of records.
+                       Use search bar to search by keywords."),
+              circle = TRUE,
+              status = "info-circle",
+              width = "300px",
+              tooltip = tooltipOptions(title = "Click for instructions"),
+              up =TRUE
+            ))
+            
             )
           )
         )
@@ -447,7 +481,17 @@ dashboardPage(
               
             )
           ),
-          verbatimTextOutput("question3Answer")
+          box(
+            title= "Key Findings",
+            status = "success",
+            width = 12,
+            collapsible = T,
+            h4("On Twitter, the conversation is predominantly centered around cutting-edge technologies such as \"chatgpt\" & \"ai\". There is also notable interest in new emerging technologies such as \"web3\", \"iot\", \"ar\", and \"metaverse\".
+            The frequent mention of terms like \"python\" and \"data\" suggests a strong focus on data science within the Twitter tech community."),
+            h4("In contrast, Reddit discussions are more focused on specific companies and broader tech issues. \"Comcast\" is the most mentioned , reflecting its prominence in discussions, possibly about customer service or broadband issues. Other frequently mentioned entities include major tech companies like \"Google\" , \"Microsoft\", and \"Apple\". The presence of \"AI\" and cybersecurity terms like \"NSA\" and \"WannaCry\"  highlights a mix of interests in both artificial intelligence and security concerns."),
+            h4("On Dev.To, the focus shifts towards technical terms and tools relevant to developers. \"AI\" is again a major topic. Other notable terms include \"LLM\", \"JMX\", and \"Node.js\" reflecting a concentration on large language models, Java management extensions, and server-side JavaScript environments. Mentions of \"GitHub\"  and \"Spring\"  indicate the platform's strong community of software developers engaged in discussing coding frameworks and repositories."),
+            h3("Overall, these findings highlight that while Twitter is abuzz with trending tech terms and broader AI discussions, Reddit hosts more company-specific and security-related conversations. Meanwhile, Dev.To is distinctly developer-centric, focusing on tools, programming languages, and development practices.")
+            )
         )
       ),
       
