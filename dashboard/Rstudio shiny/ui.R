@@ -600,17 +600,17 @@ dashboardPage(
         }
       "))),
             
-            fluidRow(
-              column(width = 3,
-                     actionButton("move_to_barplot_q4", "Bar Plot", class="custom-btn")
-              ),
-              column(width = 3,
-                     actionButton("move_to_treemap_q4", "Tree Map", class="custom-btn")
-              ),
-              column(width = 3,
-                     actionButton("move_to_piechart_q4", "Pie Chart", class="custom-btn")
-              )
-            ),
+            ##fluidRow(
+             ## column(width = 3,
+             ##        actionButton("move_to_barplot_q4", "Bar Plot", class="custom-btn")
+             ## ),
+              ##
+              ##       actionButton("move_to_treemap_q4", "Tree Map", class="custom-btn", disabled = TRUE)
+              ##),
+              ##column(width = 3,
+              ##       actionButton("move_to_piechart_q4", "Pie Chart", class="custom-btn", disabled = TRUE)
+              ##)
+            ##),
             br(),
             plotly::plotlyOutput("q4dynamicplot"),
 
@@ -623,7 +623,7 @@ dashboardPage(
               uiOutput("question4YearSelect")
 
           ),
-          verbatimTextOutput("question3Answer")
+          verbatimTextOutput("question4Answer")
         )
       ),
 
@@ -632,7 +632,7 @@ dashboardPage(
         tabName = "q4Data",
         fluidRow(
         box(
-          title= "Which programming languages were used before and after ChatGPT?",
+          title= "A generative AI agnostic analysis of programming languages adoption before and after the release of ChatGPT",
           status = "primary",
           width = 12,
           collapsible = T,
@@ -641,6 +641,7 @@ dashboardPage(
           # Question 4 table
           DT::dataTableOutput("q4Table"),
           
+          fluidRow(
           dropdownButton(
             # Panel title
             h4("List of Datasets"),
@@ -657,6 +658,21 @@ dashboardPage(
             width = "300px",
             tooltip = tooltipOptions(title = "Click to see possible datasets"),
             up = TRUE
+          )
+          ),
+          fluidRow(
+          dropdownButton(
+              label = h4("Instructions"),
+              icon = icon("info-circle"),
+              menu = p("Click on any of the buttons to export dataset in the desired format. 
+                       Use pagination to go to the next set of records.
+                       Use search bar to search by keywords."),
+              circle = TRUE,
+              status = "info-circle",
+              width = "300px",
+              tooltip = tooltipOptions(title = "Click for instructions"),
+              up =TRUE
+            )
           )
         )
         )
