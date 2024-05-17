@@ -48,7 +48,24 @@ dashboardPage(
         menuSubItem("Insights", tabName = "q4Insights", icon = icon("line-chart")),
         menuSubItem("Data", tabName = "q4Data", icon = icon("table"))
       ),
-        
+      # Question 5 menu item
+      menuItem(
+        "Tools",
+        icon = icon("cogs"),
+        tabName = "q5",
+        menuSubItem("Insights", tabName = "q5Insights", icon = icon("line-chart")),
+        menuSubItem("Data", tabName = "q5Data", icon = icon("table"))
+      ),
+
+      # Question 6 menu item
+      menuItem(
+        "Ethics",
+        icon = icon("cogs"),
+        tabName = "q6",
+        menuSubItem("Insights", tabName = "q6Insights", icon = icon("line-chart")),
+        menuSubItem("Data", tabName = "q6Data", icon = icon("table"))
+      ),
+
       #ADD OTHER QUESTIONS HERE
       br()
     )
