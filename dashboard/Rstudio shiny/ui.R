@@ -389,7 +389,8 @@ public discussions (such as NVIDIA) and one can observe them in the treemap abov
             status = "success",
             width = 12,
             collapsible = T,
-            h4("Based on the data from Dev.To, it was observed that the prevailing opinions expressed  regarding remote working were predominantly positive. This indicates a favorable disposition towards emerging digital nomadism work arrangements. The main sentiments described this arrangment as easy, new, and available. ")
+            h4("Based on the data from Dev.To, it was observed that the prevailing opinions expressed regarding remote working were predominantly positive. This indicates a favorable disposition towards emerging digital nomadism work arrangements. The main sentiments described this arrangment as easy, new, and available."),
+            h4("Regarding twitter the data shows that the predominant feelings, regarding this topic, are netural and positive, that confirms the outcome of the research made on the dev.to dataset. The topics that are mostly talked about in those discussions are visible in the treemap above")
           )
         )
       ),
